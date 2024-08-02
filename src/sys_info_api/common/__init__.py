@@ -2,10 +2,15 @@ import datetime
 import time
 import sys
 from dateutil import parser as dateparser
+from .exceptions import MetricNotAvailable
+from .key_value_parser import KeyValueParser
+from .bin_collector import BinCollector
+from .bin_collector_test import BinCollectorTest
 
-STDOFFSET = datetime.timedelta(seconds=-time.timezone)
+
+STDOFFSET = datetime.timedelta(seconds = -time.timezone)
 if time.daylight:
-	DSTOFFSET = datetime.timedelta(seconds=-time.altzone)
+	DSTOFFSET = datetime.timedelta(seconds = -time.altzone)
 else:
 	DSTOFFSET = STDOFFSET
 
@@ -41,19 +46,10 @@ class LocalTimezone(datetime.tzinfo):
 		return tt.tm_isdst > 0
 
 
-class MetricNotAvailable(BaseException):
-	"""
-	General exception thrown when a metric is not available
-
-	Usually used to encompass various things like FileNotFound or cmd exceptions.
-	"""
-	pass
-
-
 def print_error(string):
 	"""
 	Simple method to write out an error message to STDERR.
-	
+
 	This will be available to the retrieving server but will not interfere with the standard output!
 	"""
 	sys.stderr.write('ERR: ' + string + "\n")
@@ -62,7 +58,7 @@ def print_error(string):
 def print_warning(string):
 	"""
 	Simple method to write out a warning message to STDERR.
-	
+
 	This will be available to the retrieving server but will not interfere with the standard output!
 	"""
 	sys.stderr.write('WARN: ' + string + "\n")
@@ -71,7 +67,7 @@ def print_warning(string):
 def local_date_to_utc_epoch(date) -> int:
 	"""
 	Retrieve the time in UTC epoch of a given date.
-	
+
 	This will return an int representing the number of seconds since Jan 1, 1970 UTC.
 	"""
 
@@ -86,7 +82,7 @@ def local_date_to_utc_epoch(date) -> int:
 def datestring_to_utc_epoch(datestring) -> int:
 	"""
 	Retrieve the time in UTC Epoch of a given string representation of a date
-	
+
 	This will return an int representing the number of seconds since Jan 1, 1970 UTC.
 	"""
 
