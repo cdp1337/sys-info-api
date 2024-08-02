@@ -6,44 +6,7 @@ from .exceptions import MetricNotAvailable
 from .key_value_parser import KeyValueParser
 from .bin_collector import BinCollector
 from .bin_collector_test import BinCollectorTest
-
-
-STDOFFSET = datetime.timedelta(seconds = -time.timezone)
-if time.daylight:
-	DSTOFFSET = datetime.timedelta(seconds = -time.altzone)
-else:
-	DSTOFFSET = STDOFFSET
-
-DSTDIFF = DSTOFFSET - STDOFFSET
-
-
-class LocalTimezone(datetime.tzinfo):
-	"""
-	Hot-patch support for a "local" timezone for converting pesky unaware date strings into UTC
-	"""
-
-	def utcoffset(self, dt):
-		if self._isdst(dt):
-			return DSTOFFSET
-		else:
-			return STDOFFSET
-
-	def dst(self, dt):
-		if self._isdst(dt):
-			return DSTDIFF
-		else:
-			return ZERO
-
-	def tzname(self, dt):
-		return time.tzname[self._isdst(dt)]
-
-	def _isdst(self, dt):
-		tt = (dt.year, dt.month, dt.day,
-		      dt.hour, dt.minute, dt.second,
-		      dt.weekday(), 0, 0)
-		stamp = time.mktime(tt)
-		tt = time.localtime(stamp)
-		return tt.tm_isdst > 0
+from .local_timezone import LocalTimezone
 
 
 def print_error(string):
