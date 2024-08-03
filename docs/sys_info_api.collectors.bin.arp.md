@@ -45,10 +45,7 @@ get_data() → List[dict]
 
 Get the neighbors as a list of dictionaries 
 
-
-
-**Example:**
- 
+Example Response: 
 
 ```yaml
 
@@ -75,11 +72,22 @@ get_ips() → List[str]
 
 Get the list of IP addresses 
 
+Example Response: 
+
+```yaml
+
+- 10.200.0.3
+
+- 10.200.0.244
+
+- 10.200.0.243
+``` 
+
 :raises MetricNotAvailable: 
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L113"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L121"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `get_ips_on`
 
@@ -88,6 +96,17 @@ get_ips_on(iface: str) → List[str]
 ```
 
 Get the list of IP addresses on a specific interface 
+
+Example Response: 
+
+```yaml
+
+- 10.200.0.3
+
+- 10.200.0.244
+
+- 10.200.0.243
+``` 
 
 :raises MetricNotAvailable: 
 
@@ -108,7 +127,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L123"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L139"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class</kbd> `ArpTest`
 
@@ -120,7 +139,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L127"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L143"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `get_test_keys`
 
@@ -134,7 +153,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L124"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L140"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `setUp`
 
