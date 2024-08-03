@@ -2,7 +2,7 @@
 
 <a href="../src/sys_info_api/common/cmd.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-# <kbd>module</kbd> `sys_info_api.common.cmd`
+# <kbd>module:</kbd> `sys_info_api.common.cmd`
 
 
 
@@ -105,7 +105,7 @@ Check if a binary exists in the path
 
 <a href="../src/sys_info_api/common/cmd.py#L20"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-## <kbd>class</kbd> `CmdExecException`
+## <kbd>class:</kbd> `CmdExecException`
 Base command execution exception 
 
 
@@ -116,12 +116,12 @@ Base command execution exception
 
 <a href="../src/sys_info_api/common/cmd.py#L27"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-## <kbd>class</kbd> `CmdExecExitCodeException`
+## <kbd>class:</kbd> `CmdExecExitCodeException`
 Thrown if the command exit code wasn't good 
 
 <a href="../src/sys_info_api/common/cmd.py#L32"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `__init__`
+### <kbd>method:</kbd> `__init__`
 
 ```python
 __init__(returncode, stdout)
@@ -139,7 +139,7 @@ __init__(returncode, stdout)
 
 <a href="../src/sys_info_api/common/cmd.py#L37"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-## <kbd>class</kbd> `CmdExecNotFoundException`
+## <kbd>class:</kbd> `CmdExecNotFoundException`
 Thrown if the command could not be located 
 
 

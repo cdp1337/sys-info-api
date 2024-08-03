@@ -37,4 +37,9 @@ find docs/ -name '*.md' | while read file; do
 	# Appliances
 	sed -i "$file" -e 's:{%img_proxmox%}:![Ubuntu](images/icons/proxmox.svg):g'
 	sed -i "$file" -e 's:{%img_truenas%}:![Ubuntu](images/icons/truenas.svg):g'
+
+	# Tweak resulting markdown to fix some issues
+	sed -i "$file" -e 's:# <kbd>module</kbd>:# <kbd>module\:</kbd>:g'
+	sed -i "$file" -e 's:## <kbd>class</kbd>:## <kbd>class\:</kbd>:g'
+	sed -i "$file" -e 's:### <kbd>method</kbd>:### <kbd>method\:</kbd>:g'
 done

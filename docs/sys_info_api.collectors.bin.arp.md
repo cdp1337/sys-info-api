@@ -2,7 +2,7 @@
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-# <kbd>module</kbd> `sys_info_api.collectors.bin.arp`
+# <kbd>module:</kbd> `sys_info_api.collectors.bin.arp`
 
 
 
@@ -13,7 +13,7 @@
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L20"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-## <kbd>class</kbd> `Arp`
+## <kbd>class:</kbd> `Arp`
 Execute `arp` to get the list of neighbors on the network. 
 
 Compatibility: 
@@ -22,7 +22,7 @@ Compatibility:
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L29"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `__init__`
+### <kbd>method:</kbd> `__init__`
 
 ```python
 __init__()
@@ -37,7 +37,7 @@ __init__()
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L84"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `get_data`
+### <kbd>method:</kbd> `get_data`
 
 ```python
 get_data() → List[dict]
@@ -64,7 +64,7 @@ mac: 50:5a:65:85:05:a9
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L104"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `get_ips`
+### <kbd>method:</kbd> `get_ips`
 
 ```python
 get_ips() → List[str]
@@ -89,7 +89,7 @@ Example Response:
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L121"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `get_ips_on`
+### <kbd>method:</kbd> `get_ips_on`
 
 ```python
 get_ips_on(iface: str) → List[str]
@@ -114,7 +114,7 @@ Example Response:
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L38"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `parse`
+### <kbd>method:</kbd> `parse`
 
 ```python
 parse()
@@ -129,7 +129,7 @@ parse()
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L139"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-## <kbd>class</kbd> `ArpTest`
+## <kbd>class:</kbd> `ArpTest`
 
 
 
@@ -141,7 +141,7 @@ parse()
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L143"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `get_test_keys`
+### <kbd>method:</kbd> `get_test_keys`
 
 ```python
 get_test_keys() → dict
@@ -155,7 +155,7 @@ get_test_keys() → dict
 
 <a href="../src/sys_info_api/collectors/bin/arp.py#L140"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-### <kbd>method</kbd> `setUp`
+### <kbd>method:</kbd> `setUp`
 
 ```python
 setUp()

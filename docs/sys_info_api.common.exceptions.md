@@ -2,7 +2,7 @@
 
 <a href="../src/sys_info_api/common/exceptions.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-# <kbd>module</kbd> `sys_info_api.common.exceptions`
+# <kbd>module:</kbd> `sys_info_api.common.exceptions`
 
 
 
@@ -13,7 +13,7 @@
 
 <a href="../src/sys_info_api/common/exceptions.py#L1"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-## <kbd>class</kbd> `MetricNotAvailable`
+## <kbd>class:</kbd> `MetricNotAvailable`
 General exception thrown when a metric is not available 
 
 Usually used to encompass various things like FileNotFound or cmd exceptions. 

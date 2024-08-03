@@ -2,7 +2,7 @@
 
 <a href="../src/sys_info_api/common/__init__.py#L0"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
-# <kbd>module</kbd> `sys_info_api.common`
+# <kbd>module:</kbd> `sys_info_api.common`
 
 
 
