@@ -19,6 +19,10 @@ which in turn queries /etc/version, pveversion, /etc/os-release, and system_prof
 
 ## Low level Collectors
 
+List of collectors and the platforms tested.
+(Not a definitive list of supported platforms, as Debian support for example generally extends to any Debian-based distro
+and TrueNAS generally derives from FreeBSD support.)
+
 | Type  | Collector          | ![Debian](docs/images/icons/debian.svg) Debian | ![Ubuntu](docs/images/icons/ubuntu.svg) Ubuntu | ![Fedora](docs/images/icons/fedora.svg) Fedora | ![Rocky Linux](docs/images/icons/rocky.svg) Rocky | ![MacOS](docs/images/icons/macos.svg) MacOS   | ![FreeBSD](docs/images/icons/freebsd.svg) FreeBSD | 
 |-------|--------------------|------------------------------------------------|------------------------------------------------|------------------------------------------------|---------------------------------------------------|-----------------------------------------------|---------------------------------------------------|
 | bin   | arp                | 12                                             |                                                |                                                |                                                   |                                               |                                                   |

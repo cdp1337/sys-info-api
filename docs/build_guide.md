@@ -48,3 +48,5 @@ apt install pre-commit
 Run tests: `pytest`
 
 Lint code: `flake8 src`
+
+Generate documentation: `pydoc-markdown > docs/api.md`
