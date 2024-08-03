@@ -89,6 +89,7 @@ class TestDataFiles(TestCase):
 		with self.subTest('{}'.format(test_name)):
 			# Instantiate a new Collector (of type one of the tests)
 			c = collector(*arguments)
+			c.setUp()
 
 			with open(raw, 'r') as f:
 				# Load the raw data from the stored test into the cache of the collector
@@ -100,4 +101,3 @@ class TestDataFiles(TestCase):
 
 			# Compare the stored values to the calculated values from the cached raw data
 			c.verify_test_data(data)
-

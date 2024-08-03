@@ -14,7 +14,6 @@
 
 import subprocess
 import os
-import sys
 import logging
 
 
@@ -42,7 +41,7 @@ class CmdExecNotFoundException(CmdExecException):
 	pass
 
 
-def run_passthru(cmd: list, input = None, env = None):
+def run_passthru(cmd: list, input=None, env=None):
 	"""
 	Run a command and pass stdout and stderr directly to appropriate streams
 
@@ -54,14 +53,8 @@ def run_passthru(cmd: list, input = None, env = None):
 	:raises CmdExecNotFoundException: If the binary was not found on the system
 	"""
 
-	python_34 = sys.version_info[0] == 3 and sys.version_info[1] <= 4
-
 	try:
-		if python_34:
-			# Run was added in 3.5, so we can't use that.
-			subprocess.check_call(cmd, stdin=input, env=env)
-		else:
-			subprocess.run(cmd, stdout=None, stderr=None, check=True, input=input, env=env)
+		subprocess.run(cmd, stdout=None, stderr=None, check=True, input=input, env=env)
 
 	except subprocess.CalledProcessError as e:
 		logging.info('Exception [ReturnCode] from cmd.run_passthru([' + ', '.join(cmd) + '])')
@@ -81,22 +74,13 @@ def run_output(cmd: list) -> str:
 
 	:param cmd: The parameters of the call to execute
 	:returns: The output from the command
-	
+
 	:raises CmdExecExitCodeException: If the process returns an exit code other than 0
 	:raises CmdExecNotFoundException: If the binary was not found on the system
 	"""
-	python_34 = sys.version_info[0] == 3 and sys.version_info[1] <= 4
-	python_35 = sys.version_info[0] == 3 and sys.version_info[1] <= 5
 
 	try:
-		if python_34:
-			# Run was added in 3.5, so we can't use that.
-			return subprocess.check_output(cmd).decode('utf-8').strip()
-		elif python_35:
-			# Encoding was added in Python 3.6, so for 3.5 we need to work around that feature.
-			return subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True).stdout.decode('utf-8').strip()
-		else:
-			return subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, encoding='utf-8').stdout.strip()
+		return subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, encoding='utf-8').stdout.strip()
 	except subprocess.CalledProcessError as e:
 		logging.info('Exception [ReturnCode ' + str(e.returncode) + '] from cmd.run_output([' + ', '.join(cmd) + '])')
 		logging.info(e.stderr)
@@ -118,15 +102,10 @@ def run_binary(cmd: list) -> bytes:
 	:raises CmdExecExitCodeException: If the process returns an exit code other than 0
 	:raises CmdExecNotFoundException: If the binary was not found on the system
 	"""
-	python_34 = sys.version_info[0] == 3 and sys.version_info[1] <= 4
 
 	try:
-		if python_34:
-			# Run was added in 3.5, so we can't use that.
-			return subprocess.check_output(cmd)
-		else:
-			# We're not doing any encoding work here, so raw output can be provided.
-			return subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True).stdout
+		# We're not doing any encoding work here, so raw output can be provided.
+		return subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True).stdout
 	except subprocess.CalledProcessError as e:
 		logging.info('Exception [ReturnCode ' + str(e.returncode) + '] from cmd.run_binary([' + ', '.join(cmd) + '])')
 		logging.info(e.stderr)
@@ -148,15 +127,8 @@ def run_returncode(cmd: list) -> int:
 	:raises CmdExecNotFoundException: If the binary was not found on the system
 	"""
 
-	python_34 = sys.version_info[0] == 3 and sys.version_info[1] <= 4
-
 	try:
-		if python_34:
-			# Run was added in 3.5, so we can't use that.
-			return subprocess.call(cmd, stdout=open(os.devnull, 'w'))
-		else:
-			return subprocess.run(cmd, stdout=open(os.devnull, "w"), stderr=None).returncode
-
+		return subprocess.run(cmd, stdout=open(os.devnull, "w"), stderr=None).returncode
 	except FileNotFoundError:
 		logging.info('Exception [BinaryNotFound] from cmd.run_returncode([' + ', '.join(cmd) + '])')
 		raise CmdExecNotFoundException

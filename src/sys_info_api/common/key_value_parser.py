@@ -76,7 +76,7 @@ class KeyValueParser:
 				continue
 
 			key = line[0:pos].strip()
-			val = line[pos+1:].strip()
+			val = line[pos + 1:].strip()
 
 			# Remove quotes if present and enabled
 			if (self.quotes == 'auto' or self.quotes == '"') and val.startswith('"') and val.endswith('"'):

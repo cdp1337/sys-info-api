@@ -41,3 +41,10 @@ sudo apt install wireless-tools
 
 
 apt install python3-pip
+
+apt install pre-commit
+
+
+Run tests: `pytest`
+
+Lint code: `flake8 src`

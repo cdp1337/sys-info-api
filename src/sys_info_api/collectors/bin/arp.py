@@ -13,7 +13,8 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from typing import List
-from sys_info_api.common import BinCollector, BinCollectorTest
+from sys_info_api.common.bin_collector import BinCollector
+from sys_info_api.common.bin_collector_test import BinCollectorTest
 
 
 class Arp(BinCollector):
@@ -101,8 +102,7 @@ class Arp(BinCollector):
 
 
 class ArpTest(BinCollectorTest):
-	def __init__(self):
-		super().__init__()
+	def setUp(self):
 		self.collector = Arp()
 
 	def get_test_keys(self) -> dict[str, callable]:

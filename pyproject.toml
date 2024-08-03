@@ -10,7 +10,7 @@ authors = [
 ]
 description = "Collection of APIs to retrieve various system information for Linux, BSD, and MacOS."
 readme = "README.md"
-license = {file = "LICENSE.md"}
+license = {text = "GNU AGPLv3"}
 requires-python = ">=3.8"
 classifiers = [
     # See https://pypi.org/classifiers/ for full list
@@ -37,6 +37,14 @@ dependencies = [
     "pyyaml>=5.4.1",
 ]
 # keywords = ["egg", "bacon", "sausage", "tomatoes", "Lobster Thermidor"]
+
+[project.optional-dependencies]
+dev = [
+    "coverage>=5.0.3",
+    "flake8>=3.9.2",
+    "pytest",
+    "pytest-benchmark[histogram]>=3.2.1",
+]
 
 [project.urls]
 Homepage = "https://github.com/cdp1337/sys-info-api"

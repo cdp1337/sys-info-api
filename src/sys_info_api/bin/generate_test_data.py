@@ -96,6 +96,8 @@ def _store_test(target, filename, collector, arguments):
 		else:
 			c = collector()
 
+		c.setUp()
+
 		with open(os.path.join(target, filename + '.txt'), 'w') as f:
 			# Write raw output from this environment, (useful because different versions will have different formatting)
 			f.write(c.generate_raw_data())

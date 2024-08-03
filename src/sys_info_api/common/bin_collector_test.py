@@ -15,7 +15,8 @@
 from enum import Enum
 from unittest import TestCase
 
-from sys_info_api.common import BinCollector, MetricNotAvailable
+from sys_info_api.common.bin_collector import BinCollector
+from sys_info_api.common.exceptions import MetricNotAvailable
 
 
 class BinCollectorTest(TestCase):
@@ -23,7 +24,7 @@ class BinCollectorTest(TestCase):
 	Base class for collector tests for binary commands.
 	"""
 
-	def __init__(self):
+	def setUp(self):
 		super().__init__()
 		self.collector = BinCollector()
 

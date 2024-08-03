@@ -1,12 +1,25 @@
+#  Copyright (c) 2024 Charlie Powell <cdp1337@veraciousnetwork.com>
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Affero General Public License as
+#  published by the Free Software Foundation, version 3.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Affero General Public License for more details.
+#
+#  You should have received a copy of the GNU Affero General Public License
+#  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import datetime
 import time
 import sys
-from dateutil import parser as dateparser
-from .exceptions import MetricNotAvailable
-from .key_value_parser import KeyValueParser
-from .bin_collector import BinCollector
-from .bin_collector_test import BinCollectorTest
-from .local_timezone import LocalTimezone
+# from .exceptions import MetricNotAvailable
+# from .key_value_parser import KeyValueParser
+# from .bin_collector import BinCollector
+# from .bin_collector_test import BinCollectorTest
+# from .local_timezone import LocalTimezone
 
 
 def print_error(string):
@@ -27,51 +40,43 @@ def print_warning(string):
 	sys.stderr.write('WARN: ' + string + "\n")
 
 
-def local_date_to_utc_epoch(date) -> int:
+def str_to_utc(date_value: str, format: str) -> datetime.datetime:
+	"""
+	Similar to datetime.strptime, but will auto convert to UTC.
+
+	:param date_value:
+	:param format:
+	:return:
+	"""
+	date = datetime.datetime.strptime(date_value, format)
+	if date.tzname() is None:
+		# No timezone data from the format, assume local timezone
+		date = date.replace(tzinfo=datetime.timezone.utc) + datetime.timedelta(seconds=-time.localtime().tm_gmtoff)
+	elif date.tzname() != 'UTC':
+		# Timezone present in the string, but just not UTC.
+		date = date.astimezone(datetime.timezone.utc)
+
+	return date
+
+
+def date_to_epoch(date: datetime.datetime) -> int:
 	"""
 	Retrieve the time in UTC epoch of a given date.
 
 	This will return an int representing the number of seconds since Jan 1, 1970 UTC.
 	"""
+	if date.tzname() is None:
+		# No timezone data from the format, assume local timezone
+		date = date.replace(tzinfo=datetime.timezone.utc) + datetime.timedelta(seconds=-time.localtime().tm_gmtoff)
 
-	# Grab the offset between the UTC time and local time, I'll need that to convert the local time to UTC!
-	now = time.time()
-	offset = datetime.datetime.utcfromtimestamp(now) - datetime.datetime.fromtimestamp(now)
-	epoch = datetime.datetime(1970, 1, 1)
-
-	return total_seconds_in_delta(date + offset - epoch)
-
-
-def datestring_to_utc_epoch(datestring) -> int:
-	"""
-	Retrieve the time in UTC Epoch of a given string representation of a date
-
-	This will return an int representing the number of seconds since Jan 1, 1970 UTC.
-	"""
-
-	daterequested = dateparser.parse(datestring)
-	dateepoch = dateparser.parse('1970-01-01 00:00:00 +0000')
-
-	if daterequested.tzinfo is None:
-		# Swap this out with a tz-aware date.
-		daterequested = daterequested.replace(tzinfo=LocalTimezone())
-
-	return total_seconds_in_delta(daterequested - dateepoch)
-
-
-def total_seconds_in_delta(timedelta) -> int:
-	"""
-	Python 2.6 does not have a total_seconds method on timedelta.
-	"""
-	return int(int(
-		timedelta.microseconds + 0.0 +
-		(timedelta.seconds + timedelta.days * 24 * 3600) * 10 ** 6) / 10 ** 6)
+	epoch = datetime.datetime(1970, 1, 1, tzinfo=datetime.timezone.utc)
+	return int((date - epoch).total_seconds())
 
 
 def formatted_string_to_bytes(value: str) -> int:
 	"""
 	Convert a string of bytes to the actual number of bytes included.
-	
+
 	Supports suffixes for "k/K/M/G/T/P/E/Z/Y/R/Q"
 
 	Assume that byte values are Gibi/Tebi/etc and not actually Giga/Tera/etc.
