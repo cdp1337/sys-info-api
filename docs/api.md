@@ -19,7 +19,7 @@
 
 ## Classes
 
-- [`arp.Arp`](./sys_info_api.collectors.bin.arp.md#class-arp)
+- [`arp.Arp`](./sys_info_api.collectors.bin.arp.md#class-arp): Execute `arp` to get the list of neighbors on the network.
 - [`arp.ArpTest`](./sys_info_api.collectors.bin.arp.md#class-arptest)
 - [`bin_collector.BinCollector`](./sys_info_api.common.bin_collector.md#class-bincollector): Base class for collectors that run a binary command and parse the output.
 - [`bin_collector_test.BinCollectorTest`](./sys_info_api.common.bin_collector_test.md#class-bincollectortest): Base class for collector tests for binary commands.

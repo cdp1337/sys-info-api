@@ -14,11 +14,13 @@
 <a href="../src/sys_info_api/collectors/bin/arp.py#L20"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class</kbd> `Arp`
+Execute `arp` to get the list of neighbors on the network. 
 
+Compatibility: 
 
+![Debian](images/icons/debian.svg) ![Fedora](images/icons/fedora.svg) ![Redhat](images/icons/redhat.svg) ![Rocky](images/icons/rocky.svg) ![Ubuntu](images/icons/ubuntu.svg) ![FreeBSD](images/icons/freebsd.svg) ![Ubuntu](images/icons/proxmox.svg) ![Ubuntu](images/icons/truenas.svg) 
 
-
-<a href="../src/sys_info_api/collectors/bin/arp.py#L21"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L29"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `__init__`
 
@@ -33,7 +35,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L76"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L84"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `get_data`
 
@@ -43,11 +45,27 @@ get_data() → List[dict]
 
 Get the neighbors as a list of dictionaries 
 
+
+
+**Example:**
+ 
+
+```yaml
+
+- interface: enp6s0
+ip: 10.200.0.115
+mac: 9e:db:c1:43:4d:d3
+
+- interface: enp6s0
+ip: 10.200.0.204
+mac: 50:5a:65:85:05:a9
+``` 
+
 :raises MetricNotAvailable: 
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L85"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L104"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `get_ips`
 
@@ -61,7 +79,7 @@ Get the list of IP addresses
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L94"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L113"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `get_ips_on`
 
@@ -75,7 +93,7 @@ Get the list of IP addresses on a specific interface
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L30"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L38"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `parse`
 
@@ -90,7 +108,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L104"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L123"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class</kbd> `ArpTest`
 
@@ -102,7 +120,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L108"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L127"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `get_test_keys`
 
@@ -116,7 +134,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/arp.py#L105"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/arp.py#L124"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method</kbd> `setUp`
 

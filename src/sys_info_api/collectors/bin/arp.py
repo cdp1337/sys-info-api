@@ -18,6 +18,14 @@ from sys_info_api.common.bin_collector_test import BinCollectorTest
 
 
 class Arp(BinCollector):
+	"""
+	Execute `arp` to get the list of neighbors on the network.
+
+	Compatibility:
+
+	{%img_linux_all%} {%img_freebsd%} {%img_proxmox%} {%img_truenas%}
+	"""
+
 	def __init__(self):
 		"""
 		:raises MetricNotAvailable:
@@ -77,6 +85,17 @@ class Arp(BinCollector):
 		"""
 		Get the neighbors as a list of dictionaries
 
+		Example Response:
+
+		```yaml
+		- interface: enp6s0
+		ip: 10.200.0.115
+		mac: 9e:db:c1:43:4d:d3
+		- interface: enp6s0
+		ip: 10.200.0.204
+		mac: 50:5a:65:85:05:a9
+		```
+
 		:raises MetricNotAvailable:
 		"""
 		self.ensure_ready()
@@ -86,6 +105,14 @@ class Arp(BinCollector):
 		"""
 		Get the list of IP addresses
 
+		Example Response:
+
+		```yaml
+		- 10.200.0.3
+		- 10.200.0.244
+		- 10.200.0.243
+		```
+
 		:raises MetricNotAvailable:
 		"""
 		self.ensure_ready()
@@ -94,6 +121,14 @@ class Arp(BinCollector):
 	def get_ips_on(self, iface: str) -> List[str]:
 		"""
 		Get the list of IP addresses on a specific interface
+
+		Example Response:
+
+		```yaml
+		- 10.200.0.3
+		- 10.200.0.244
+		- 10.200.0.243
+		```
 
 		:raises MetricNotAvailable:
 		"""
