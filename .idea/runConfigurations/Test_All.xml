@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Python tests in tests" type="tests" factoryName="Autodetect" nameIsGenerated="true">
+  <configuration default="false" name="Test All" type="tests" factoryName="Autodetect">
     <module name="sys-info-api" />
     <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
