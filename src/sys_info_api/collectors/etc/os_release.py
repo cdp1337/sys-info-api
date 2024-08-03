@@ -13,6 +13,7 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import os
+from typing import List
 from sys_info_api.common.bin_collector import BinCollector
 from sys_info_api.common.bin_collector_test import BinCollectorTest
 from sys_info_api.common.exceptions import MetricNotAvailable
@@ -139,7 +140,7 @@ class OsRelease(BinCollector):
 	def get_id(self) -> str:
 		return self._get('ID').lower()
 
-	def get_like(self) -> list[str]:
+	def get_like(self) -> List[str]:
 		"""
 		Get a list of "like" operating systems
 

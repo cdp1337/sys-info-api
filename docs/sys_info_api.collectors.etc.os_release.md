@@ -11,7 +11,7 @@
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L21"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L22"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `OsRelease`
 Provides a simple API to read /etc/os-release data 
@@ -22,7 +22,7 @@ Compatibility:
 
 @see https://www.man7.org/linux/man-pages/man5/os-release.5.html 
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L32"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L33"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `__init__`
 
@@ -37,7 +37,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L139"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L140"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_id`
 
@@ -51,12 +51,12 @@ get_id() → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L142"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L143"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_like`
 
 ```python
-get_like() → list[str]
+get_like() → List[str]
 ```
 
 Get a list of "like" operating systems 
@@ -65,7 +65,7 @@ A lower-case string (no spaces or other characters outside of 0-9, a-z, ".", "_"
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L52"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L53"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_name`
 
@@ -79,7 +79,7 @@ A string identifying the operating system, without a version component, and suit
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L62"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L63"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_version`
 
@@ -95,7 +95,7 @@ A string identifying the operating system version, excluding any OS name informa
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L131"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L132"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_version_codename`
 
@@ -107,7 +107,7 @@ Get the codename of this OS version :return: str :raises MetricNotAvailable:
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L108"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L109"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_version_string`
 
@@ -121,7 +121,7 @@ Get the full version string of this OS
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L164"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L165"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `like_os`
 
@@ -138,7 +138,7 @@ This checks if it is a derivative, but also checks if the OS itself is what's be
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L177"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L178"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `OsReleaseTest`
 
@@ -150,7 +150,7 @@ This checks if it is a derivative, but also checks if the OS itself is what's be
 
 ---
 
-<a href="../src/sys_info_api/collectors/etc/os_release.py#L178"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/etc/os_release.py#L179"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
