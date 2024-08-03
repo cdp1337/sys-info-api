@@ -34,7 +34,7 @@ class BinCollectorTest(TestCase):
 		:type: dict[str, callable]
 		"""
 
-	def get_test_keys(self) -> dict[str, callable]:
+	def get_test_keys(self) -> dict:
 		"""
 		Get the keys in the data of this collector that are testable
 		:return:
