@@ -105,7 +105,7 @@ class ArpTest(BinCollectorTest):
 	def setUp(self):
 		self.collector = Arp()
 
-	def get_test_keys(self) -> dict[str, callable]:
+	def get_test_keys(self) -> dict:
 		keys = {
 			'data': self.collector.get_data,
 			'ips': self.collector.get_ips
