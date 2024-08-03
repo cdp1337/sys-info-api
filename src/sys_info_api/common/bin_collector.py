@@ -14,7 +14,8 @@
 
 import json
 
-from sys_info_api.common import MetricNotAvailable, KeyValueParser
+from sys_info_api.common.exceptions import MetricNotAvailable
+from sys_info_api.common.key_value_parser import KeyValueParser
 from sys_info_api.common import cmd
 
 
