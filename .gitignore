@@ -1,4 +1,5 @@
 dist/
 venv/
 src/sys_info_api.egg-info/
+build/
 **.pyc

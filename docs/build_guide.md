@@ -49,4 +49,6 @@ Run tests: `pytest`
 
 Lint code: `flake8 src`
 
-Generate documentation: `pydoc-markdown > docs/api.md`
+Generate documentation: `lazydocs src`
+
+Install dev dependencies `pip install .[dev]`

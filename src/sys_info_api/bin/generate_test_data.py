@@ -27,7 +27,7 @@ from datetime import datetime
 # from system_information.tests.collectors.bin.test_mii_tool import TestMiiTool
 # from system_information.tests.collectors.etc.test_os_release import TestOSRelease
 # from system_information.tests.collectors.bin.test_iplinklist import TestIPLinkList
-from sys_info_api.common import MetricNotAvailable
+from sys_info_api.common.exceptions import MetricNotAvailable
 # from system_information.device.net import get_all_interface_names
 
 from sys_info_api.collectors.bin.arp import ArpTest

@@ -44,6 +44,7 @@ dev = [
     "flake8>=3.9.2",
     "pytest",
     "pytest-benchmark[histogram]>=3.2.1",
+    "lazydocs>=0.4.8",
 ]
 
 [project.urls]
@@ -52,16 +53,3 @@ Issues = "https://github.com/cdp1337/sys-info-api/issues"
 
 [project.scripts]
 generate_test_data = "sys_info_api.bin.generate_test_data:run"
-
-[[tool.pydoc-markdown.loaders]]
-type = "python"
-search_path = ["src"]
-
-[tool.pydoc-markdown.renderer]
-type = "markdown"
-render_toc = true
-
-[[tool.pydoc-markdown.renderer.pages]]
-title = "Sys Info API Documentation"
-name = "index"
-contents = [ "sys_info_api.*" ]
