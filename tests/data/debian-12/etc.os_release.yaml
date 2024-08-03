@@ -1,0 +1,6 @@
+id: debian
+like:
+- debian
+name: Debian GNU/Linux
+version_codename: bookworm
+version_string: '12'

@@ -8,6 +8,9 @@
 - [`sys_info_api.collectors`](./sys_info_api.collectors.md#module-sys_info_apicollectors)
 - [`sys_info_api.collectors.bin`](./sys_info_api.collectors.bin.md#module-sys_info_apicollectorsbin)
 - [`sys_info_api.collectors.bin.arp`](./sys_info_api.collectors.bin.arp.md#module-sys_info_apicollectorsbinarp)
+- [`sys_info_api.collectors.bin.df`](./sys_info_api.collectors.bin.df.md#module-sys_info_apicollectorsbindf)
+- [`sys_info_api.collectors.etc`](./sys_info_api.collectors.etc.md#module-sys_info_apicollectorsetc)
+- [`sys_info_api.collectors.etc.os_release`](./sys_info_api.collectors.etc.os_release.md#module-sys_info_apicollectorsetcos_release)
 - [`sys_info_api.common`](./sys_info_api.common.md#module-sys_info_apicommon)
 - [`sys_info_api.common.bin_collector`](./sys_info_api.common.bin_collector.md#module-sys_info_apicommonbin_collector)
 - [`sys_info_api.common.bin_collector_test`](./sys_info_api.common.bin_collector_test.md#module-sys_info_apicommonbin_collector_test)
@@ -21,6 +24,10 @@
 
 - [`arp.Arp`](./sys_info_api.collectors.bin.arp.md#class-arp): Execute `arp` to get the list of neighbors on the network.
 - [`arp.ArpTest`](./sys_info_api.collectors.bin.arp.md#class-arptest)
+- [`df.Df`](./sys_info_api.collectors.bin.df.md#class-df): Execute `df` to get the list of filesystems.
+- [`df.DfTest`](./sys_info_api.collectors.bin.df.md#class-dftest)
+- [`os_release.OsRelease`](./sys_info_api.collectors.etc.os_release.md#class-osrelease): Provides a simple API to read /etc/os-release data
+- [`os_release.OsReleaseTest`](./sys_info_api.collectors.etc.os_release.md#class-osreleasetest)
 - [`bin_collector.BinCollector`](./sys_info_api.common.bin_collector.md#class-bincollector): Base class for collectors that run a binary command and parse the output.
 - [`bin_collector_test.BinCollectorTest`](./sys_info_api.common.bin_collector_test.md#class-bincollectortest): Base class for collector tests for binary commands.
 - [`cmd.CmdExecException`](./sys_info_api.common.cmd.md#class-cmdexecexception): Base command execution exception

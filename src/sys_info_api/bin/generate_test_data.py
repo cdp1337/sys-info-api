@@ -16,21 +16,18 @@ import os
 import sys
 import platform
 import yaml
-from datetime import datetime
-
-# from system_information.tests.collectors.bin.test_arpneighborscan import TestARPNeighborScan
-# from system_information.tests.collectors.bin.test_dflist import TestDfList
-# from system_information.tests.collectors.bin.test_dmimemory import TestDMIMemory
-# from system_information.tests.collectors.bin.test_ifconfig import TestIfconfig
-# from system_information.tests.collectors.bin.test_lldpneighborscan import TestLldpNeighborScan
-# from system_information.tests.collectors.bin.test_lldpstatus import TestLldpStatus
-# from system_information.tests.collectors.bin.test_mii_tool import TestMiiTool
-# from system_information.tests.collectors.etc.test_os_release import TestOSRelease
-# from system_information.tests.collectors.bin.test_iplinklist import TestIPLinkList
-from sys_info_api.common.exceptions import MetricNotAvailable
-# from system_information.device.net import get_all_interface_names
 
 from sys_info_api.collectors.bin.arp import ArpTest
+from sys_info_api.collectors.bin.df import DfTest
+from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
+# from sys_info_api.collectors.bin.test_dmimemory import TestDMIMemory
+# from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
+# from sys_info_api.collectors.bin.test_lldpneighborscan import TestLldpNeighborScan
+# from sys_info_api.collectors.bin.test_lldpstatus import TestLldpStatus
+# from sys_info_api.collectors.bin.test_mii_tool import TestMiiTool
+# from sys_info_api.collectors.bin.test_iplinklist import TestIPLinkList
+from sys_info_api.common.exceptions import MetricNotAvailable
+# from system_information.device.net import get_all_interface_names
 
 
 def run():
@@ -41,11 +38,18 @@ def run():
 		only_collectors = None
 		print_only = False
 
+	# @todo Swap this with the higher level functionality once ready
+	try:
+		os_info = OsRelease()
+		target_dir = '-'.join([os_info.get_id(), os_info.get_version_string()])
+	except MetricNotAvailable:
+		target_dir = '-'.join([platform.system(), platform.release()])
+
 	# Set the target to store collected results within tests/data
 	target = os.path.abspath(os.path.join(
 		os.path.dirname(__file__),
 		'../../../tests/data',
-		'-'.join([platform.system(), platform.release(), '{:%Y%m%d%H%M%S}'.format(datetime.now())])
+		target_dir
 	))
 
 	# List of interfaces for interface-specific tests
@@ -53,18 +57,18 @@ def run():
 
 	# Collection of scripts to run and try to store
 	collectors = [
+		['bin.arp', ArpTest, None],
+		['bin.df', DfTest, None],
+		['etc.os_release', OsReleaseTest, None],
 		# ['bin.iplinklist', TestIPLinkList, None],
-		# ['bin.dflist', TestDfList, None],
 		# ['bin.dmimemory', TestDMIMemory, None],
-		# ['etc.os_release', TestOSRelease, None],
 		# ['bin.ifconfig', TestIfconfig, None],
 		# ['bin.lldpstatus', TestLldpStatus, interfaces],
 		# ['bin.lldpneighborscan', TestLldpNeighborScan, interfaces],
 		# ['bin.mii_tool', TestMiiTool, interfaces],
-		['bin.arp', ArpTest, None],
 	]
 
-	if not print_only:
+	if not print_only and not os.path.exists(target):
 		print('Creating test data in: {}'.format(target))
 		os.mkdir(target)
 
@@ -119,6 +123,8 @@ def _print_test(target, filename, collector, arguments):
 			c = collector(*arguments)
 		else:
 			c = collector()
+
+		c.setUp()
 
 		print('=============== RAW DATA  ===============')
 		print(c.generate_raw_data())

@@ -18,14 +18,14 @@ import re
 import yaml
 from unittest import TestCase
 
-# from sys_info_api.collectors.bin.test_dflist import TestDfList
+from sys_info_api.collectors.bin.arp import ArpTest
+from sys_info_api.collectors.bin.df import DfTest
+from sys_info_api.collectors.etc.os_release import OsReleaseTest
 # from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
 # from sys_info_api.collectors.bin.test_ifconfigscan import TestIfconfigScan
 # from sys_info_api.collectors.bin.test_lldpneighborscan import TestLldpNeighborScan
 # from sys_info_api.collectors.bin.test_lldpstatus import TestLldpStatus
 # from sys_info_api.collectors.bin.test_mii_tool import TestMiiTool
-# from sys_info_api.collectors.etc.test_os_release import TestOSRelease
-from sys_info_api.collectors.bin.arp import ArpTest
 
 
 class TestDataFiles(TestCase):
@@ -33,12 +33,13 @@ class TestDataFiles(TestCase):
 		# Collection of scripts to run and try to store
 		collectors = [
 			['bin.arp', ArpTest],
+			['bin.df', DfTest],
+			['etc.os_release', OsReleaseTest],
 			# ['bin.ifconfigscan', TestIfconfigScan],
 			# ['bin.ifconfig', TestIfconfig],
 			# ['bin.lldpstatus', TestLldpStatus],
 			# ['bin.lldpneighborscan', TestLldpNeighborScan],
 			# ['bin.mii_tool', TestMiiTool],
-			# ['bin.dflist', TestDfList],
 			# ['etc.os_release', TestOSRelease],
 		]
 
