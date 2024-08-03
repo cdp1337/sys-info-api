@@ -25,7 +25,6 @@ class BinCollectorTest(TestCase):
 	"""
 
 	def setUp(self):
-		super().__init__()
 		self.collector = BinCollector()
 
 		self.keys = {}
