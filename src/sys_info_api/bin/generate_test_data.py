@@ -22,6 +22,7 @@ from sys_info_api.collectors.bin.df import DfTest
 from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiMemoryTest, DmiBiosTest, DmiCacheTest, \
 	DmiChassisTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
+from sys_info_api.collectors.bin.ifconfig import IfconfigTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 # from sys_info_api.collectors.bin.test_dmimemory import TestDMIMemory
 # from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
@@ -70,9 +71,9 @@ def run():
 		['bin.dmiprocessor', DmiProcessorTest],
 		['bin.dmisystem', DmiSystemTest],
 		['bin.hostnamectl', HostnameCtlTest],
+		['bin.ifconfig', IfconfigTest],
 		['etc.os_release', OsReleaseTest],
 		# ['bin.iplinklist', TestIPLinkList, None],
-		# ['bin.ifconfig', TestIfconfig, None],
 		# ['bin.lldpstatus', TestLldpStatus, interfaces],
 		# ['bin.lldpneighborscan', TestLldpNeighborScan, interfaces],
 		# ['bin.mii_tool', TestMiiTool, interfaces],

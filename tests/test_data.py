@@ -23,6 +23,7 @@ from sys_info_api.collectors.bin.df import DfTest
 from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiBiosTest, DmiCacheTest, DmiChassisTest, \
 	DmiMemoryTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
+from sys_info_api.collectors.bin.ifconfig import IfconfigTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
 # from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
 # from sys_info_api.collectors.bin.test_ifconfigscan import TestIfconfigScan
@@ -45,9 +46,8 @@ class TestDataFiles(TestCase):
 			['bin.dmiprocessor', DmiProcessorTest],
 			['bin.dmisystem', DmiSystemTest],
 			['bin.hostnamectl', HostnameCtlTest],
+			['bin.ifconfig', IfconfigTest],
 			['etc.os_release', OsReleaseTest],
-			# ['bin.ifconfigscan', TestIfconfigScan],
-			# ['bin.ifconfig', TestIfconfig],
 			# ['bin.lldpstatus', TestLldpStatus],
 			# ['bin.lldpneighborscan', TestLldpNeighborScan],
 			# ['bin.mii_tool', TestMiiTool],
