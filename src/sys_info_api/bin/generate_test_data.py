@@ -23,15 +23,9 @@ from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiMemoryTes
 	DmiChassisTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import IfconfigTest
+from sys_info_api.collectors.bin.ip import IPLinkTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
-# from sys_info_api.collectors.bin.test_dmimemory import TestDMIMemory
-# from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
-# from sys_info_api.collectors.bin.test_lldpneighborscan import TestLldpNeighborScan
-# from sys_info_api.collectors.bin.test_lldpstatus import TestLldpStatus
-# from sys_info_api.collectors.bin.test_mii_tool import TestMiiTool
-# from sys_info_api.collectors.bin.test_iplinklist import TestIPLinkList
 from sys_info_api.common.exceptions import MetricNotAvailable
-# from system_information.device.net import get_all_interface_names
 
 
 def run():
@@ -72,11 +66,8 @@ def run():
 		['bin.dmisystem', DmiSystemTest],
 		['bin.hostnamectl', HostnameCtlTest],
 		['bin.ifconfig', IfconfigTest],
+		['bin.iplink', IPLinkTest],
 		['etc.os_release', OsReleaseTest],
-		# ['bin.iplinklist', TestIPLinkList, None],
-		# ['bin.lldpstatus', TestLldpStatus, interfaces],
-		# ['bin.lldpneighborscan', TestLldpNeighborScan, interfaces],
-		# ['bin.mii_tool', TestMiiTool, interfaces],
 	]
 
 	if not print_only and not os.path.exists(target):

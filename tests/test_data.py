@@ -24,12 +24,8 @@ from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiBiosTest,
 	DmiMemoryTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import IfconfigTest
+from sys_info_api.collectors.bin.ip import IPLinkTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
-# from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
-# from sys_info_api.collectors.bin.test_ifconfigscan import TestIfconfigScan
-# from sys_info_api.collectors.bin.test_lldpneighborscan import TestLldpNeighborScan
-# from sys_info_api.collectors.bin.test_lldpstatus import TestLldpStatus
-# from sys_info_api.collectors.bin.test_mii_tool import TestMiiTool
 
 
 class TestDataFiles(TestCase):
@@ -47,11 +43,8 @@ class TestDataFiles(TestCase):
 			['bin.dmisystem', DmiSystemTest],
 			['bin.hostnamectl', HostnameCtlTest],
 			['bin.ifconfig', IfconfigTest],
+			['bin.iplink', IPLinkTest],
 			['etc.os_release', OsReleaseTest],
-			# ['bin.lldpstatus', TestLldpStatus],
-			# ['bin.lldpneighborscan', TestLldpNeighborScan],
-			# ['bin.mii_tool', TestMiiTool],
-			# ['etc.os_release', TestOSRelease],
 		]
 
 		# Set the target to store collected results within tests/data
