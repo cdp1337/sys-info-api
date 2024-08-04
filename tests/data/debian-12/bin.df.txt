@@ -1,8 +1,8 @@
 Filesystem     Type     1024-blocks       Used  Available Capacity Mounted on
 udev           devtmpfs    65859988          0   65859988       0% /dev
-tmpfs          tmpfs       13180036       3772   13176264       1% /run
-/dev/nvme0n1p2 ext4      1825218404 1537549088  194879508      89% /
-tmpfs          tmpfs       65900168     454648   65445520       1% /dev/shm
+tmpfs          tmpfs       13180036       3780   13176256       1% /run
+/dev/nvme0n1p2 ext4      1825218404 1537718704  194709892      89% /
+tmpfs          tmpfs       65900168     450104   65450064       1% /dev/shm
 tmpfs          tmpfs           5120         16       5104       1% /run/lock
 /dev/loop4     squashfs       57088      57088          0     100% /snap/core18/2829
 /dev/loop0     squashfs         128        128          0     100% /snap/bare/5
@@ -15,4 +15,4 @@ tmpfs          tmpfs           5120         16       5104       1% /run/lock
 /dev/loop7     squashfs       93952      93952          0     100% /snap/gtk-common-themes/1535
 /dev/sda       ext4      1921725720 1198081900  625951708      66% /media/charlie/SolidStore
 /dev/sdb       ext4      5813178480         28 5520135940       1% /media/charlie/LocalArchive
-tmpfs          tmpfs       13180032       2740   13177292       1% /run/user/1000
+tmpfs          tmpfs       13180032       2744   13177288       1% /run/user/1000

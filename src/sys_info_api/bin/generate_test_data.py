@@ -79,16 +79,24 @@ def run():
 		print('Creating test data in: {}'.format(target))
 		os.mkdir(target)
 
-	for params in collectors:
-		filename = params[0]
-		collector = params[1]
-		params = params[2:]
+	for fields in collectors:
+		filename = fields[0]
+		collector = fields[1]
+		params = fields[2] if len(fields) >= 3 else []
 
 		if only_collectors is None or filename in only_collectors:
-			if print_only:
-				_print_test(target, filename, collector, params)
+			if len(params):
+				# Additional parameters requested
+				for p in params:
+					if print_only:
+						_print_test(target, filename, collector, p)
+					else:
+						_store_test(target, filename, collector, p)
 			else:
-				_store_test(target, filename, collector, params)
+				if print_only:
+					_print_test(target, filename, collector, [])
+				else:
+					_store_test(target, filename, collector, [])
 
 	if not print_only:
 		print('Completed run, please check the data files and censor any sensitive information.')
@@ -99,16 +107,20 @@ def _store_test(target, filename, collector, params):
 		c = collector()
 		if len(params):
 			c.setUp(*params)
+			filename = filename + '-' + '-'.join(params)
 		else:
 			c.setUp()
 
+		command_output = c.generate_raw_data()
+		test_data = c.generate_test_data()
+
 		with open(os.path.join(target, filename + '.txt'), 'w') as f:
 			# Write raw output from this environment, (useful because different versions will have different formatting)
-			f.write(c.generate_raw_data())
+			f.write(command_output)
 
 		with open(os.path.join(target, filename + '.yaml'), 'w') as f:
 			# Use the library to generate test data based on this environment, (can be corrected manually)
-			f.write(yaml.dump(c.generate_test_data(), default_flow_style=False))
+			f.write(yaml.dump(test_data, default_flow_style=False))
 
 		# print(json.dumps({'raw': c.raw, 'results': c.generate_test_data()}, indent=2))
 		print('  {} - {}'.format(filename, 'generated'))
@@ -121,6 +133,7 @@ def _print_test(target, filename, collector, params):
 		c = collector()
 		if len(params):
 			c.setUp(*params)
+			filename = filename + '-' + '-'.join(params)
 		else:
 			c.setUp()
 

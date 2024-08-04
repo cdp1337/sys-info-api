@@ -44,7 +44,8 @@ class Iwconfig(BinCollector):
 
 			if 'ESSID:' in line:
 				match = re.match('.*ESSID:"(.*)"', line)
-				new_data[iface]['ssid'] = match.groups()[0]
+				if match is not None:
+					new_data[iface]['ssid'] = match.groups()[0]
 
 			if 'Frequency:' in line:
 				match = re.match('.*Frequency:([0-9.]* [TGMk]Hz).*', line)

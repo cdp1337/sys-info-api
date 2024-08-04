@@ -1,10 +1,10 @@
 data:
 - device: nvme0n1p2
   format: ext4
-  free: 199556616192
+  free: 199382929408
   label: /
   total: 1869023645696
-  used: 1574450266112
+  used: 1574623952896
 - device: nvme0n1p1
   format: vfat
   free: 4982681600
