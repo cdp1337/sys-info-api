@@ -24,6 +24,7 @@ from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiMemoryTes
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLinkTest
+from sys_info_api.collectors.bin.iwconfig import IwconfigTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 from sys_info_api.common.exceptions import MetricNotAvailable
 
@@ -67,6 +68,7 @@ def run():
 		['bin.hostnamectl', HostnameCtlTest],
 		['bin.ifconfig', IfconfigTest],
 		['bin.iplink', IPLinkTest],
+		['bin.iwconfig', IwconfigTest],
 		['etc.os_release', OsReleaseTest],
 	]
 

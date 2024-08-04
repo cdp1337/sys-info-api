@@ -25,6 +25,7 @@ from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiBiosTest,
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLinkTest
+from sys_info_api.collectors.bin.iwconfig import IwconfigTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
 
 
@@ -44,6 +45,7 @@ class TestDataFiles(TestCase):
 			['bin.hostnamectl', HostnameCtlTest],
 			['bin.ifconfig', IfconfigTest],
 			['bin.iplink', IPLinkTest],
+			['bin.iwconfig', IwconfigTest],
 			['etc.os_release', OsReleaseTest],
 		]
 
