@@ -26,6 +26,7 @@ from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLinkTest
 from sys_info_api.collectors.bin.iwconfig import IwconfigTest
+from sys_info_api.collectors.bin.lldptool import LldpStatusTest, LldpNeighborScanTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
 
 
@@ -46,6 +47,8 @@ class TestDataFiles(TestCase):
 			['bin.ifconfig', IfconfigTest],
 			['bin.iplink', IPLinkTest],
 			['bin.iwconfig', IwconfigTest],
+			['bin.lldpstatus', LldpStatusTest],
+			['bin.lldpneighborscan', LldpNeighborScanTest],
 			['etc.os_release', OsReleaseTest],
 		]
 
@@ -95,8 +98,8 @@ class TestDataFiles(TestCase):
 		print('  Testing {}'.format(os.path.basename(raw)))
 		with self.subTest('{}'.format(test_name)):
 			# Instantiate a new Collector (of type one of the tests)
-			c = collector(*arguments)
-			c.setUp()
+			c = collector()
+			c.setUp(*arguments)
 
 			with open(raw, 'r') as f:
 				# Load the raw data from the stored test into the cache of the collector
