@@ -67,7 +67,7 @@ class IPLink(BinCollector):
 		self.ensure_ready()
 		return list(self.data.keys())
 
-	def get_admin_statuses(self) -> dict[str, str]:
+	def get_admin_statuses(self) -> dict:
 		"""
 		Get the administrative status of the interfaces
 		:raises MetricNotAvailable:
@@ -77,7 +77,7 @@ class IPLink(BinCollector):
 			admin_statuses[interface] = 'UP' if 'UP' in self.data[interface]['flags'] else 'DOWN'
 		return admin_statuses
 
-	def get_statuses(self) -> dict[str, str]:
+	def get_statuses(self) -> dict:
 		"""
 		Get the status of the interfaces
 		:raises MetricNotAvailable:
@@ -97,7 +97,7 @@ class IPLink(BinCollector):
 		except KeyError:
 			raise MetricNotAvailable
 
-	def get_mac_addresses(self) -> dict[str, str]:
+	def get_mac_addresses(self) -> dict:
 		"""
 		Get the status of the interfaces
 		:raises MetricNotAvailable:
