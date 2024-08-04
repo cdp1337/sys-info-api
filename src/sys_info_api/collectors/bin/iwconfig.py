@@ -93,7 +93,7 @@ class IwconfigTest(BinCollectorTest):
 	def setUp(self):
 		self.collector = Iwconfig()
 
-	def get_test_keys(self) -> dict[str, callable]:
+	def get_test_keys(self) -> dict:
 
 		keys = {
 			'names': self.collector.get_names,
