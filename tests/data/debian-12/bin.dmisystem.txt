@@ -1,0 +1,18 @@
+System Information
+	Manufacturer: System manufacturer
+	Product Name: System Product Name
+	Version: System Version
+	Serial Number: System Serial Number
+	UUID: 9e80d9e2-ce29-bb95-589c-a036bc3d9f1e
+	Wake-up Type: Power Switch
+	SKU Number: SKU
+	Family: To be filled by O.E.M.
+
+System Configuration Options
+	Option 1: Default string
+	Option 2: Default string
+	Option 3: Default string
+	Option 4: Default string
+
+System Boot Information
+	Status: No errors detected

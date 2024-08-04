@@ -19,6 +19,8 @@ import yaml
 
 from sys_info_api.collectors.bin.arp import ArpTest
 from sys_info_api.collectors.bin.df import DfTest
+from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiMemoryTest, DmiBiosTest, DmiCacheTest, \
+	DmiChassisTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 # from sys_info_api.collectors.bin.test_dmimemory import TestDMIMemory
 # from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
@@ -57,11 +59,17 @@ def run():
 
 	# Collection of scripts to run and try to store
 	collectors = [
-		['bin.arp', ArpTest, None],
-		['bin.df', DfTest, None],
-		['etc.os_release', OsReleaseTest, None],
+		['bin.arp', ArpTest],
+		['bin.df', DfTest],
+		['bin.dmibaseboard', DmiBaseboardTest],
+		['bin.dmibios', DmiBiosTest],
+		['bin.dmicache', DmiCacheTest],
+		['bin.dmichassis', DmiChassisTest],
+		['bin.dmimemory', DmiMemoryTest],
+		['bin.dmiprocessor', DmiProcessorTest],
+		['bin.dmisystem', DmiSystemTest],
+		['etc.os_release', OsReleaseTest],
 		# ['bin.iplinklist', TestIPLinkList, None],
-		# ['bin.dmimemory', TestDMIMemory, None],
 		# ['bin.ifconfig', TestIfconfig, None],
 		# ['bin.lldpstatus', TestLldpStatus, interfaces],
 		# ['bin.lldpneighborscan', TestLldpNeighborScan, interfaces],
@@ -72,34 +80,20 @@ def run():
 		print('Creating test data in: {}'.format(target))
 		os.mkdir(target)
 
-	for filename, collector, arguments in collectors:
+	for filename, collector in collectors:
 		if only_collectors is None or filename in only_collectors:
-			if arguments is None:
-				if print_only:
-					_print_test(target, filename, collector, [])
-				else:
-					_store_test(target, filename, collector, [])
+			if print_only:
+				_print_test(target, filename, collector)
 			else:
-				for argument_set in arguments:
-					if argument_set is not list:
-						argument_set = [argument_set]
-					if print_only:
-						_print_test(target, filename, collector, argument_set)
-					else:
-						_store_test(target, filename, collector, argument_set)
+				_store_test(target, filename, collector)
 
 	if not print_only:
 		print('Completed run, please check the data files and censor any sensitive information.')
 
 
-def _store_test(target, filename, collector, arguments):
+def _store_test(target, filename, collector):
 	try:
-		if len(arguments) > 0:
-			filename = filename + '-' + '-'.join(arguments)
-			c = collector(*arguments)
-		else:
-			c = collector()
-
+		c = collector()
 		c.setUp()
 
 		with open(os.path.join(target, filename + '.txt'), 'w') as f:
@@ -116,14 +110,9 @@ def _store_test(target, filename, collector, arguments):
 		print('  {} - {}'.format(filename, 'failed (Metric not available)'))
 
 
-def _print_test(target, filename, collector, arguments):
+def _print_test(target, filename, collector):
 	try:
-		if len(arguments) > 0:
-			filename = filename + '-' + '-'.join(arguments)
-			c = collector(*arguments)
-		else:
-			c = collector()
-
+		c = collector()
 		c.setUp()
 
 		print('=============== RAW DATA  ===============')

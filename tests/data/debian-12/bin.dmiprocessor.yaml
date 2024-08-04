@@ -1,0 +1,41 @@
+cpu_0_asset_tag: null
+cpu_0_cores: 8
+cpu_0_family: Zen
+cpu_0_flags:
+- FPU
+- VME
+- DE
+- PSE
+- TSC
+- MSR
+- PAE
+- MCE
+- CX8
+- APIC
+- SEP
+- MTRR
+- PGE
+- MCA
+- CMOV
+- PAT
+- PSE-36
+- CLFSH
+- MMX
+- FXSR
+- SSE
+- SSE2
+- HTT
+cpu_0_frequency: 3600
+cpu_0_manufacturer: Advanced Micro Devices, Inc.
+cpu_0_max_frequency: 4650
+cpu_0_model: AMD Ryzen 7 5700X 8-Core Processor
+cpu_0_part_number: null
+cpu_0_serial_number: null
+cpu_0_socket: AM4
+cpu_0_socket_type: Socket AM4
+cpu_0_status: Populated, Enabled
+cpu_0_threads: 16
+cpu_0_voltage: 1.1
+total_cores: 8
+total_count: 1
+total_threads: 16

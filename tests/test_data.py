@@ -20,6 +20,8 @@ from unittest import TestCase
 
 from sys_info_api.collectors.bin.arp import ArpTest
 from sys_info_api.collectors.bin.df import DfTest
+from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiBiosTest, DmiCacheTest, DmiChassisTest, \
+	DmiMemoryTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
 # from sys_info_api.collectors.bin.test_ifconfig import TestIfconfig
 # from sys_info_api.collectors.bin.test_ifconfigscan import TestIfconfigScan
@@ -34,6 +36,13 @@ class TestDataFiles(TestCase):
 		collectors = [
 			['bin.arp', ArpTest],
 			['bin.df', DfTest],
+			['bin.dmibaseboard', DmiBaseboardTest],
+			['bin.dmibios', DmiBiosTest],
+			['bin.dmicache', DmiCacheTest],
+			['bin.dmichassis', DmiChassisTest],
+			['bin.dmimemory', DmiMemoryTest],
+			['bin.dmiprocessor', DmiProcessorTest],
+			['bin.dmisystem', DmiSystemTest],
 			['etc.os_release', OsReleaseTest],
 			# ['bin.ifconfigscan', TestIfconfigScan],
 			# ['bin.ifconfig', TestIfconfig],
