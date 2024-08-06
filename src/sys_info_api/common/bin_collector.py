@@ -137,6 +137,24 @@ class BinCollector:
 			except KeyError:
 				raise MetricNotAvailable
 
+	def _gets(self, keys: [str]):
+		"""
+		Get one of multiple values from the data using the keys
+
+		Will return the first located key, or throw an exception if none of the provided are found.
+
+		:param keys:
+		:return:
+		"""
+		for key in keys:
+			try:
+				return self._get(key)
+			except MetricNotAvailable:
+				pass
+
+		# None matched
+		raise MetricNotAvailable
+
 	def parse(self):
 		"""
 		Parse the raw output into a usable format

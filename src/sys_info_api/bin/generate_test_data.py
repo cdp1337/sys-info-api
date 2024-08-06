@@ -26,6 +26,9 @@ from sys_info_api.collectors.bin.ifconfig import Ifconfig, IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLink, IPLinkTest
 from sys_info_api.collectors.bin.iwconfig import IwconfigTest
 from sys_info_api.collectors.bin.lldptool import LldpStatusTest, LldpNeighborScanTest
+from sys_info_api.collectors.bin.lsblk import LsblkTest
+from sys_info_api.collectors.bin.lspci import LspciTest
+from sys_info_api.collectors.bin.lsusb import LsusbTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 from sys_info_api.common.exceptions import MetricNotAvailable
 
@@ -72,6 +75,9 @@ def run():
 		['bin.iwconfig', IwconfigTest],
 		['bin.lldpstatus', LldpStatusTest, interfaces],
 		['bin.lldpneighborscan', LldpNeighborScanTest, interfaces],
+		['bin.lsblk', LsblkTest],
+		['bin.lspci', LspciTest],
+		['bin.lsusb', LsusbTest],
 		['etc.os_release', OsReleaseTest],
 	]
 
@@ -163,3 +169,8 @@ def _get_net_interfaces():
 		ret.append([name])
 
 	return ret
+
+
+# Debug / Test
+# sys.argv = ['bin.lspci']
+# run()

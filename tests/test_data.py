@@ -27,6 +27,9 @@ from sys_info_api.collectors.bin.ifconfig import IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLinkTest
 from sys_info_api.collectors.bin.iwconfig import IwconfigTest
 from sys_info_api.collectors.bin.lldptool import LldpStatusTest, LldpNeighborScanTest
+from sys_info_api.collectors.bin.lsblk import LsblkTest
+from sys_info_api.collectors.bin.lspci import LspciTest
+from sys_info_api.collectors.bin.lsusb import LsusbTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
 
 
@@ -49,6 +52,9 @@ class TestDataFiles(TestCase):
 			['bin.iwconfig', IwconfigTest],
 			['bin.lldpstatus', LldpStatusTest],
 			['bin.lldpneighborscan', LldpNeighborScanTest],
+			['bin.lsblk', LsblkTest],
+			['bin.lspci', LspciTest],
+			['bin.lsusb', LsusbTest],
 			['etc.os_release', OsReleaseTest],
 		]
 
