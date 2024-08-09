@@ -35,7 +35,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L81"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L82"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_access_point`
 
@@ -49,7 +49,7 @@ get_access_point(iface: str) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L78"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L79"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_frequency`
 
@@ -63,7 +63,7 @@ get_frequency(iface: str) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L67"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L68"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_names`
 
@@ -75,7 +75,7 @@ Get a list of all wireless interface names :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L87"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L88"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_signal`
 
@@ -89,7 +89,7 @@ get_signal(iface: str) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L84"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L85"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_speed`
 
@@ -103,7 +103,7 @@ get_speed(iface: str) → int
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L75"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L76"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_ssid`
 
@@ -132,7 +132,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L91"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L92"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `IwconfigTest`
 
@@ -144,12 +144,12 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L95"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L96"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
 ```python
-get_test_keys() → dict[str, callable]
+get_test_keys() → dict
 ```
 
 
@@ -158,7 +158,7 @@ get_test_keys() → dict[str, callable]
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L92"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/iwconfig.py#L93"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 

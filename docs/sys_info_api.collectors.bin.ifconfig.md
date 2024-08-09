@@ -187,7 +187,7 @@ generate_test_data() → dict
 ### <kbd>method:</kbd> `get_test_keys`
 
 ```python
-get_test_keys() → dict[str, callable]
+get_test_keys() → dict
 ```
 
 

@@ -36,7 +36,7 @@ __init__()
 ### <kbd>method:</kbd> `get_admin_statuses`
 
 ```python
-get_admin_statuses() → dict[str, str]
+get_admin_statuses() → dict
 ```
 
 Get the administrative status of the interfaces :raises MetricNotAvailable: 
@@ -48,7 +48,7 @@ Get the administrative status of the interfaces :raises MetricNotAvailable:
 ### <kbd>method:</kbd> `get_mac_addresses`
 
 ```python
-get_mac_addresses() → dict[str, str]
+get_mac_addresses() → dict
 ```
 
 Get the status of the interfaces :raises MetricNotAvailable: 
@@ -84,7 +84,7 @@ Get the status of the given interface :raises MetricNotAvailable:
 ### <kbd>method:</kbd> `get_statuses`
 
 ```python
-get_statuses() → dict[str, str]
+get_statuses() → dict
 ```
 
 Get the status of the interfaces :raises MetricNotAvailable: 

@@ -19,9 +19,9 @@ from sys_info_api.common.key_value_parser import KeyValueParser
 from sys_info_api.common import cmd
 
 
-class BinCollector:
+class BinParser:
 	"""
-	Base class for collectors that run a binary command and parse the output.
+	Parser layer for processing data, (usually from commands)
 	"""
 
 	PARSER_JSON = 'json'
@@ -45,25 +45,6 @@ class BinCollector:
 	"""
 
 	def __init__(self):
-		"""
-		When initializing a new binary collector, set the following arguments:
-
-		- self.bin: The binary to run
-		- self.arguments: A list of arguments to pass to the binary
-		- self.parser: The parser to use for handling the output
-		"""
-		self.bin = 'true'
-		"""
-		Binary to run, (either fully resolved or in the PATH)
-		:type str
-		"""
-
-		self.arguments = []
-		"""
-		List of arguments (as strings) to pass to the binary
-		:type list[str]
-		"""
-
 		self.raw = None
 		"""
 		Raw output from binary
@@ -84,31 +65,6 @@ class BinCollector:
 		"""
 		Options to pass into the parser, see the corresponding parser for details.
 		"""
-
-	def fetch(self):
-		"""
-		Run the binary and store the output
-		:throws MetricNotAvailable:
-		"""
-		try:
-			self.raw = cmd.run_output([self.bin] + self.arguments)
-		except cmd.CmdExecException:
-			self.raw = False
-			raise MetricNotAvailable
-
-	def run(self, arguments: [str]) -> str:
-		"""
-		Run the binary with the given arguments and return the output
-
-		Does NOT store the output, (useful for one-off commands)
-		:param arguments:
-		:return:
-		:raises MetricNotAvailable:
-		"""
-		try:
-			return cmd.run_output([self.bin] + arguments)
-		except cmd.CmdExecException:
-			raise MetricNotAvailable
 
 	def _get(self, key):
 		"""
@@ -161,7 +117,8 @@ class BinCollector:
 		:throws MetricNotAvailable:
 		"""
 		if self.raw is None:
-			self.fetch()
+			# Parse cannot be called before the data is available!
+			raise MetricNotAvailable
 
 		if self.parser is None:
 			# No parser requested, just skip.
@@ -211,3 +168,80 @@ class BinCollector:
 		"""
 		if self.data is None:
 			self.parse()
+
+
+class BinCollector(BinParser):
+	"""
+	Base class for collectors that run a binary command and parse the output.
+	"""
+
+	def __init__(self):
+		"""
+		When initializing a new binary collector, set the following arguments:
+
+		- self.bin: The binary to run
+		- self.arguments: A list of arguments to pass to the binary
+		- self.parser: The parser to use for handling the output
+		"""
+		super().__init__()
+
+		self.bin = 'true'
+		"""
+		Binary to run, (either fully resolved or in the PATH)
+		:type str
+		"""
+
+		self.arguments = []
+		"""
+		List of arguments (as strings) to pass to the binary
+		:type list[str]
+		"""
+
+		self.return_codes = None
+		"""
+		List of return codes to consider as successful, (default is none, only allow '0')
+		:type list[int]
+		"""
+
+	def fetch(self):
+		"""
+		Run the binary and store the output
+		:throws MetricNotAvailable:
+		"""
+		try:
+			self.raw = cmd.run_output([self.bin] + self.arguments)
+		except cmd.CmdExecExitCodeException as e:
+			if self.return_codes is not None and e.returncode in self.return_codes:
+				# A return code != 0 will trigger an exception to be raised,
+				# but allow the developer to specify which return codes are acceptable
+				self.raw = e.stdout.strip()
+			else:
+				self.raw = False
+				raise MetricNotAvailable
+		except cmd.CmdExecException:
+			self.raw = False
+			raise MetricNotAvailable
+
+	def run(self, arguments: [str]) -> str:
+		"""
+		Run the binary with the given arguments and return the output
+
+		Does NOT store the output, (useful for one-off commands)
+		:param arguments:
+		:return:
+		:raises MetricNotAvailable:
+		"""
+		try:
+			return cmd.run_output([self.bin] + arguments)
+		except cmd.CmdExecException:
+			raise MetricNotAvailable
+
+	def parse(self):
+		"""
+		Parse the raw output into a usable format
+		:throws MetricNotAvailable:
+		"""
+		if self.raw is None:
+			self.fetch()
+
+		super().parse()

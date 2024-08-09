@@ -21,7 +21,7 @@ A simple key/value parser for parsing key/value pairs from a string.
 ### <kbd>method:</kbd> `__init__`
 
 ```python
-__init__(sep=':', linebreak='\n', comment=None, quotes='auto')
+__init__(sep=':', linebreak='\n')
 ```
 
 :raises ValueError: 
@@ -31,7 +31,7 @@ __init__(sep=':', linebreak='\n', comment=None, quotes='auto')
 
 ---
 
-<a href="../src/sys_info_api/common/key_value_parser.py#L32"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/key_value_parser.py#L33"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `set_opts`
 
@@ -45,7 +45,7 @@ Set the options for the parser.
 
 ---
 
-<a href="../src/sys_info_api/common/key_value_parser.py#L48"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/key_value_parser.py#L51"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `to_dict`
 

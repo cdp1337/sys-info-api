@@ -52,3 +52,9 @@ Lint code: `flake8 src`
 Generate documentation: `lazydocs src --overview-file=api.md`
 
 Install dev dependencies `pip install .[dev]`
+
+
+Collectors: when writing a collector, try to ensure to use
+low level classes when applicable when returning field data.
+
+ie: when returning a date, use datetime.datetime instead of a string.

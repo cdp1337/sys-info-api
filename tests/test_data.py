@@ -30,7 +30,13 @@ from sys_info_api.collectors.bin.lldptool import LldpStatusTest, LldpNeighborSca
 from sys_info_api.collectors.bin.lsblk import LsblkTest
 from sys_info_api.collectors.bin.lspci import LspciTest
 from sys_info_api.collectors.bin.lsusb import LsusbTest
+from sys_info_api.collectors.bin.pveversion import PveVersionTest
+from sys_info_api.collectors.bin.sysctl import SysctlKernBoottimeTest
+from sys_info_api.collectors.bin.uname import UnameVersionTest, UnameMachineTest
+from sys_info_api.collectors.bin.uptime import UptimeTest
+from sys_info_api.collectors.bin.who import WhoBootTimeTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
+from sys_info_api.collectors.etc.version import VersionTest
 
 
 class TestDataFiles(TestCase):
@@ -55,7 +61,14 @@ class TestDataFiles(TestCase):
 			['bin.lsblk', LsblkTest],
 			['bin.lspci', LspciTest],
 			['bin.lsusb', LsusbTest],
+			['bin.pveversion', PveVersionTest],
+			['bin.sysctlkernboottime', SysctlKernBoottimeTest],
+			['bin.unameversion', UnameVersionTest],
+			['bin.unamemachine', UnameMachineTest],
+			['bin.uptime', UptimeTest],
+			['bin.whoboottime', WhoBootTimeTest],
 			['etc.os_release', OsReleaseTest],
+			['etc.version', VersionTest],
 		]
 
 		# Set the target to store collected results within tests/data

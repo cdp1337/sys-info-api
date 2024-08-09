@@ -17,10 +17,12 @@ import sys
 import platform
 import yaml
 
+from sys_info_api.collectors.bin.apt import AptUpdatesTest, AptShowTest
 from sys_info_api.collectors.bin.arp import ArpTest
 from sys_info_api.collectors.bin.df import DfTest
 from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiMemoryTest, DmiBiosTest, DmiCacheTest, \
 	DmiChassisTest, DmiProcessorTest, DmiSystemTest
+from sys_info_api.collectors.bin.dpkg import DpkgListInstalledTest
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import Ifconfig, IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLink, IPLinkTest
@@ -29,12 +31,21 @@ from sys_info_api.collectors.bin.lldptool import LldpStatusTest, LldpNeighborSca
 from sys_info_api.collectors.bin.lsblk import LsblkTest
 from sys_info_api.collectors.bin.lspci import LspciTest
 from sys_info_api.collectors.bin.lsusb import LsusbTest
+from sys_info_api.collectors.bin.pveversion import PveVersionTest
+from sys_info_api.collectors.bin.sysctl import SysctlKernBoottimeTest
+from sys_info_api.collectors.bin.uname import UnameVersionTest, UnameMachineTest
+from sys_info_api.collectors.bin.uptime import UptimeTest
+from sys_info_api.collectors.bin.who import WhoBootTimeTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
+from sys_info_api.collectors.etc.version import VersionTest
 from sys_info_api.common.exceptions import MetricNotAvailable
 
 
-def run():
-	if len(sys.argv) > 1:
+def run(mock_run: str = None):
+	if mock_run is not None:
+		only_collectors = mock_run
+		print_only = True
+	elif len(sys.argv) > 1:
 		only_collectors = sys.argv[1:]
 		print_only = True
 	else:
@@ -57,9 +68,12 @@ def run():
 
 	# List of interfaces for interface-specific tests
 	interfaces = _get_net_interfaces()
+	packages = [['python3'], ['vlc'], ['xterm']]
 
 	# Collection of scripts to run and try to store
 	collectors = [
+		['bin.aptshow', AptShowTest, packages],
+		['bin.aptupdates', AptUpdatesTest],
 		['bin.arp', ArpTest],
 		['bin.df', DfTest],
 		['bin.dmibaseboard', DmiBaseboardTest],
@@ -69,6 +83,7 @@ def run():
 		['bin.dmimemory', DmiMemoryTest],
 		['bin.dmiprocessor', DmiProcessorTest],
 		['bin.dmisystem', DmiSystemTest],
+		['bin.dpkglistinstalled', DpkgListInstalledTest],
 		['bin.hostnamectl', HostnameCtlTest],
 		['bin.ifconfig', IfconfigTest],
 		['bin.iplink', IPLinkTest],
@@ -78,7 +93,14 @@ def run():
 		['bin.lsblk', LsblkTest],
 		['bin.lspci', LspciTest],
 		['bin.lsusb', LsusbTest],
+		['bin.pveversion', PveVersionTest],
+		['bin.sysctlkernboottime', SysctlKernBoottimeTest],
+		['bin.unameversion', UnameVersionTest],
+		['bin.unamemachine', UnameMachineTest],
+		['bin.uptime', UptimeTest],
+		['bin.whoboottime', WhoBootTimeTest],
 		['etc.os_release', OsReleaseTest],
+		['etc.version', VersionTest],
 	]
 
 	if not print_only and not os.path.exists(target):
@@ -172,5 +194,4 @@ def _get_net_interfaces():
 
 
 # Debug / Test
-# sys.argv = ['bin.lspci']
-# run()
+# run('bin.dpkglistinstalled')

@@ -104,7 +104,6 @@ def _line_val_and_string_string_only(line: str) -> Union[str, None]:
 	:param line:
 	:return:
 	"""
-	print(line)
 	value = line[line.index(' '):].strip()
 	try:
 		value = value[value.index(' '):].strip()

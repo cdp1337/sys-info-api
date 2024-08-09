@@ -17,7 +17,7 @@ class KeyValueParser:
 	A simple key/value parser for parsing key/value pairs from a string.
 	"""
 
-	def __init__(self, sep=":", linebreak="\n", comment=None, quotes='auto'):
+	def __init__(self, sep=":", linebreak="\n"):
 		"""
 		:raises ValueError:
 		"""
@@ -26,8 +26,9 @@ class KeyValueParser:
 
 		self.sep = sep
 		self.linebreak = linebreak
-		self.comment = comment
-		self.quotes = quotes
+		self.comment = None
+		self.quotes = 'auto'
+		self.continuation = None
 
 	def set_opts(self, options: dict):
 		"""
@@ -44,6 +45,8 @@ class KeyValueParser:
 			self.comment = options['comment']
 		if 'quotes' in options:
 			self.quotes = options['quotes']
+		if 'continuation' in options:
+			self.continuation = options['continuation']
 
 	def to_dict(self, raw: str) -> dict:
 		"""
@@ -56,6 +59,7 @@ class KeyValueParser:
 		"""
 
 		data = {}
+		key = None
 		contents = raw.split(self.linebreak)
 		for line in contents:
 			if line.strip() == "":
@@ -64,6 +68,11 @@ class KeyValueParser:
 
 			if self.comment is not None and line.startswith(self.comment):
 				# Skip comments if set
+				continue
+
+			if self.continuation and line.startswith(self.continuation) and key is not None:
+				# Continuation line, (allows long multi-line descriptions)
+				data[key] += "\n" + line[len(self.continuation):]
 				continue
 
 			# Use "index" to grab the first index of the sep; otherwise a string such as

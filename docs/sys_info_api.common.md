@@ -123,12 +123,14 @@ str_to_utc(date_value: str, format: str) → datetime
 
 Similar to datetime.strptime, but will auto convert to UTC. 
 
+| Directive | Example                                               | Note                  | |-----------|-------------------------------------------------------|-----------------------| | %a        | Sun, Mon, …, Sat                                      | Day of week           | | %A        | Sunday, Monday, …, Saturday                           | Day of week           | | %w        | 0, 1, …, 6                                            | Day of week           | | %d        | 01, 02, …, 31                                         | Day of month          | | %b        | Jan, Feb, …, Dec                                      | Month                 | | %B        | January, February, …, December                        | Month                 | | %m        | 01, 02, …, 12                                         | Month                 | | %y        | 00, 01, …, 99                                         | Year                  | | %Y        | 0001, 0002, …, 2013, 2014, …, 9998, 9999              | Year                  | | %H        | 00, 01, …, 23                                         | Hour                  | | %I        | 01, 02, …, 12                                         | Hour (12-hour)        | | %p        | AM, PM                                                | AM/PM                 | | %M        | 00, 01, …, 59                                         | Minute                | | %S        | 00, 01, …, 59                                         | Seconds               | | %f        | 000000, 000001, …, 999999                             | Microseconds          | | %z        | (empty), +0000, -0400, +1030, +063415, -030712.345216 | Timezone Offset       | | %Z        | (empty), UTC, GMT                                     | Timezone Name         | | %j        | 001, 002, …, 366                                      | Day of year           | | %U        | 00, 01, …, 53                                         | Week of year (Sunday) | | %W        | 00, 01, …, 53                                         | Week of year (Monday) | | %c        | Tue Aug 16 21:30:00 1988                              | Locale date/time      | | %x        | 08/16/88                                              | Locale date           | | %X        | 21:30:00                                              | Locale time           | 
+
 :param date_value: :param format: :return: 
 
 
 ---
 
-<a href="../src/sys_info_api/common/__init__.py#L62"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/__init__.py#L88"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `date_to_epoch`
 
@@ -143,7 +145,7 @@ This will return an int representing the number of seconds since Jan 1, 1970 UTC
 
 ---
 
-<a href="../src/sys_info_api/common/__init__.py#L76"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/__init__.py#L102"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `formatted_string_to_bytes`
 
@@ -162,7 +164,7 @@ Assume that speed values are actually Giga/Tera/etc, and thus calculated in Base
 
 ---
 
-<a href="../src/sys_info_api/common/__init__.py#L131"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/__init__.py#L157"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `formatted_string_to_bits`
 
@@ -181,7 +183,7 @@ Assume that speed values are actually Giga/Tera/etc, and thus calculated in Base
 
 ---
 
-<a href="../src/sys_info_api/common/__init__.py#L197"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/__init__.py#L223"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `bytes_to_formatted_string`
 
@@ -194,7 +196,7 @@ Convert bytes to a formatted string
 
 ---
 
-<a href="../src/sys_info_api/common/__init__.py#L223"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/__init__.py#L249"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `bps_to_formatted_string`
 

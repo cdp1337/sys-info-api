@@ -28,3 +28,25 @@ class KeyValueParserTest(TestCase):
 
 		# str_data = parser.to_str(data)
 		# self.assertEqual("key1:value1\nkey2:value2\nkey3:some value 3", str_data)
+
+	def test_string_continuation(self):
+		test_string = '''Package: firefox-esr
+Version: 115.12.0esr-1~deb12u1
+Description-en: Mozilla Firefox web browser - Extended Support Release (ESR)
+ Firefox ESR is a powerful, extensible web:browser with support for modern
+ web application technologies.
+Description-md5: 88ee196fd829d9218a763b4d498a6f6a
+'''  # noqa: E101
+		parser = KeyValueParser()
+		parser.quotes = 'none'
+		parser.sep = ':'
+		parser.continuation = ' '
+		data = parser.to_dict(test_string)
+		self.assertEqual({
+			'Package': 'firefox-esr',
+			'Version': '115.12.0esr-1~deb12u1',
+			'Description-en': '''Mozilla Firefox web browser - Extended Support Release (ESR)
+Firefox ESR is a powerful, extensible web:browser with support for modern
+web application technologies.''',
+			'Description-md5': '88ee196fd829d9218a763b4d498a6f6a'
+		}, data)
