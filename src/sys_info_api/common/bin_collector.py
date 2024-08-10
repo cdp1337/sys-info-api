@@ -222,17 +222,18 @@ class BinCollector(BinParser):
 			self.raw = False
 			raise MetricNotAvailable
 
-	def run(self, arguments: [str]) -> str:
+	def run(self, arguments: [str], input=None, env=None):
 		"""
-		Run the binary with the given arguments and return the output
+		Run the binary with the given arguments
 
 		Does NOT store the output, (useful for one-off commands)
+		:param env:
+		:param input:
 		:param arguments:
-		:return:
 		:raises MetricNotAvailable:
 		"""
 		try:
-			return cmd.run_output([self.bin] + arguments)
+			cmd.run_passthru([self.bin] + arguments, input=input, env=env)
 		except cmd.CmdExecException:
 			raise MetricNotAvailable
 

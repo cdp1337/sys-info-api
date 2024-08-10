@@ -36,6 +36,7 @@ from sys_info_api.collectors.bin.sysctl import SysctlKernBoottimeTest
 from sys_info_api.collectors.bin.uname import UnameVersionTest, UnameMachineTest
 from sys_info_api.collectors.bin.uptime import UptimeTest
 from sys_info_api.collectors.bin.who import WhoBootTimeTest
+from sys_info_api.collectors.bin.yum import YumUpdatesTest, YumListInstalledTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 from sys_info_api.collectors.etc.version import VersionTest
 from sys_info_api.common.exceptions import MetricNotAvailable
@@ -51,6 +52,8 @@ def run(mock_run: str = None):
 	else:
 		only_collectors = None
 		print_only = False
+
+	cmd_help = '--help' in sys.argv or '-h' in sys.argv
 
 	# @todo Swap this with the higher level functionality once ready
 	try:
@@ -99,9 +102,20 @@ def run(mock_run: str = None):
 		['bin.unamemachine', UnameMachineTest],
 		['bin.uptime', UptimeTest],
 		['bin.whoboottime', WhoBootTimeTest],
+		['bin.yumlistinstalled', YumListInstalledTest],
+		['bin.yumupdates', YumUpdatesTest],
 		['etc.os_release', OsReleaseTest],
 		['etc.version', VersionTest],
 	]
+
+	if cmd_help:
+		# Print usage / help and exit
+		print('Usage: generate_test_data [collector]')
+		print('')
+		print('If no collectors are provided, all tests are executed and stored in tests/data')
+		print('Otherwise, an individual collector can be requested to display the results of that single test.')
+		print('Collectors: ')
+		print(', '.join(c[0] for c in collectors))
 
 	if not print_only and not os.path.exists(target):
 		print('Creating test data in: {}'.format(target))

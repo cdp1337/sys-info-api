@@ -12,6 +12,8 @@
 #  You should have received a copy of the GNU Affero General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import os
+
 from sys_info_api.collectors.bin.apt import _AptCollection
 from sys_info_api.common.bin_collector import BinCollector
 from sys_info_api.common.bin_collector_test import BinCollectorTest
@@ -45,6 +47,25 @@ class DpkgListInstalled(BinCollector, _AptCollection):
 				})
 
 		self.data = out
+
+
+class DpkgInstall(BinCollector):
+	def __init__(self):
+		super().__init__()
+		self.bin = 'dpkg'
+		self.parser = None
+
+	def install_file(self, filename: str):
+		"""
+		Install a package using dpkg
+		:param filename: The filename to install
+		"""
+		# Setup the environment so DPKG can run headless without complaining
+		env = os.environ.copy()
+		env['DEBIAN_FRONTEND'] = 'noninteractive'
+
+		# Install the package
+		self.run(['install', '-y', filename], env=env)
 
 
 class DpkgListInstalledTest(BinCollectorTest):

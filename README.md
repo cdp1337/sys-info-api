@@ -17,6 +17,15 @@ For example, the operating system name is provided by the `operating_system` dev
 which in turn queries /etc/version, pveversion, /etc/os-release, and system_profiler to determine the operating system.
 
 
+## Setting up from source (for development)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install --upgrade pip
+venv/bin/pip3 install -e .[dev]
+```
+
 ## Low level Collectors
 
 List of collectors and the platforms tested.

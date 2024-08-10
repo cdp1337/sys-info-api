@@ -11,6 +11,7 @@
 #
 #  You should have received a copy of the GNU Affero General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+import os
 from typing import List
 
 from sys_info_api.common.bin_collector import BinCollector
@@ -130,6 +131,28 @@ class AptShow(BinCollector, _AptCollection):
 			})
 
 		self.data = packages
+
+
+class AptInstall(BinCollector):
+	def __init__(self):
+		super().__init__()
+		self.bin = 'apt-get'
+		self.parser = None
+
+	def install_package(self, package: str):
+		"""
+		Install a package using apt-get
+		:param package: The package to install
+		"""
+		# Setup the environment so DPKG can run headless without complaining
+		env = os.environ.copy()
+		env['DEBIAN_FRONTEND'] = 'noninteractive'
+
+		# Ensure repos are up to date
+		self.run(['update'], env=env)
+
+		# Install the package
+		self.run(['install', '-y', package], env=env)
 
 
 class AptUpdatesTest(BinCollectorTest):
