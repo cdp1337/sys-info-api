@@ -81,9 +81,9 @@ class LsbRelease(BinCollector):
 
 		version = version.split('.')
 		if len(version) >= 1:
-			ret['major'] = version[0]
+			ret['major'] = int(version[0])
 		if len(version) >= 2:
-			ret['minor'] = version[1]
+			ret['minor'] = int(version[1])
 
 		return ret
 

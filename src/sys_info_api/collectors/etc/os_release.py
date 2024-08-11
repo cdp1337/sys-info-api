@@ -98,11 +98,11 @@ class OsRelease(BinCollector):
 
 		version = version.split('.')
 		if len(version) >= 1:
-			ret['major'] = version[0]
+			ret['major'] = int(version[0])
 		if len(version) >= 2:
-			ret['minor'] = version[1]
+			ret['minor'] = int(version[1])
 		if len(version) >= 3:
-			ret['point'] = version[2]
+			ret['point'] = int(version[2])
 
 		return ret
 
@@ -116,13 +116,13 @@ class OsRelease(BinCollector):
 		version = self.get_version()
 		parts = []
 		if version['major'] is not None:
-			parts.append(version['major'])
+			parts.append(str(version['major']))
 
 			if version['minor'] is not None:
-				parts.append(version['minor'])
+				parts.append(str(version['minor']))
 
 				if version['point'] is not None:
-					parts.append(version['point'])
+					parts.append(str(version['point']))
 
 		if version['modifier'] is not None:
 			return '.'.join(parts) + ' ' + version['modifier']
@@ -181,6 +181,7 @@ class OsReleaseTest(BinCollectorTest):
 
 		self.keys = {
 			'name': self.collector.get_name,
+			'version': self.collector.get_version,
 			'version_codename': self.collector.get_version_codename,
 			'version_string': self.collector.get_version_string,
 			'like': self.collector.get_like,

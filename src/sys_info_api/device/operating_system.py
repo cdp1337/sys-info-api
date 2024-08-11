@@ -138,7 +138,7 @@ def get_upstream_version() -> str:
 	return ''
 
 
-def get_upstream_version_major() -> str:
+def get_upstream_version_major() -> int:
 	"""
 	Try to get the version of the upstream OS based on hints in /etc
 
