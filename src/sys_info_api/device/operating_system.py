@@ -16,16 +16,17 @@ import logging
 from typing import List, Union
 
 from sys_info_api.collectors.bin.apt import AptUpdates
-from sys_info_api.collectors.bin.dpkg import DpkgListInstalled as BinDpkgListInstalled
-from sys_info_api.collectors.bin.pkg import PkgListInstalled as BinPkgListInstalled
-from sys_info_api.collectors.bin.pveversion import PveVersion as BinPveVersion
-from sys_info_api.collectors.bin.uname import UnameMachine as BinUnameMachine
-from sys_info_api.collectors.bin.uptime import Uptime as BinUptime
-from sys_info_api.collectors.bin.sysctl import SysctlKernBoottime as BinSysctlKernBoottime
-from sys_info_api.collectors.bin.who import WhoBootTime as BinWhoBootTime
-from sys_info_api.collectors.bin.yum import YumListInstalled as BinYumListInstalled, YumUpdates
-from sys_info_api.collectors.etc.version import Version as EtcVersion
-from sys_info_api.collectors.etc.os_release import OsRelease as EtcOsRelease
+from sys_info_api.collectors.bin.dpkg import DpkgListInstalled
+from sys_info_api.collectors.bin.pkg import PkgListInstalled
+from sys_info_api.collectors.bin.pveversion import PveVersion
+from sys_info_api.collectors.bin.uname import UnameMachine
+from sys_info_api.collectors.bin.uptime import Uptime
+from sys_info_api.collectors.bin.sysctl import SysctlKernBoottime
+from sys_info_api.collectors.bin.who import WhoBootTime
+from sys_info_api.collectors.bin.yum import YumListInstalled, YumUpdates
+from sys_info_api.collectors.etc.lsb_release import LsbRelease
+from sys_info_api.collectors.etc.version import Version
+from sys_info_api.collectors.etc.os_release import OsRelease
 from sys_info_api.common.cmd import check_binary_exists
 from sys_info_api.common.exceptions import MetricNotAvailable
 
@@ -37,18 +38,18 @@ def get_name() -> str:
 
 	# Check for appliance name first; we'll prefer this over the base OS
 	try:
-		return EtcVersion().get_name()
+		return Version().get_name()
 	except MetricNotAvailable:
 		pass
 
 	try:
-		BinPveVersion().get_version()
+		PveVersion().get_version()
 		return 'Proxmox VE'
 	except MetricNotAvailable:
 		pass
 
 	try:
-		return EtcOsRelease().get_name()
+		return OsRelease().get_name()
 	except MetricNotAvailable:
 		pass
 
@@ -61,6 +62,35 @@ def get_name() -> str:
 	return 'Unknown'
 
 
+def get_upstream_id() -> str:
+	"""
+	Try to get the name of the upstream OS based on hints in /etc
+
+	This may be different from the actual OS running, ie:
+	Proxmox VE is considered the operating system name, (as it is a full appliance),
+	but its upstream OS for installing packages is Debian.
+	"""
+
+	# Check if there is an upstream lsb-release
+	try:
+		return LsbRelease(upstream=True).get_id()
+	except MetricNotAvailable:
+		pass
+
+	try:
+		return OsRelease().get_id()
+	except MetricNotAvailable:
+		pass
+
+	# MacOS
+	# try:
+	# 	return system_profiler.SystemProfiler.software().system_name()
+	# except MetricNotAvailable:
+	# 	pass
+
+	return 'unknown'
+
+
 def get_version() -> str:
 	"""
 	Try to get the name of the device OS based on hints in /etc
@@ -68,25 +98,65 @@ def get_version() -> str:
 
 	# Check for appliance version first; we'll prefer this over the base OS
 	try:
-		return EtcVersion().get_version()
+		return Version().get_version()
 	except MetricNotAvailable:
 		pass
 
 	try:
-		return BinPveVersion().get_version()
+		return PveVersion().get_version()
 	except MetricNotAvailable:
 		pass
 
 	try:
-		return EtcOsRelease().get_version_string()
+		return OsRelease().get_version_string()
 	except MetricNotAvailable:
 		pass
 
-	# MacOS
-	# try:
-	# 	return system_profiler.SystemProfiler.software().system_version()
-	# except MetricNotAvailable:
-	# 	pass
+	return ''
+
+
+def get_upstream_version() -> str:
+	"""
+	Try to get the version of the upstream OS based on hints in /etc
+
+	This may be different from the actual OS running, ie:
+	Proxmox VE is considered the operating system name, (as it is a full appliance),
+	but its upstream OS for installing packages is Debian.
+	"""
+
+	# Check if there is an upstream lsb-release
+	try:
+		return LsbRelease(upstream=True).get_version_string()
+	except MetricNotAvailable:
+		pass
+
+	try:
+		return OsRelease().get_version_string()
+	except MetricNotAvailable:
+		pass
+
+	return ''
+
+
+def get_upstream_version_major() -> str:
+	"""
+	Try to get the version of the upstream OS based on hints in /etc
+
+	This may be different from the actual OS running, ie:
+	Proxmox VE is considered the operating system name, (as it is a full appliance),
+	but its upstream OS for installing packages is Debian.
+	"""
+
+	# Check if there is an upstream lsb-release
+	try:
+		return LsbRelease(upstream=True).get_version()['major']
+	except MetricNotAvailable:
+		pass
+
+	try:
+		return OsRelease().get_version()['major']
+	except MetricNotAvailable:
+		pass
 
 	return ''
 
@@ -96,26 +166,26 @@ def get_arch() -> str:
 	Get the architecture of this OS
 	"""
 
-	return BinUnameMachine().get_data()
+	return UnameMachine().get_data()
 
 
 def get_boottime() -> Union[datetime.datetime, None]:
 	# Boot Time Detection
 
 	try:
-		return BinUptime().get_data()
+		return Uptime().get_data()
 	except MetricNotAvailable:
 		pass
 
 	try:
 		# Let's try BSD's approach.
-		return BinSysctlKernBoottime().get_data()
+		return SysctlKernBoottime().get_data()
 	except MetricNotAvailable:
 		pass
 
 	try:
 		# uptime -s failed, try who -b instead.
-		return BinWhoBootTime().get_data()
+		return WhoBootTime().get_data()
 	except MetricNotAvailable:
 		pass
 
@@ -131,11 +201,11 @@ def get_installed_software():
 
 	# @todo support MacOS
 	if check_binary_exists('apt-get'):
-		return BinDpkgListInstalled().get_data()
+		return DpkgListInstalled().get_data()
 	elif check_binary_exists('yum'):
-		return BinYumListInstalled().get_data()
+		return YumListInstalled().get_data()
 	elif check_binary_exists('pkg'):
-		return BinPkgListInstalled().get_data()
+		return PkgListInstalled().get_data()
 	else:
 		return []
 
@@ -166,9 +236,34 @@ def like_os(family: str) -> bool:
 	"""
 
 	try:
-		return EtcOsRelease().like_os(family)
+		return OsRelease().like_os(family)
 	except MetricNotAvailable:
 		pass
 
 	# *shrugs*
 	return False
+
+
+class OsDump:
+	"""
+	Dump all info available about the operating system (from the os module)
+	"""
+
+	def setUp(self):
+		pass  # No setup needed
+
+	def generate_raw_data(self) -> str:
+		return '(dynamic)'  # Dynamic sources, no raw data
+
+	def generate_test_data(self) -> dict:
+		return {
+			'name': get_name(),
+			'upstream_id': get_upstream_id(),
+			'version': get_version(),
+			'upstream_version': get_upstream_version(),
+			'upstream_version_major': get_upstream_version_major(),
+			'arch': get_arch(),
+			'boottime': get_boottime(),
+			'installed_software': get_installed_software(),
+			'updates': get_updates()
+		}

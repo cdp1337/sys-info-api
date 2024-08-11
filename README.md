@@ -19,11 +19,13 @@ which in turn queries /etc/version, pveversion, /etc/os-release, and system_prof
 
 ## Setting up from source (for development)
 
+Linux Mint 22 requires python-venv to be installed: `sudo apt install python3-venv`
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 python3 -m pip install --upgrade pip
-venv/bin/pip3 install -e .[dev]
+pip3 install -e .[dev]
 ```
 
 ## Low level Collectors

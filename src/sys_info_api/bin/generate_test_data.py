@@ -37,9 +37,11 @@ from sys_info_api.collectors.bin.uname import UnameVersionTest, UnameMachineTest
 from sys_info_api.collectors.bin.uptime import UptimeTest
 from sys_info_api.collectors.bin.who import WhoBootTimeTest
 from sys_info_api.collectors.bin.yum import YumUpdatesTest, YumListInstalledTest
+from sys_info_api.collectors.etc.lsb_release import LsbReleaseTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 from sys_info_api.collectors.etc.version import VersionTest
 from sys_info_api.common.exceptions import MetricNotAvailable
+from sys_info_api.device.operating_system import OsDump
 
 
 def run(mock_run: str = None):
@@ -104,8 +106,10 @@ def run(mock_run: str = None):
 		['bin.whoboottime', WhoBootTimeTest],
 		['bin.yumlistinstalled', YumListInstalledTest],
 		['bin.yumupdates', YumUpdatesTest],
+		['etc.lsb_release', LsbReleaseTest],
 		['etc.os_release', OsReleaseTest],
 		['etc.version', VersionTest],
+		['device.os', OsDump],
 	]
 
 	if cmd_help:
