@@ -139,10 +139,10 @@ class AptInstall(BinCollector):
 		self.bin = 'apt-get'
 		self.parser = None
 
-	def install_package(self, package: str):
+	def install_packages(self, packages: [str]):
 		"""
-		Install a package using apt-get
-		:param package: The package to install
+		Install a set of packages using apt-get
+		:param packages: The packages to install
 		"""
 		# Setup the environment so DPKG can run headless without complaining
 		env = os.environ.copy()
@@ -151,8 +151,15 @@ class AptInstall(BinCollector):
 		# Ensure repos are up to date
 		self.run(['update'], env=env)
 
-		# Install the package
-		self.run(['install', '-y', package], env=env)
+		# Install the packages
+		self.run(['install', '-y'] + packages, env=env)
+
+	def install_package(self, package: str):
+		"""
+		Install a package using apt-get
+		:param package: The package to install
+		"""
+		self.install_packages([package])
 
 
 class AptUpdatesTest(BinCollectorTest):

@@ -96,6 +96,29 @@ class YumUpdates(BinCollector):
 		return [package['package'] for package in self.data]
 
 
+class YumInstall(BinCollector):
+	def __init__(self):
+		super().__init__()
+		self.bin = 'yum'
+		self.parser = None
+
+	def install_packages(self, packages: [str]):
+		"""
+		Install a set of packages using yum
+		:param packages: The packages to install
+		"""
+
+		# Install the packages
+		self.run(['install', '-y'] + packages)
+
+	def install_package(self, package: str):
+		"""
+		Install a package using yum
+		:param package: The package to install
+		"""
+		self.install_packages([package])
+
+
 class YumListInstalledTest(BinCollectorTest):
 	def setUp(self):
 		self.collector = YumListInstalled()
