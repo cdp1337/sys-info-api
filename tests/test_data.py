@@ -37,6 +37,7 @@ from sys_info_api.collectors.bin.uptime import UptimeTest
 from sys_info_api.collectors.bin.who import WhoBootTimeTest
 from sys_info_api.collectors.etc.os_release import OsReleaseTest
 from sys_info_api.collectors.etc.version import VersionTest
+from sys_info_api.collectors.etc.yum_repos import YumReposTest
 
 
 class TestDataFiles(TestCase):
@@ -69,6 +70,7 @@ class TestDataFiles(TestCase):
 			['bin.whoboottime', WhoBootTimeTest],
 			['etc.os_release', OsReleaseTest],
 			['etc.version', VersionTest],
+			['etc.yum_repos', YumReposTest],
 		]
 
 		# Set the target to store collected results within tests/data

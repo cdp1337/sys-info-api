@@ -40,6 +40,7 @@ from sys_info_api.collectors.bin.yum import YumUpdatesTest, YumListInstalledTest
 from sys_info_api.collectors.etc.lsb_release import LsbReleaseTest
 from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
 from sys_info_api.collectors.etc.version import VersionTest
+from sys_info_api.collectors.etc.yum_repos import YumReposTest
 from sys_info_api.common.exceptions import MetricNotAvailable
 from sys_info_api.device.operating_system import OsDump
 
@@ -74,6 +75,7 @@ def run(mock_run: str = None):
 	# List of interfaces for interface-specific tests
 	interfaces = _get_net_interfaces()
 	packages = [['python3'], ['vlc'], ['xterm']]
+	yum_repos = [['epel'], ['centos'], ['rocky']]
 
 	# Collection of scripts to run and try to store
 	collectors = [
@@ -109,6 +111,7 @@ def run(mock_run: str = None):
 		['etc.lsb_release', LsbReleaseTest],
 		['etc.os_release', OsReleaseTest],
 		['etc.version', VersionTest],
+		['etc.yum_repos', YumReposTest, yum_repos],
 		['device.os', OsDump],
 	]
 
@@ -153,7 +156,8 @@ def _store_test(target, filename, collector, params):
 		c = collector()
 		if len(params):
 			c.setUp(*params)
-			filename = filename + '-' + '-'.join(params)
+			for p in params:
+				filename += '-' + p.replace('-', '_')
 		else:
 			c.setUp()
 
