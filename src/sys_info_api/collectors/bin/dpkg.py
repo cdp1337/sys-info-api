@@ -65,7 +65,7 @@ class DpkgInstall(BinCollector):
 		env['DEBIAN_FRONTEND'] = 'noninteractive'
 
 		# Install the package
-		self.run(['install', '-y', filename], env=env)
+		self.run(['-i', filename], env=env)
 
 
 class DpkgListInstalledTest(BinCollectorTest):
