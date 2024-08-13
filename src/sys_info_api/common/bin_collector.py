@@ -13,6 +13,7 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
+import os
 
 from sys_info_api.common.exceptions import MetricNotAvailable
 from sys_info_api.common.key_value_parser import KeyValueParser
@@ -175,6 +176,8 @@ class BinCollector(BinParser):
 	Base class for collectors that run a binary command and parse the output.
 	"""
 
+	BIN_FREAD = 'PYTHON_FILE_READ'
+
 	def __init__(self):
 		"""
 		When initializing a new binary collector, set the following arguments:
@@ -188,6 +191,12 @@ class BinCollector(BinParser):
 		self.bin = 'true'
 		"""
 		Binary to run, (either fully resolved or in the PATH)
+		:type str
+		"""
+
+		self.filename = None
+		"""
+		When native read is requested, this is the filename to read
 		:type str
 		"""
 
@@ -208,19 +217,32 @@ class BinCollector(BinParser):
 		Run the binary and store the output
 		:throws MetricNotAvailable:
 		"""
-		try:
-			self.raw = cmd.run_output([self.bin] + self.arguments)
-		except cmd.CmdExecExitCodeException as e:
-			if self.return_codes is not None and e.returncode in self.return_codes:
-				# A return code != 0 will trigger an exception to be raised,
-				# but allow the developer to specify which return codes are acceptable
-				self.raw = e.stdout.strip()
-			else:
+		if self.bin == self.BIN_FREAD:
+			# Special option to have Python handle the read natively
+			if not os.path.exists(self.filename):
 				self.raw = False
 				raise MetricNotAvailable
-		except cmd.CmdExecException:
-			self.raw = False
-			raise MetricNotAvailable
+			try:
+				with open(self.filename, 'r') as f:
+					self.raw = f.read()
+			except OSError:
+				self.raw = False
+				raise MetricNotAvailable
+		else:
+			# Standard binary execution
+			try:
+				self.raw = cmd.run_output([self.bin] + self.arguments)
+			except cmd.CmdExecExitCodeException as e:
+				if self.return_codes is not None and e.returncode in self.return_codes:
+					# A return code != 0 will trigger an exception to be raised,
+					# but allow the developer to specify which return codes are acceptable
+					self.raw = e.stdout.strip()
+				else:
+					self.raw = False
+					raise MetricNotAvailable
+			except cmd.CmdExecException:
+				self.raw = False
+				raise MetricNotAvailable
 
 	def run(self, arguments: [str], input=None, env=None):
 		"""
