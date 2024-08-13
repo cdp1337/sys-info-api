@@ -16,7 +16,6 @@ from typing import List
 
 from sys_info_api.common.bin_collector import BinCollector
 from sys_info_api.common.bin_collector_test import BinCollectorTest
-from sys_info_api.common.cmd import run_returncode
 from sys_info_api.common.exceptions import MetricNotAvailable
 from sys_info_api.common.key_value_parser import KeyValueParser
 
@@ -54,7 +53,7 @@ class AptUpdates(BinCollector, _AptCollection):
 
 	def fetch(self):
 		# Prior to fetching package updates, ensure the repo list is up to date!
-		run_returncode(['apt-get', 'update'])
+		self.run(['update'])
 		super().fetch()
 
 	def parse(self):

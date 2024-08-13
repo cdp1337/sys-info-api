@@ -152,6 +152,8 @@ class YumRepos(BinCollector):
 			self.data = ''
 
 	def parse(self):
+		super().parse()
+
 		self.data = {
 			'comment': '',
 			'repos': [],
