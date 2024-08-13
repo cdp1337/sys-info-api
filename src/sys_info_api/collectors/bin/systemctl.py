@@ -13,6 +13,7 @@
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from sys_info_api.common.bin_collector import BinCollector
+from sys_info_api.common.bin_collector_test import BinCollectorTest
 
 
 class SystemCtlListServices(BinCollector):
@@ -96,3 +97,11 @@ class SystemCtlService(BinCollector):
 		Restart the service
 		"""
 		self.run(['restart', self.service])
+
+
+class SystemCtlListServicesTest(BinCollectorTest):
+	def setUp(self):
+		self.collector = SystemCtlListServices()
+		self.keys = {
+			'data': self.collector.get_data,
+		}

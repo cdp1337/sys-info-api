@@ -33,6 +33,7 @@ from sys_info_api.collectors.bin.lspci import LspciTest
 from sys_info_api.collectors.bin.lsusb import LsusbTest
 from sys_info_api.collectors.bin.pveversion import PveVersionTest
 from sys_info_api.collectors.bin.sysctl import SysctlKernBoottimeTest
+from sys_info_api.collectors.bin.systemctl import SystemCtlListServicesTest
 from sys_info_api.collectors.bin.uname import UnameVersionTest, UnameMachineTest
 from sys_info_api.collectors.bin.uptime import UptimeTest
 from sys_info_api.collectors.bin.who import WhoBootTimeTest
@@ -102,6 +103,7 @@ def run(mock_run: str = None):
 		['bin.lsusb', LsusbTest],
 		['bin.pveversion', PveVersionTest],
 		['bin.sysctlkernboottime', SysctlKernBoottimeTest],
+		['bin.systemctllistservices', SystemCtlListServicesTest],
 		['bin.unameversion', UnameVersionTest],
 		['bin.unamemachine', UnameMachineTest],
 		['bin.uptime', UptimeTest],
