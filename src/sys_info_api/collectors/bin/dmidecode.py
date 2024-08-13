@@ -348,6 +348,8 @@ class DmiMemory(DmiSection):
 		value = self._get(['Memory Device', module, 'Total Width'])
 		if value.endswith(' bits'):
 			return int(value[:-4])
+		elif value == 'Unknown':
+			raise MetricNotAvailable
 		else:
 			return int(value)
 
