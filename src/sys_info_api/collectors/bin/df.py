@@ -15,7 +15,6 @@
 from typing import List
 from sys_info_api.common.bin_collector import BinCollector
 from sys_info_api.common.bin_collector_test import BinCollectorTest
-import os
 
 
 class Df(BinCollector):
@@ -59,14 +58,8 @@ class Df(BinCollector):
 
 			lineparts = line.split()
 
-			if lineparts[0].startswith('/dev/'):
-				# Convert /dev aliases to their real path and return just the device itself.
-				dev = os.path.realpath(lineparts[0])[5:]
-			else:
-				dev = lineparts[0]
-
 			results.append({
-				'device': dev,
+				'device': lineparts[0],
 				'format': lineparts[1],
 				'total': int(lineparts[2]) * blocksize,
 				'used': int(lineparts[3]) * blocksize,
