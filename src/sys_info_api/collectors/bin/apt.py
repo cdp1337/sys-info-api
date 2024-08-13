@@ -11,6 +11,7 @@
 #
 #  You should have received a copy of the GNU Affero General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import os
 from typing import List
 
@@ -133,6 +134,14 @@ class AptShow(BinCollector, _AptCollection):
 
 
 class AptInstall(BinCollector):
+	"""
+	Install packages using apt-get
+
+	Compatibility:
+
+	{%img_debian%} {%img_ubuntu%}
+	"""
+
 	def __init__(self):
 		super().__init__()
 		self.bin = 'apt-get'
@@ -142,6 +151,19 @@ class AptInstall(BinCollector):
 		"""
 		Install a set of packages using apt-get
 		:param packages: The packages to install
+
+		Usage:
+
+		```python
+		from sys_info_api.collectors.bin.apt import AptInstall
+		AptInstall().install_packages(['package1', 'package2'])
+		```
+
+		Package string formats:
+
+		* 'name-of-package' -- Installs the latest version, guessing architecture
+		* 'name-of-package=version' -- Install a specific version, guessing architecture
+		* 'name-of-package:arch=version' -- Install a specific version and architecture
 		"""
 		# Setup the environment so DPKG can run headless without complaining
 		env = os.environ.copy()
@@ -157,6 +179,19 @@ class AptInstall(BinCollector):
 		"""
 		Install a package using apt-get
 		:param package: The package to install
+
+		Usage:
+
+		```python
+		from sys_info_api.collectors.bin.apt import AptInstall
+		AptInstall().install_package('package1')
+		```
+
+		Package string formats:
+
+		* 'name-of-package' -- Installs the latest version, guessing architecture
+		* 'name-of-package=version' -- Install a specific version, guessing architecture
+		* 'name-of-package:arch=version' -- Install a specific version and architecture
 		"""
 		self.install_packages([package])
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.1"
-   width="48"
-   height="48"
+   width="24"
+   height="24"
    id="svg2"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="ubuntu.svg"
@@ -43,9 +43,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.15"
-     inkscape:cx="-107.3913"
-     inkscape:cy="62.173913"
+     inkscape:zoom="2.86"
+     inkscape:cx="-22.902098"
+     inkscape:cy="25.34965"
      inkscape:window-x="26"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -55,7 +55,7 @@
      inkscape:deskcolor="#d1d1d1" />
   <g
      id="logo"
-     transform="matrix(0.51188707,0,0,0.51188707,-1.5943567,-1.5943534)">
+     transform="matrix(0.24716132,0,0,0.24716132,-0.35806754,-0.35806598)">
     <path
        id="roundel"
        d="M 95.00015,50.000432 C 95.00015,74.852315 74.852463,95 49.999138,95 25.146388,95 4.9998625,74.852315 4.9998625,50.000432 c 0,-24.853612 20.1465255,-45.0004322 44.9992755,-45.0004322 24.853325,0 45.001012,20.1468202 45.001012,45.0004322"

@@ -131,6 +131,55 @@ parse()
 
 <a href="../src/sys_info_api/collectors/bin/yum.py#L99"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
+## <kbd>class:</kbd> `YumInstall`
+
+
+
+
+<a href="../src/sys_info_api/collectors/bin/yum.py#L100"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+
+### <kbd>method:</kbd> `__init__`
+
+```python
+__init__()
+```
+
+
+
+
+
+
+
+
+---
+
+<a href="../src/sys_info_api/collectors/bin/yum.py#L114"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+
+### <kbd>method:</kbd> `install_package`
+
+```python
+install_package(package: str)
+```
+
+Install a package using yum :param package: The package to install 
+
+---
+
+<a href="../src/sys_info_api/collectors/bin/yum.py#L105"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+
+### <kbd>method:</kbd> `install_packages`
+
+```python
+install_packages(packages: [<class 'str'>])
+```
+
+Install a set of packages using yum :param packages: The packages to install 
+
+
+---
+
+<a href="../src/sys_info_api/collectors/bin/yum.py#L122"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+
 ## <kbd>class:</kbd> `YumListInstalledTest`
 
 
@@ -141,7 +190,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/yum.py#L100"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/yum.py#L123"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -156,7 +205,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/yum.py#L107"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/yum.py#L130"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `YumUpdatesTest`
 
@@ -168,7 +217,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/yum.py#L108"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/yum.py#L131"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 

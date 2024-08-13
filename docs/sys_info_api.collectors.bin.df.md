@@ -11,7 +11,7 @@
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/df.py#L21"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/df.py#L20"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `Df`
 Execute `df` to get the list of filesystems. 
@@ -20,7 +20,7 @@ Compatibility:
 
 ![Debian](images/icons/debian.svg) ![Fedora](images/icons/fedora.svg) ![Redhat](images/icons/redhat.svg) ![Rocky](images/icons/rocky.svg) ![Ubuntu](images/icons/ubuntu.svg) ![FreeBSD](images/icons/freebsd.svg) ![Ubuntu](images/icons/proxmox.svg) ![Ubuntu](images/icons/truenas.svg) 
 
-<a href="../src/sys_info_api/collectors/bin/df.py#L30"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/df.py#L29"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `__init__`
 
@@ -35,7 +35,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/df.py#L78"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/df.py#L71"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_data`
 
@@ -68,7 +68,7 @@ used: 6115328
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/df.py#L39"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/df.py#L38"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `parse`
 
@@ -83,7 +83,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/df.py#L105"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/df.py#L98"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DfTest`
 
@@ -95,7 +95,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/df.py#L106"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/df.py#L99"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 

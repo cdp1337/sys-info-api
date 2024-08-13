@@ -454,7 +454,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L426"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L428"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_asset`
 
@@ -466,7 +466,7 @@ Get memory asset tag :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L370"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L372"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_form_factor`
 
@@ -478,7 +478,7 @@ Get memory form factor :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L378"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L380"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_locator`
 
@@ -490,7 +490,7 @@ Get memory socket / location :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L410"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L412"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_manufacturer`
 
@@ -502,7 +502,7 @@ Get memory manufacturer :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L402"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L404"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_max_speed`
 
@@ -514,7 +514,7 @@ Get memory speed, usually with MT/s units :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L434"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L436"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_part`
 
@@ -526,7 +526,7 @@ Get memory part number :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L418"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L420"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_serial`
 
@@ -538,7 +538,7 @@ Get memory serial number :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L362"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L364"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_size`
 
@@ -550,7 +550,7 @@ Get memory size, in bytes :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L394"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L396"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_speed`
 
@@ -602,7 +602,7 @@ Will return both empty and occupied slots
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L386"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L388"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_type`
 
@@ -614,7 +614,7 @@ Get memory type :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L442"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L444"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_voltage`
 
@@ -638,7 +638,7 @@ Get memory width, in units of number of bits :param module: :return:
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L354"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L356"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `is_installed`
 
@@ -665,14 +665,14 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L451"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L453"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiProcessor`
 
 
 
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L452"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L454"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `__init__`
 
@@ -689,7 +689,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L590"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L592"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_asset_tag`
 
@@ -703,7 +703,7 @@ get_asset_tag(processor: int = 0) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L610"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L612"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_cores`
 
@@ -717,7 +717,7 @@ get_cores(processor: int = 0) → int
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L491"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L493"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_family`
 
@@ -731,7 +731,7 @@ Retrieve the processor-family from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L507"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L509"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_flags`
 
@@ -745,7 +745,7 @@ get_flags(processor: int = 0) → list
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L539"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L541"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_frequency`
 
@@ -761,7 +761,7 @@ Retrieve the processor-frequency from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L499"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L501"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_manufacturer`
 
@@ -775,7 +775,7 @@ Retrieve the processor-manufacturer from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L550"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L552"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_max_frequency`
 
@@ -791,7 +791,7 @@ Retrieve the processor-frequency from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L522"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L524"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_model`
 
@@ -805,7 +805,7 @@ Retrieve the processor-version from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L600"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L602"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_part_number`
 
@@ -819,7 +819,7 @@ get_part_number(processor: int = 0) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L580"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L582"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_serial_number`
 
@@ -833,7 +833,7 @@ get_serial_number(processor: int = 0) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L485"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L487"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_socket`
 
@@ -845,7 +845,7 @@ get_socket(processor: int = 0) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L570"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L572"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_socket_type`
 
@@ -859,7 +859,7 @@ get_socket_type(processor: int = 0) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L560"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L562"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_status`
 
@@ -873,7 +873,7 @@ get_status(processor: int = 0) → str
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L620"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L622"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_threads`
 
@@ -887,7 +887,7 @@ get_threads(processor: int = 0) → int
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L463"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L465"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_total_cores`
 
@@ -901,7 +901,7 @@ get_total_cores() → int
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L455"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L457"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_total_count`
 
@@ -915,7 +915,7 @@ get_total_count() → int
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L474"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L476"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_total_threads`
 
@@ -929,7 +929,7 @@ get_total_threads() → int
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L530"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L532"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_voltage`
 
@@ -958,14 +958,14 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L643"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L645"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiSystem`
 
 
 
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L644"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L646"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `__init__`
 
@@ -982,7 +982,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L687"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L689"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_family`
 
@@ -996,7 +996,7 @@ Retrieve the system-family from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L647"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L649"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_manufacturer`
 
@@ -1010,7 +1010,7 @@ Retrieve the system-manufacturer from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L655"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L657"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_product_name`
 
@@ -1024,7 +1024,7 @@ Retrieve the system-product-name from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L671"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L673"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_serial_number`
 
@@ -1038,7 +1038,7 @@ Retrieve the system-serial-number from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L679"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L681"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_uuid`
 
@@ -1052,7 +1052,7 @@ Retrieve the system-uuid from DMI
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L663"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L665"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_version`
 
@@ -1081,7 +1081,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L696"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L698"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiBaseboardTest`
 
@@ -1093,7 +1093,7 @@ parse()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L700"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L702"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1107,7 +1107,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L697"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L699"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -1122,7 +1122,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L712"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L714"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiBiosTest`
 
@@ -1134,7 +1134,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L716"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L718"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1148,7 +1148,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L713"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L715"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -1163,7 +1163,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L726"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L728"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiCacheTest`
 
@@ -1175,7 +1175,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L730"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L732"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1189,7 +1189,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L727"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L729"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -1204,7 +1204,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L740"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L742"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiChassisTest`
 
@@ -1216,7 +1216,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L744"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L746"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1230,7 +1230,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L741"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L743"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -1245,7 +1245,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L756"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L758"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiMemoryTest`
 
@@ -1257,7 +1257,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L760"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L762"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1271,7 +1271,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L757"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L759"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -1286,7 +1286,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L781"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L783"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiProcessorTest`
 
@@ -1298,7 +1298,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L785"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L787"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1312,7 +1312,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L782"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L784"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 
@@ -1327,7 +1327,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L813"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L815"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `DmiSystemTest`
 
@@ -1339,7 +1339,7 @@ setUp()
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L817"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L819"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `get_test_keys`
 
@@ -1353,7 +1353,7 @@ get_test_keys() → dict
 
 ---
 
-<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L814"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/collectors/bin/dmidecode.py#L816"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 

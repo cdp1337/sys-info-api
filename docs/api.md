@@ -22,14 +22,18 @@
 - [`sys_info_api.collectors.bin.lsusb`](./sys_info_api.collectors.bin.lsusb.md#module-sys_info_apicollectorsbinlsusb)
 - [`sys_info_api.collectors.bin.pkg`](./sys_info_api.collectors.bin.pkg.md#module-sys_info_apicollectorsbinpkg)
 - [`sys_info_api.collectors.bin.pveversion`](./sys_info_api.collectors.bin.pveversion.md#module-sys_info_apicollectorsbinpveversion)
+- [`sys_info_api.collectors.bin.rpm`](./sys_info_api.collectors.bin.rpm.md#module-sys_info_apicollectorsbinrpm)
 - [`sys_info_api.collectors.bin.sysctl`](./sys_info_api.collectors.bin.sysctl.md#module-sys_info_apicollectorsbinsysctl)
+- [`sys_info_api.collectors.bin.systemctl`](./sys_info_api.collectors.bin.systemctl.md#module-sys_info_apicollectorsbinsystemctl)
 - [`sys_info_api.collectors.bin.uname`](./sys_info_api.collectors.bin.uname.md#module-sys_info_apicollectorsbinuname)
 - [`sys_info_api.collectors.bin.uptime`](./sys_info_api.collectors.bin.uptime.md#module-sys_info_apicollectorsbinuptime)
 - [`sys_info_api.collectors.bin.who`](./sys_info_api.collectors.bin.who.md#module-sys_info_apicollectorsbinwho)
 - [`sys_info_api.collectors.bin.yum`](./sys_info_api.collectors.bin.yum.md#module-sys_info_apicollectorsbinyum)
 - [`sys_info_api.collectors.etc`](./sys_info_api.collectors.etc.md#module-sys_info_apicollectorsetc)
+- [`sys_info_api.collectors.etc.lsb_release`](./sys_info_api.collectors.etc.lsb_release.md#module-sys_info_apicollectorsetclsb_release)
 - [`sys_info_api.collectors.etc.os_release`](./sys_info_api.collectors.etc.os_release.md#module-sys_info_apicollectorsetcos_release)
 - [`sys_info_api.collectors.etc.version`](./sys_info_api.collectors.etc.version.md#module-sys_info_apicollectorsetcversion)
+- [`sys_info_api.collectors.etc.yum_repos`](./sys_info_api.collectors.etc.yum_repos.md#module-sys_info_apicollectorsetcyum_repos)
 - [`sys_info_api.common`](./sys_info_api.common.md#module-sys_info_apicommon)
 - [`sys_info_api.common.bin_collector`](./sys_info_api.common.bin_collector.md#module-sys_info_apicommonbin_collector)
 - [`sys_info_api.common.bin_collector_test`](./sys_info_api.common.bin_collector_test.md#module-sys_info_apicommonbin_collector_test)
@@ -43,6 +47,7 @@
 
 ## Classes
 
+- [`apt.AptInstall`](./sys_info_api.collectors.bin.apt.md#class-aptinstall): Install packages using apt-get
 - [`apt.AptShow`](./sys_info_api.collectors.bin.apt.md#class-aptshow)
 - [`apt.AptShowTest`](./sys_info_api.collectors.bin.apt.md#class-aptshowtest)
 - [`apt.AptUpdates`](./sys_info_api.collectors.bin.apt.md#class-aptupdates)
@@ -66,6 +71,7 @@
 - [`dmidecode.DmiSection`](./sys_info_api.collectors.bin.dmidecode.md#class-dmisection)
 - [`dmidecode.DmiSystem`](./sys_info_api.collectors.bin.dmidecode.md#class-dmisystem)
 - [`dmidecode.DmiSystemTest`](./sys_info_api.collectors.bin.dmidecode.md#class-dmisystemtest)
+- [`dpkg.DpkgInstall`](./sys_info_api.collectors.bin.dpkg.md#class-dpkginstall)
 - [`dpkg.DpkgListInstalled`](./sys_info_api.collectors.bin.dpkg.md#class-dpkglistinstalled)
 - [`dpkg.DpkgListInstalledTest`](./sys_info_api.collectors.bin.dpkg.md#class-dpkglistinstalledtest)
 - [`hostnamectl.HostnameCtl`](./sys_info_api.collectors.bin.hostnamectl.md#class-hostnamectl)
@@ -90,8 +96,12 @@
 - [`pkg.PkgListInstalledTest`](./sys_info_api.collectors.bin.pkg.md#class-pkglistinstalledtest)
 - [`pveversion.PveVersion`](./sys_info_api.collectors.bin.pveversion.md#class-pveversion)
 - [`pveversion.PveVersionTest`](./sys_info_api.collectors.bin.pveversion.md#class-pveversiontest)
+- [`rpm.RpmInstall`](./sys_info_api.collectors.bin.rpm.md#class-rpminstall)
 - [`sysctl.SysctlKernBoottime`](./sys_info_api.collectors.bin.sysctl.md#class-sysctlkernboottime)
 - [`sysctl.SysctlKernBoottimeTest`](./sys_info_api.collectors.bin.sysctl.md#class-sysctlkernboottimetest)
+- [`systemctl.SystemCtlListServices`](./sys_info_api.collectors.bin.systemctl.md#class-systemctllistservices)
+- [`systemctl.SystemCtlListServicesTest`](./sys_info_api.collectors.bin.systemctl.md#class-systemctllistservicestest)
+- [`systemctl.SystemCtlService`](./sys_info_api.collectors.bin.systemctl.md#class-systemctlservice)
 - [`uname.UnameMachine`](./sys_info_api.collectors.bin.uname.md#class-unamemachine)
 - [`uname.UnameMachineTest`](./sys_info_api.collectors.bin.uname.md#class-unamemachinetest)
 - [`uname.UnameVersion`](./sys_info_api.collectors.bin.uname.md#class-unameversion)
@@ -100,14 +110,19 @@
 - [`uptime.UptimeTest`](./sys_info_api.collectors.bin.uptime.md#class-uptimetest)
 - [`who.WhoBootTime`](./sys_info_api.collectors.bin.who.md#class-whoboottime)
 - [`who.WhoBootTimeTest`](./sys_info_api.collectors.bin.who.md#class-whoboottimetest)
+- [`yum.YumInstall`](./sys_info_api.collectors.bin.yum.md#class-yuminstall)
 - [`yum.YumListInstalled`](./sys_info_api.collectors.bin.yum.md#class-yumlistinstalled)
 - [`yum.YumListInstalledTest`](./sys_info_api.collectors.bin.yum.md#class-yumlistinstalledtest)
 - [`yum.YumUpdates`](./sys_info_api.collectors.bin.yum.md#class-yumupdates)
 - [`yum.YumUpdatesTest`](./sys_info_api.collectors.bin.yum.md#class-yumupdatestest)
+- [`lsb_release.LsbRelease`](./sys_info_api.collectors.etc.lsb_release.md#class-lsbrelease): Provides a simple API to read /etc/lsb-release or /etc/upstream-release/lsb-release data
+- [`lsb_release.LsbReleaseTest`](./sys_info_api.collectors.etc.lsb_release.md#class-lsbreleasetest)
 - [`os_release.OsRelease`](./sys_info_api.collectors.etc.os_release.md#class-osrelease): Provides a simple API to read /etc/os-release data
 - [`os_release.OsReleaseTest`](./sys_info_api.collectors.etc.os_release.md#class-osreleasetest)
 - [`version.Version`](./sys_info_api.collectors.etc.version.md#class-version)
 - [`version.VersionTest`](./sys_info_api.collectors.etc.version.md#class-versiontest)
+- [`yum_repos.YumRepos`](./sys_info_api.collectors.etc.yum_repos.md#class-yumrepos)
+- [`yum_repos.YumReposTest`](./sys_info_api.collectors.etc.yum_repos.md#class-yumrepostest)
 - [`bin_collector.BinCollector`](./sys_info_api.common.bin_collector.md#class-bincollector): Base class for collectors that run a binary command and parse the output.
 - [`bin_collector.BinParser`](./sys_info_api.common.bin_collector.md#class-binparser): Parser layer for processing data, (usually from commands)
 - [`bin_collector_test.BinCollectorTest`](./sys_info_api.common.bin_collector_test.md#class-bincollectortest): Base class for collector tests for binary commands.
@@ -119,6 +134,7 @@
 - [`exceptions.MetricNotAvailable`](./sys_info_api.common.exceptions.md#class-metricnotavailable): General exception thrown when a metric is not available
 - [`key_value_parser.KeyValueParser`](./sys_info_api.common.key_value_parser.md#class-keyvalueparser): A simple key/value parser for parsing key/value pairs from a string.
 - [`local_timezone.LocalTimezone`](./sys_info_api.common.local_timezone.md#class-localtimezone)
+- [`operating_system.OsDump`](./sys_info_api.device.operating_system.md#class-osdump): Dump all info available about the operating system (from the os module)
 
 ## Functions
 
@@ -140,6 +156,9 @@
 - [`operating_system.get_installed_software`](./sys_info_api.device.operating_system.md#function-get_installed_software): Call the underlying OS's package manager to handle detection of installed software
 - [`operating_system.get_name`](./sys_info_api.device.operating_system.md#function-get_name): Try to get the name of the device OS based on hints in /etc
 - [`operating_system.get_updates`](./sys_info_api.device.operating_system.md#function-get_updates): Get any updates that are available
+- [`operating_system.get_upstream_id`](./sys_info_api.device.operating_system.md#function-get_upstream_id): Try to get the name of the upstream OS based on hints in /etc
+- [`operating_system.get_upstream_version`](./sys_info_api.device.operating_system.md#function-get_upstream_version): Try to get the version of the upstream OS based on hints in /etc
+- [`operating_system.get_upstream_version_major`](./sys_info_api.device.operating_system.md#function-get_upstream_version_major): Try to get the version of the upstream OS based on hints in /etc
 - [`operating_system.get_version`](./sys_info_api.device.operating_system.md#function-get_version): Try to get the name of the device OS based on hints in /etc
 - [`operating_system.like_os`](./sys_info_api.device.operating_system.md#function-like_os): Check if this operating system is "like" another
 

@@ -11,12 +11,12 @@
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L22"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L23"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `BinParser`
 Parser layer for processing data, (usually from commands) 
 
-<a href="../src/sys_info_api/common/bin_collector.py#L47"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L48"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `__init__`
 
@@ -33,7 +33,7 @@ __init__()
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L157"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L158"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `clear`
 
@@ -45,7 +45,7 @@ Clear the raw and parsed data, allowing for multiple functions on the same binar
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L165"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L166"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `ensure_ready`
 
@@ -57,7 +57,7 @@ Ensure that the data is ready for use, (safe to call multiple times)
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L114"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L115"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `parse`
 
@@ -70,12 +70,12 @@ Parse the raw output into a usable format :throws MetricNotAvailable:
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L173"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L174"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `BinCollector`
 Base class for collectors that run a binary command and parse the output. 
 
-<a href="../src/sys_info_api/common/bin_collector.py#L178"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L181"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `__init__`
 
@@ -95,7 +95,7 @@ When initializing a new binary collector, set the following arguments:
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L157"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L158"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `clear`
 
@@ -107,7 +107,7 @@ Clear the raw and parsed data, allowing for multiple functions on the same binar
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L165"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L166"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `ensure_ready`
 
@@ -119,7 +119,7 @@ Ensure that the data is ready for use, (safe to call multiple times)
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L206"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L215"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `fetch`
 
@@ -131,7 +131,7 @@ Run the binary and store the output :throws MetricNotAvailable:
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L239"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L262"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `parse`
 
@@ -143,17 +143,17 @@ Parse the raw output into a usable format :throws MetricNotAvailable:
 
 ---
 
-<a href="../src/sys_info_api/common/bin_collector.py#L225"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/common/bin_collector.py#L247"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `run`
 
 ```python
-run(arguments: [<class 'str'>]) → str
+run(arguments: [<class 'str'>], input=None, env=None)
 ```
 
-Run the binary with the given arguments and return the output 
+Run the binary with the given arguments 
 
-Does NOT store the output, (useful for one-off commands) :param arguments: :return: :raises MetricNotAvailable: 
+Does NOT store the output, (useful for one-off commands) :param env: :param input: :param arguments: :raises MetricNotAvailable: 
 
 
 
