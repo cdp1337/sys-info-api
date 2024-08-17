@@ -1,0 +1,222 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following NEW packages will be installed:
+  linux-headers-6.8.0-40 linux-headers-6.8.0-40-generic
+  linux-image-6.8.0-40-generic linux-modules-6.8.0-40-generic
+  linux-modules-extra-6.8.0-40-generic linux-tools-6.8.0-40
+  linux-tools-6.8.0-40-generic linux-tools-common python3-feedparser
+  python3-html2text python3-sgmllib3k
+The following packages will be upgraded:
+  bind9-dnsutils bind9-host bind9-libs busybox-initramfs busybox-static
+  cinnamon cinnamon-common cinnamon-dbg curl dracut-install
+  evolution-data-server evolution-data-server-common firefox firefox-locale-en
+  fonts-opensymbol gir1.2-camel-1.2 gir1.2-ecal-2.0 gir1.2-edataserver-1.2
+  gir1.2-nemo-3.0 krb5-locales libcamel-1.2-64t64 libcurl3t64-gnutls
+  libcurl4t64 libebackend-1.2-11t64 libebook-1.2-21t64
+  libebook-contacts-1.2-4t64 libecal-2.0-3 libedata-book-1.2-27t64
+  libedata-cal-2.0-2t64 libedataserver-1.2-27t64 libedataserverui-1.2-4t64
+  libgssapi-krb5-2 libk5crypto3 libkrb5-3 libkrb5support0 libnemo-extension1
+  liborc-0.4-0t64 libpoppler-cpp0t64 libpoppler-glib8t64 libpoppler134
+  libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core
+  libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
+  libreoffice-help-en-us libreoffice-impress libreoffice-style-colibre
+  libreoffice-uiconfig-calc libreoffice-uiconfig-common
+  libreoffice-uiconfig-draw libreoffice-uiconfig-impress
+  libreoffice-uiconfig-writer libreoffice-writer libssl3t64 libuno-cppu3t64
+  libuno-cppuhelpergcc3-3t64 libuno-purpenvhelpergcc3-3t64 libuno-sal3t64
+  libuno-salhelpergcc3-3t64 linux-generic linux-headers-generic
+  linux-image-generic linux-libc-dev mint-common mintinstall nemo nemo-data
+  nemo-dbg openssl poppler-utils python3-apport python3-problem-report
+  python3-uno thunderbird ubuntu-system-adjustments uno-libs-private ure
+  wpasupplicant xdg-desktop-portal-xapp
+83 upgraded, 11 newly installed, 0 to remove and 0 not upgraded.
+Inst firefox [128.0+linuxmint1+wilma] (129.0+linuxmint1+wilma linuxmint:22/wilma [amd64])
+Inst python3-html2text (2024.2.26-1 Ubuntu:24.04/noble [all])
+Conf python3-html2text (2024.2.26-1 Ubuntu:24.04/noble [all])
+Inst mint-common [2.3.7] (2.3.9 linuxmint:22/wilma [all])
+Conf mint-common (2.3.9 linuxmint:22/wilma [all])
+Inst mintinstall [8.3.2] (8.3.3 linuxmint:22/wilma [all])
+Inst libuno-sal3t64 [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst libuno-salhelpergcc3-3t64 [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst libuno-cppu3t64 [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst ure [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst uno-libs-private [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libuno-cppuhelpergcc3-3t64:amd64 ]
+Inst libuno-cppuhelpergcc3-3t64 [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst libuno-purpenvhelpergcc3-3t64 [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst libreoffice-impress [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-uiconfig-impress [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) [libreoffice-draw:amd64 ]
+Inst libreoffice-uiconfig-draw [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) [libreoffice-draw:amd64 ]
+Inst libreoffice-draw [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-uiconfig-writer [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) [libreoffice-writer:amd64 ]
+Inst libreoffice-writer [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-uiconfig-common [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) [libreoffice-common:amd64 ]
+Inst libreoffice-help-en-us [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) [libreoffice-common:amd64 ]
+Inst libreoffice-help-common [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) [libreoffice-common:amd64 ]
+Inst libreoffice-common [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) []
+Inst libreoffice-gnome [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-gtk3 [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-base-core [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libreoffice-calc:amd64 ]
+Inst python3-uno [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libreoffice-calc:amd64 ]
+Inst libreoffice-calc [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-core [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libreoffice-uiconfig-calc [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Inst fonts-opensymbol [4:102.12+LibO24.2.5-0ubuntu0.24.04.1] (4:102.12+LibO24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Inst curl [8.5.0-2ubuntu10.1] (8.5.0-2ubuntu10.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libkrb5support0 [1.20.1-6ubuntu2] (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libgssapi-krb5-2:amd64 libkrb5-3:amd64 libk5crypto3:amd64 ]
+Conf libkrb5support0 (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libgssapi-krb5-2:amd64 libkrb5-3:amd64 libk5crypto3:amd64 ]
+Inst libkrb5-3 [1.20.1-6ubuntu2] (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libgssapi-krb5-2:amd64 libk5crypto3:amd64 ]
+Conf libkrb5-3 (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libgssapi-krb5-2:amd64 libk5crypto3:amd64 ]
+Inst libgssapi-krb5-2 [1.20.1-6ubuntu2] (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libk5crypto3:amd64 ]
+Conf libgssapi-krb5-2 (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) [libk5crypto3:amd64 ]
+Inst libk5crypto3 [1.20.1-6ubuntu2] (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Conf libk5crypto3 (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libssl3t64 [3.0.13-0ubuntu3.1] (3.0.13-0ubuntu3.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Conf libssl3t64 (3.0.13-0ubuntu3.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libcurl4t64 [8.5.0-2ubuntu10.1] (8.5.0-2ubuntu10.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst poppler-utils [24.02.0-1ubuntu9] (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libpoppler-cpp0t64 [24.02.0-1ubuntu9] (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libpoppler-glib8t64 [24.02.0-1ubuntu9] (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libcurl3t64-gnutls [8.5.0-2ubuntu10.1] (8.5.0-2ubuntu10.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Conf libcurl3t64-gnutls (8.5.0-2ubuntu10.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst libpoppler134 [24.02.0-1ubuntu9] (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst libreoffice-style-colibre [4:24.2.5-0ubuntu0.24.04.1] (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Inst openssl [3.0.13-0ubuntu3.1] (3.0.13-0ubuntu3.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf openssl (3.0.13-0ubuntu3.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst krb5-locales [1.20.1-6ubuntu2] (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Inst bind9-host [1:9.18.24-0ubuntu5] (1:9.18.28-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst bind9-dnsutils [1:9.18.24-0ubuntu5] (1:9.18.28-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst bind9-libs [1:9.18.24-0ubuntu5] (1:9.18.28-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst busybox-static [1:1.36.1-6ubuntu3] (1:1.36.1-6ubuntu3.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst busybox-initramfs [1:1.36.1-6ubuntu3] (1:1.36.1-6ubuntu3.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst nemo-dbg [6.2.6+wilma] (6.2.8+wilma linuxmint:22/wilma [amd64]) []
+Inst nemo [6.2.6+wilma] (6.2.8+wilma linuxmint:22/wilma [amd64]) []
+Inst libnemo-extension1 [6.2.6+wilma] (6.2.8+wilma linuxmint:22/wilma [amd64]) []
+Inst nemo-data [6.2.6+wilma] (6.2.8+wilma linuxmint:22/wilma [all])
+Inst cinnamon-dbg [6.2.7+wilma] (6.2.9+wilma linuxmint:22/wilma [amd64]) []
+Inst cinnamon-common [6.2.7+wilma] (6.2.9+wilma linuxmint:22/wilma [all]) []
+Inst libebackend-1.2-11t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libebook-contacts-1.2-4t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libedata-book-1.2-27t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libebook-1.2-21t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libecal-2.0-3 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libedata-cal-2.0-2t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst evolution-data-server-common [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [all]) []
+Inst libedataserverui-1.2-4t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst evolution-data-server [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libcamel-1.2-64t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst libedataserver-1.2-27t64 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst gir1.2-ecal-2.0 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst gir1.2-edataserver-1.2 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst gir1.2-camel-1.2 [3.52.0-1build3] (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64]) []
+Inst xdg-desktop-portal-xapp [1.0.8+wilma] (1.0.9+wilma linuxmint:22/wilma [amd64]) []
+Inst cinnamon [6.2.7+wilma] (6.2.9+wilma linuxmint:22/wilma [amd64])
+Inst dracut-install [060+5-1ubuntu3.1] (060+5-1ubuntu3.2 Ubuntu:24.04/noble-updates [amd64])
+Inst firefox-locale-en [128.0+linuxmint1+wilma] (129.0+linuxmint1+wilma linuxmint:22/wilma [amd64])
+Inst gir1.2-nemo-3.0 [6.2.6+wilma] (6.2.8+wilma linuxmint:22/wilma [amd64])
+Inst liborc-0.4-0t64 [1:0.4.38-1build1] (1:0.4.38-1ubuntu0.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-modules-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-image-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-modules-extra-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-generic [6.8.0-38.38] (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst linux-image-generic [6.8.0-38.38] (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst linux-headers-6.8.0-40 (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all]) []
+Inst linux-headers-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64]) []
+Inst linux-headers-generic [6.8.0-38.38] (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-libc-dev [6.8.0-38.38] (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-tools-common (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Inst linux-tools-6.8.0-40 (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst linux-tools-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Inst python3-problem-report [2.28.1-0ubuntu3] (2.28.1-0ubuntu3.1 Ubuntu:24.04/noble-updates [all])
+Inst python3-apport [2.28.1-0ubuntu3] (2.28.1-0ubuntu3.1 Ubuntu:24.04/noble-updates [all])
+Inst python3-sgmllib3k (1.0.0-4 Ubuntu:24.04/noble [all])
+Inst python3-feedparser (6.0.10-1 Ubuntu:24.04/noble [all])
+Inst thunderbird [1:128.0.1esr+linuxmint1+wilma] (1:128.1.0esr+linuxmint1+wilma linuxmint:22/wilma [amd64])
+Inst ubuntu-system-adjustments [2024.07.20-wilma] (2024.07.27-wilma linuxmint:22/wilma [all])
+Inst wpasupplicant [2:2.10-21build4] (2:2.10-21ubuntu0.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf firefox (129.0+linuxmint1+wilma linuxmint:22/wilma [amd64])
+Conf mintinstall (8.3.3 linuxmint:22/wilma [all])
+Conf libuno-sal3t64 (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libuno-salhelpergcc3-3t64 (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libuno-cppu3t64 (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf ure (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf uno-libs-private (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libuno-cppuhelpergcc3-3t64 (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libuno-purpenvhelpergcc3-3t64 (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-impress (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-uiconfig-impress (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-uiconfig-draw (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-draw (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-uiconfig-writer (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-writer (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-uiconfig-common (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-help-en-us (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-help-common (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-common (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf libreoffice-gnome (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-gtk3 (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-base-core (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf python3-uno (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-calc (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-core (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-uiconfig-calc (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf fonts-opensymbol (4:102.12+LibO24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf curl (8.5.0-2ubuntu10.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libcurl4t64 (8.5.0-2ubuntu10.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf poppler-utils (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libpoppler-cpp0t64 (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libpoppler-glib8t64 (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libpoppler134 (24.02.0-1ubuntu9.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf libreoffice-style-colibre (4:24.2.5-0ubuntu0.24.04.2 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf krb5-locales (1.20.1-6ubuntu2.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf bind9-host (1:9.18.28-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf bind9-dnsutils (1:9.18.28-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf bind9-libs (1:9.18.28-0ubuntu0.24.04.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf busybox-static (1:1.36.1-6ubuntu3.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf busybox-initramfs (1:1.36.1-6ubuntu3.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf nemo-dbg (6.2.8+wilma linuxmint:22/wilma [amd64])
+Conf nemo (6.2.8+wilma linuxmint:22/wilma [amd64])
+Conf libnemo-extension1 (6.2.8+wilma linuxmint:22/wilma [amd64])
+Conf nemo-data (6.2.8+wilma linuxmint:22/wilma [all])
+Conf cinnamon-dbg (6.2.9+wilma linuxmint:22/wilma [amd64])
+Conf cinnamon-common (6.2.9+wilma linuxmint:22/wilma [all])
+Conf libebackend-1.2-11t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libebook-contacts-1.2-4t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libedata-book-1.2-27t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libebook-1.2-21t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libecal-2.0-3 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libedata-cal-2.0-2t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf evolution-data-server-common (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [all])
+Conf libedataserverui-1.2-4t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf evolution-data-server (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libcamel-1.2-64t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf libedataserver-1.2-27t64 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf gir1.2-ecal-2.0 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf gir1.2-edataserver-1.2 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf gir1.2-camel-1.2 (3.52.3-0ubuntu1 Ubuntu:24.04/noble-updates [amd64])
+Conf xdg-desktop-portal-xapp (1.0.9+wilma linuxmint:22/wilma [amd64])
+Conf cinnamon (6.2.9+wilma linuxmint:22/wilma [amd64])
+Conf dracut-install (060+5-1ubuntu3.2 Ubuntu:24.04/noble-updates [amd64])
+Conf firefox-locale-en (129.0+linuxmint1+wilma linuxmint:22/wilma [amd64])
+Conf gir1.2-nemo-3.0 (6.2.8+wilma linuxmint:22/wilma [amd64])
+Conf liborc-0.4-0t64 (1:0.4.38-1ubuntu0.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-modules-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-image-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-modules-extra-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-image-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-headers-6.8.0-40 (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf linux-headers-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-headers-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-libc-dev (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-tools-common (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [all])
+Conf linux-tools-6.8.0-40 (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf linux-tools-6.8.0-40-generic (6.8.0-40.40 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])
+Conf python3-problem-report (2.28.1-0ubuntu3.1 Ubuntu:24.04/noble-updates [all])
+Conf python3-apport (2.28.1-0ubuntu3.1 Ubuntu:24.04/noble-updates [all])
+Conf python3-sgmllib3k (1.0.0-4 Ubuntu:24.04/noble [all])
+Conf python3-feedparser (6.0.10-1 Ubuntu:24.04/noble [all])
+Conf thunderbird (1:128.1.0esr+linuxmint1+wilma linuxmint:22/wilma [amd64])
+Conf ubuntu-system-adjustments (2024.07.27-wilma linuxmint:22/wilma [all])
+Conf wpasupplicant (2:2.10-21ubuntu0.1 Ubuntu:24.04/noble-updates, Ubuntu:24.04/noble-security [amd64])

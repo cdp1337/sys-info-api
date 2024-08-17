@@ -1,0 +1,8 @@
+Filesystem     Type    1024-blocks    Used Available Capacity Mounted on
+tmpfs          tmpfs        201504    1176    200328       1% /run
+/dev/vda3      ext4       19946096 9841048   9066508      53% /
+tmpfs          tmpfs       1007508       0   1007508       0% /dev/shm
+tmpfs          tmpfs          5120       0      5120       0% /run/lock
+/dev/vda2      vfat         524252    6284    517968       2% /boot/efi
+tmpfs          tmpfs        201500     204    201296       1% /run/user/1000
+/dev/sr0       iso9660     2839680 2839680         0     100% /media/vm-user/Linux Mint 22 Cinnamon 64-bit

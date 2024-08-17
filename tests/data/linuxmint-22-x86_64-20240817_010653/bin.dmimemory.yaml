@@ -1,0 +1,11 @@
+bank_0_form_factor: DIMM
+bank_0_installed: true
+bank_0_locator: DIMM 0
+bank_0_max_speed: null
+bank_0_size: 2147483648
+bank_0_speed: null
+bank_0_type: RAM
+bank_0_width: null
+system_ecc: true
+system_maximum_capacity: 2147483648
+total_banks: 1

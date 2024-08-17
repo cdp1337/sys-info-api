@@ -1,0 +1,8 @@
+admin_statuses:
+  ens18: UP
+macs:
+  ens18: bc:24:11:44:4f:39
+names:
+- ens18
+statuses:
+  ens18: UP

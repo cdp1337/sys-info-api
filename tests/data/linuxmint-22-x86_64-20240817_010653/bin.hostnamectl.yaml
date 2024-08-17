@@ -1,0 +1,12 @@
+architecture: x86-64
+boot_id: 54143222c4b844f8ae1ba8577e272f08
+chassis: "vm \U0001F5B4"
+firmware_version: rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org
+hostname: vmuser-Standard-PC-i440FX-PIIX-1996
+icon: computer-vm
+kernel: Linux 6.8.0-38-generic
+machine_id: d664d30cf6504bb78cdc820e7c9bc935
+model: Standard PC _i440FX + PIIX, 1996_
+operating_system: Linux Mint 22
+vendor: QEMU
+virtualization: kvm

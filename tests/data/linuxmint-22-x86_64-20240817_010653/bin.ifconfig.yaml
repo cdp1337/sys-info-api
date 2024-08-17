@@ -1,0 +1,21 @@
+iface_ens18_addresses:
+- 10.10.10.132/24
+- fe80:0000:0000:0000:8203:fd5a:9756:b173/64
+iface_ens18_admin_status: UP
+iface_ens18_mac: bc:24:11:44:4f:39
+iface_ens18_mtu: '1500'
+iface_ens18_slot: ens18
+iface_ens18_status: UP
+iface_ens18_type: null
+iface_lo_addresses:
+- 127.0.0.1/8
+- 0000:0000:0000:0000:0000:0000:0000:0001/128
+iface_lo_admin_status: UP
+iface_lo_mac: null
+iface_lo_mtu: '65536'
+iface_lo_slot: lo
+iface_lo_status: UP
+iface_lo_type: null
+names:
+- ens18
+- lo

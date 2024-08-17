@@ -1,0 +1,19 @@
+data:
+- device: /dev/vda3
+  format: ext4
+  free: 9284104192
+  label: /
+  total: 20424802304
+  used: 10077233152
+- device: /dev/vda2
+  format: vfat
+  free: 530399232
+  label: /boot/efi
+  total: 536834048
+  used: 6434816
+- device: /dev/sr0
+  format: iso9660
+  free: 0
+  label: /media/vm-user/Linux
+  total: 2907832320
+  used: 2907832320

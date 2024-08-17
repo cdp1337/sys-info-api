@@ -1,0 +1,14 @@
+Static hostname: vmuser-Standard-PC-i440FX-PIIX-1996
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: d664d30cf6504bb78cdc820e7c9bc935
+         Boot ID: 54143222c4b844f8ae1ba8577e272f08
+  Virtualization: kvm
+Operating System: Linux Mint 22
+          Kernel: Linux 6.8.0-38-generic
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _i440FX + PIIX, 1996_
+Firmware Version: rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org
+   Firmware Date: Tue 2014-04-01
+    Firmware Age: 10y 4month 2w 2d

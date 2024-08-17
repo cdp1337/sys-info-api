@@ -1,0 +1,45 @@
+disk_vda_hotplug: false
+disk_vda_model: null
+disk_vda_partitioning: gpt
+disk_vda_path: /dev/vda
+disk_vda_rev: null
+disk_vda_rotational: true
+disk_vda_serial: null
+disk_vda_size: 21474836480
+disk_vda_state: null
+disk_vda_transport: virtio
+disk_vda_uuid: c36b0bf9-ddf0-414e-a5ce-67c076ab54d7
+disk_vda_vendor: '0x1af4'
+disks:
+- vda
+filesystem_vda2_label: null
+filesystem_vda2_mount: /boot/efi
+filesystem_vda2_size: 536870912
+filesystem_vda2_type: vfat
+filesystem_vda2_used: 6396313
+filesystem_vda2_version: FAT32
+filesystem_vda3_label: null
+filesystem_vda3_mount: /
+filesystem_vda3_size: 20401094656
+filesystem_vda3_type: ext4
+filesystem_vda3_used: 10093173145
+filesystem_vda3_version: '1.0'
+filesystems:
+- vda2
+- vda3
+partition_vda1_path: /dev/vda1
+partition_vda1_size: 1048576
+partition_vda1_type: BIOS boot
+partition_vda1_uuid: null
+partition_vda2_path: /dev/vda2
+partition_vda2_size: 537919488
+partition_vda2_type: EFI System
+partition_vda2_uuid: 05D0-2455
+partition_vda3_path: /dev/vda3
+partition_vda3_size: 20937965568
+partition_vda3_type: Linux filesystem
+partition_vda3_uuid: 5985365f-18a2-4823-8c81-8acad3e82b43
+partitions:
+- vda1
+- vda2
+- vda3

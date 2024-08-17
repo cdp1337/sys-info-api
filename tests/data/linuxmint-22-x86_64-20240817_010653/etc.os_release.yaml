@@ -1,0 +1,14 @@
+id: linuxmint
+like:
+- linuxmint
+- ubuntu
+- debian
+name: Linux Mint
+version:
+  codename: Wilma
+  major: 22
+  minor: null
+  modifier: null
+  point: null
+version_codename: Wilma
+version_string: '22'

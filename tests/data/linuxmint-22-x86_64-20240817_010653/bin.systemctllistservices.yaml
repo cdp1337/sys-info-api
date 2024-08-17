@@ -1,0 +1,887 @@
+data:
+- active: active
+  description: Accounts Service
+  load: loaded
+  service: accounts-daemon.service
+  sub: running
+- active: inactive
+  description: Save/Restore Sound Card State
+  load: loaded
+  service: alsa-restore.service
+  sub: dead
+- active: inactive
+  description: Manage Sound Card State (restore and store)
+  load: loaded
+  service: alsa-state.service
+  sub: dead
+- active: inactive
+  description: Run anacron jobs
+  load: loaded
+  service: anacron.service
+  sub: dead
+- active: active
+  description: Load AppArmor profiles
+  load: loaded
+  service: apparmor.service
+  sub: exited
+- active: inactive
+  description: Daily apt upgrade and clean activities
+  load: loaded
+  service: apt-daily-upgrade.service
+  sub: dead
+- active: inactive
+  description: Daily apt download activities
+  load: loaded
+  service: apt-daily.service
+  sub: dead
+- active: not-found
+  description: dead auditd.service
+  load: auditd.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Avahi mDNS/DNS-SD Stack
+  load: loaded
+  service: avahi-daemon.service
+  sub: running
+- active: active
+  description: Availability of block devices
+  load: loaded
+  service: blk-availability.service
+  sub: exited
+- active: inactive
+  description: Bluetooth management mechanism
+  load: loaded
+  service: blueman-mechanism.service
+  sub: dead
+- active: loaded
+  description: failed casper-md5check Verify Live ISO checksums
+  load: casper-md5check.service
+  service: "\u25CF"
+  sub: failed
+- active: inactive
+  description: Shuts down the "live" preinstalled system cleanly
+  load: loaded
+  service: casper.service
+  sub: dead
+- active: active
+  description: Manage, Install and Generate Color Profiles
+  load: loaded
+  service: colord.service
+  sub: running
+- active: not-found
+  description: dead connman.service
+  load: connman.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead console-screen.service
+  load: console-screen.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Set console font and keymap
+  load: loaded
+  service: console-setup.service
+  sub: exited
+- active: active
+  description: Regular background program processing daemon
+  load: loaded
+  service: cron.service
+  sub: running
+- active: active
+  description: Make remote CUPS printers available locally
+  load: loaded
+  service: cups-browsed.service
+  sub: running
+- active: active
+  description: CUPS Scheduler
+  load: loaded
+  service: cups.service
+  sub: running
+- active: active
+  description: D-Bus System Message Bus
+  load: loaded
+  service: dbus.service
+  sub: running
+- active: inactive
+  description: Device-mapper event daemon
+  load: loaded
+  service: dm-event.service
+  sub: dead
+- active: inactive
+  description: Save initial kernel messages after boot
+  load: loaded
+  service: dmesg.service
+  sub: dead
+- active: inactive
+  description: Daily dpkg database backup service
+  load: loaded
+  service: dpkg-db-backup.service
+  sub: dead
+- active: not-found
+  description: dead dracut-mount.service
+  load: dracut-mount.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Online ext4 Metadata Check for All Filesystems
+  load: loaded
+  service: e2scrub_all.service
+  sub: dead
+- active: inactive
+  description: Remove Stale Online ext4 Metadata Check Snapshots
+  load: loaded
+  service: e2scrub_reap.service
+  sub: dead
+- active: inactive
+  description: Emergency Shell
+  load: loaded
+  service: emergency.service
+  sub: dead
+- active: not-found
+  description: dead fcoe.service
+  load: fcoe.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Create final runtime dir for shutdown pivot root
+  load: loaded
+  service: finalrd.service
+  sub: exited
+- active: inactive
+  description: Discard unused blocks on filesystems from /etc/fstab
+  load: loaded
+  service: fstrim.service
+  sub: dead
+- active: inactive
+  description: Refresh fwupd metadata and update motd
+  load: loaded
+  service: fwupd-refresh.service
+  sub: dead
+- active: active
+  description: Firmware update daemon
+  load: loaded
+  service: fwupd.service
+  sub: running
+- active: inactive
+  description: getty on tty2-tty6 if dbus and logind are not available
+  load: loaded
+  service: getty-static.service
+  sub: dead
+- active: active
+  description: Getty on tty1
+  load: loaded
+  service: getty@tty1.service
+  sub: running
+- active: inactive
+  description: Getty on tty7
+  load: loaded
+  service: getty@tty7.service
+  sub: dead
+- active: inactive
+  description: Detect the available GPUs and deal with any system changes
+  load: loaded
+  service: gpu-manager.service
+  sub: dead
+- active: inactive
+  description: Record successful boot for GRUB
+  load: loaded
+  service: grub-common.service
+  sub: dead
+- active: inactive
+  description: GRUB failed boot detection
+  load: loaded
+  service: grub-initrd-fallback.service
+  sub: dead
+- active: inactive
+  description: Cleaning Up and Shutting Down Daemons
+  load: loaded
+  service: initrd-cleanup.service
+  sub: dead
+- active: inactive
+  description: Mountpoints Configured in the Real Root
+  load: loaded
+  service: initrd-parse-etc.service
+  sub: dead
+- active: inactive
+  description: Switch Root
+  load: loaded
+  service: initrd-switch-root.service
+  sub: dead
+- active: inactive
+  description: Cleanup udev Database
+  load: loaded
+  service: initrd-udevadm-cleanup-db.service
+  sub: dead
+- active: active
+  description: irqbalance daemon
+  load: loaded
+  service: irqbalance.service
+  sub: running
+- active: not-found
+  description: dead iscsi-shutdown.service
+  load: iscsi-shutdown.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead iscsi.service
+  load: iscsi.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead iscsid.service
+  load: iscsid.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead kbd.service
+  load: kbd.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Tool to automatically collect and submit kernel crash signatures
+  load: loaded
+  service: kerneloops.service
+  sub: running
+- active: active
+  description: Set the console keyboard layout
+  load: loaded
+  service: keyboard-setup.service
+  sub: exited
+- active: active
+  description: Create List of Static Device Nodes
+  load: loaded
+  service: kmod-static-nodes.service
+  sub: exited
+- active: active
+  description: Rebuild Dynamic Linker Cache
+  load: loaded
+  service: ldconfig.service
+  sub: exited
+- active: active
+  description: Light Display Manager
+  load: loaded
+  service: lightdm.service
+  sub: running
+- active: active
+  description: Initialize hardware monitoring sensors
+  load: loaded
+  service: lm-sensors.service
+  sub: exited
+- active: inactive
+  description: Rotate log files
+  load: loaded
+  service: logrotate.service
+  sub: dead
+- active: inactive
+  description: LVM2 poll daemon
+  load: loaded
+  service: lvm2-lvmpolld.service
+  sub: dead
+- active: active
+  description: Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress
+    polling
+  load: loaded
+  service: lvm2-monitor.service
+  sub: exited
+- active: inactive
+  description: Daily man-db regeneration
+  load: loaded
+  service: man-db.service
+  sub: dead
+- active: inactive
+  description: mintsystem.service
+  load: loaded
+  service: mintsystem.service
+  sub: dead
+- active: active
+  description: Modem Manager
+  load: loaded
+  service: ModemManager.service
+  sub: running
+- active: inactive
+  description: Load Kernel Module configfs
+  load: loaded
+  service: modprobe@configfs.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module dm_mod
+  load: loaded
+  service: modprobe@dm_mod.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module drm
+  load: loaded
+  service: modprobe@drm.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module efi_pstore
+  load: loaded
+  service: modprobe@efi_pstore.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module fuse
+  load: loaded
+  service: modprobe@fuse.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module loop
+  load: loaded
+  service: modprobe@loop.service
+  sub: dead
+- active: inactive
+  description: Message of the Day
+  load: loaded
+  service: motd-news.service
+  sub: dead
+- active: not-found
+  description: dead multipathd.service
+  load: multipathd.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: OpenVSwitch configuration for cleanup
+  load: loaded
+  service: netplan-ovs-cleanup.service
+  sub: dead
+- active: inactive
+  description: Dispatcher daemon for systemd-networkd
+  load: loaded
+  service: networkd-dispatcher.service
+  sub: dead
+- active: active
+  description: Network Manager Wait Online
+  load: loaded
+  service: NetworkManager-wait-online.service
+  sub: exited
+- active: active
+  description: Network Manager
+  load: loaded
+  service: NetworkManager.service
+  sub: running
+- active: not-found
+  description: dead nfs-kernel-server.service
+  load: nfs-kernel-server.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead nfs-server.service
+  load: nfs-server.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead nslcd.service
+  load: nslcd.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead oem-config.service
+  load: oem-config.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: OpenVPN service
+  load: loaded
+  service: openvpn.service
+  sub: exited
+- active: not-found
+  description: dead ovsdb-server.service
+  load: ovsdb-server.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: PackageKit Daemon
+  load: loaded
+  service: packagekit.service
+  sub: running
+- active: inactive
+  description: Update the plocate database
+  load: loaded
+  service: plocate-updatedb.service
+  sub: dead
+- active: inactive
+  description: Show Plymouth Halt Screen
+  load: loaded
+  service: plymouth-halt.service
+  sub: dead
+- active: inactive
+  description: Show Plymouth Power Off Screen
+  load: loaded
+  service: plymouth-poweroff.service
+  sub: dead
+- active: active
+  description: Hold until boot process finishes up
+  load: loaded
+  service: plymouth-quit-wait.service
+  sub: exited
+- active: inactive
+  description: Terminate Plymouth Boot Screen
+  load: loaded
+  service: plymouth-quit.service
+  sub: dead
+- active: active
+  description: Tell Plymouth To Write Out Runtime Data
+  load: loaded
+  service: plymouth-read-write.service
+  sub: exited
+- active: inactive
+  description: Show Plymouth Reboot Screen
+  load: loaded
+  service: plymouth-reboot.service
+  sub: dead
+- active: active
+  description: Show Plymouth Boot Screen
+  load: loaded
+  service: plymouth-start.service
+  sub: exited
+- active: inactive
+  description: Plymouth switch root service
+  load: loaded
+  service: plymouth-switch-root.service
+  sub: dead
+- active: active
+  description: Authorization Manager
+  load: loaded
+  service: polkit.service
+  sub: running
+- active: not-found
+  description: dead rbdmap.service
+  load: rbdmap.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: /etc/rc.local Compatibility
+  load: loaded
+  service: rc-local.service
+  sub: dead
+- active: inactive
+  description: Rescue Shell
+  load: loaded
+  service: rescue.service
+  sub: dead
+- active: not-found
+  description: dead rpc-statd-notify.service
+  load: rpc-statd-notify.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: System Logging Service
+  load: loaded
+  service: rsyslog.service
+  sub: running
+- active: active
+  description: RealtimeKit Scheduling Policy Service
+  load: loaded
+  service: rtkit-daemon.service
+  sub: running
+- active: inactive
+  description: Secure Boot updates for DB and DBX
+  load: loaded
+  service: secureboot-db.service
+  sub: dead
+- active: active
+  description: Set console scheme
+  load: loaded
+  service: setvtrgb.service
+  sub: exited
+- active: not-found
+  description: dead smb.service
+  load: smb.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: OpenBSD Secure Shell server
+  load: loaded
+  service: ssh.service
+  sub: running
+- active: inactive
+  description: Generate snakeoil SSL keypair
+  load: loaded
+  service: ssl-cert.service
+  sub: dead
+- active: active
+  description: Switcheroo Control Proxy service
+  load: loaded
+  service: switcheroo-control.service
+  sub: running
+- active: inactive
+  description: Dispatch Password Requests to Console
+  load: loaded
+  service: systemd-ask-password-console.service
+  sub: dead
+- active: inactive
+  description: Forward Password Requests to Plymouth
+  load: loaded
+  service: systemd-ask-password-plymouth.service
+  sub: dead
+- active: inactive
+  description: Forward Password Requests to Wall
+  load: loaded
+  service: systemd-ask-password-wall.service
+  sub: dead
+- active: inactive
+  description: Check battery level during early boot
+  load: loaded
+  service: systemd-battery-check.service
+  sub: dead
+- active: active
+  description: Set Up Additional Binary Formats
+  load: loaded
+  service: systemd-binfmt.service
+  sub: exited
+- active: inactive
+  description: Displays emergency message in full screen.
+  load: loaded
+  service: systemd-bsod.service
+  sub: dead
+- active: inactive
+  description: First Boot Wizard
+  load: loaded
+  service: systemd-firstboot.service
+  sub: dead
+- active: inactive
+  description: File System Check on Root Device
+  load: loaded
+  service: systemd-fsck-root.service
+  sub: dead
+- active: active
+  description: File System Check on /dev/disk/by-uuid/05D0-2455
+  load: loaded
+  service: systemd-fsck@dev-disk-by\x2duuid-05D0\x2d2455.service
+  sub: exited
+- active: inactive
+  description: File System Check Daemon to report status
+  load: loaded
+  service: systemd-fsckd.service
+  sub: dead
+- active: inactive
+  description: System Halt
+  load: loaded
+  service: systemd-halt.service
+  sub: dead
+- active: inactive
+  description: Resume from hibernation
+  load: loaded
+  service: systemd-hibernate-resume.service
+  sub: dead
+- active: inactive
+  description: System Hibernate
+  load: loaded
+  service: systemd-hibernate.service
+  sub: dead
+- active: active
+  description: Hostname Service
+  load: loaded
+  service: systemd-hostnamed.service
+  sub: running
+- active: inactive
+  description: Rebuild Hardware Database
+  load: loaded
+  service: systemd-hwdb-update.service
+  sub: dead
+- active: inactive
+  description: System Hybrid Suspend+Hibernate
+  load: loaded
+  service: systemd-hybrid-sleep.service
+  sub: dead
+- active: inactive
+  description: initctl Compatibility Daemon
+  load: loaded
+  service: systemd-initctl.service
+  sub: dead
+- active: active
+  description: Rebuild Journal Catalog
+  load: loaded
+  service: systemd-journal-catalog-update.service
+  sub: exited
+- active: active
+  description: Flush Journal to Persistent Storage
+  load: loaded
+  service: systemd-journal-flush.service
+  sub: exited
+- active: active
+  description: Journal Service
+  load: loaded
+  service: systemd-journald.service
+  sub: running
+- active: active
+  description: User Login Management
+  load: loaded
+  service: systemd-logind.service
+  sub: running
+- active: active
+  description: Commit a transient machine-id on disk
+  load: loaded
+  service: systemd-machine-id-commit.service
+  sub: exited
+- active: active
+  description: Load Kernel Modules
+  load: loaded
+  service: systemd-modules-load.service
+  sub: exited
+- active: inactive
+  description: Network Configuration
+  load: loaded
+  service: systemd-networkd.service
+  sub: dead
+- active: not-found
+  description: dead systemd-oomd.service
+  load: systemd-oomd.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: TPM2 PCR Machine ID Measurement
+  load: loaded
+  service: systemd-pcrmachine.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (initrd)
+  load: loaded
+  service: systemd-pcrphase-initrd.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (Initialization)
+  load: loaded
+  service: systemd-pcrphase-sysinit.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (User)
+  load: loaded
+  service: systemd-pcrphase.service
+  sub: dead
+- active: inactive
+  description: System Power Off
+  load: loaded
+  service: systemd-poweroff.service
+  sub: dead
+- active: inactive
+  description: Platform Persistent Storage Archival
+  load: loaded
+  service: systemd-pstore.service
+  sub: dead
+- active: inactive
+  description: File System Quota Check
+  load: loaded
+  service: systemd-quotacheck.service
+  sub: dead
+- active: active
+  description: Load/Save OS Random Seed
+  load: loaded
+  service: systemd-random-seed.service
+  sub: exited
+- active: inactive
+  description: System Reboot
+  load: loaded
+  service: systemd-reboot.service
+  sub: dead
+- active: active
+  description: Remount Root and Kernel File Systems
+  load: loaded
+  service: systemd-remount-fs.service
+  sub: exited
+- active: inactive
+  description: Repartition Root Disk
+  load: loaded
+  service: systemd-repart.service
+  sub: dead
+- active: active
+  description: Network Name Resolution
+  load: loaded
+  service: systemd-resolved.service
+  sub: running
+- active: inactive
+  description: Load/Save RF Kill Switch Status
+  load: loaded
+  service: systemd-rfkill.service
+  sub: dead
+- active: inactive
+  description: Reboot System Userspace
+  load: loaded
+  service: systemd-soft-reboot.service
+  sub: dead
+- active: inactive
+  description: System Suspend then Hibernate
+  load: loaded
+  service: systemd-suspend-then-hibernate.service
+  sub: dead
+- active: inactive
+  description: System Suspend
+  load: loaded
+  service: systemd-suspend.service
+  sub: dead
+- active: active
+  description: Apply Kernel Variables
+  load: loaded
+  service: systemd-sysctl.service
+  sub: exited
+- active: inactive
+  description: Merge System Extension Images into /usr/ and /opt/
+  load: loaded
+  service: systemd-sysext.service
+  sub: dead
+- active: active
+  description: Create System Users
+  load: loaded
+  service: systemd-sysusers.service
+  sub: exited
+- active: active
+  description: Network Time Synchronization
+  load: loaded
+  service: systemd-timesyncd.service
+  sub: running
+- active: inactive
+  description: Cleanup of Temporary Directories
+  load: loaded
+  service: systemd-tmpfiles-clean.service
+  sub: dead
+- active: active
+  description: Create Static Device Nodes in /dev gracefully
+  load: loaded
+  service: systemd-tmpfiles-setup-dev-early.service
+  sub: exited
+- active: active
+  description: Create Static Device Nodes in /dev
+  load: loaded
+  service: systemd-tmpfiles-setup-dev.service
+  sub: exited
+- active: active
+  description: Create Volatile Files and Directories
+  load: loaded
+  service: systemd-tmpfiles-setup.service
+  sub: exited
+- active: inactive
+  description: TPM2 SRK Setup (Early)
+  load: loaded
+  service: systemd-tpm2-setup-early.service
+  sub: dead
+- active: inactive
+  description: TPM2 SRK Setup
+  load: loaded
+  service: systemd-tpm2-setup.service
+  sub: dead
+- active: active
+  description: Wait for udev To Complete Device Initialization
+  load: loaded
+  service: systemd-udev-settle.service
+  sub: exited
+- active: active
+  description: Coldplug All udev Devices
+  load: loaded
+  service: systemd-udev-trigger.service
+  sub: exited
+- active: active
+  description: Rule-based Manager for Device Events and Files
+  load: loaded
+  service: systemd-udevd.service
+  sub: running
+- active: active
+  description: Update is Completed
+  load: loaded
+  service: systemd-update-done.service
+  sub: exited
+- active: inactive
+  description: Record Runlevel Change in UTMP
+  load: loaded
+  service: systemd-update-utmp-runlevel.service
+  sub: dead
+- active: active
+  description: Record System Boot/Shutdown in UTMP
+  load: loaded
+  service: systemd-update-utmp.service
+  sub: exited
+- active: active
+  description: Permit User Sessions
+  load: loaded
+  service: systemd-user-sessions.service
+  sub: exited
+- active: not-found
+  description: dead systemd-vconsole-setup.service
+  load: systemd-vconsole-setup.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Thermal Daemon Service
+  load: loaded
+  service: thermald.service
+  sub: dead
+- active: active
+  description: "Touch\xE9gg Daemon"
+  load: loaded
+  service: touchegg.service
+  sub: running
+- active: inactive
+  description: Handle dynamically added tpm devices
+  load: loaded
+  service: tpm-udev.service
+  sub: dead
+- active: active
+  description: Ubuntu system adjustments
+  load: loaded
+  service: ubuntu-system-adjustments.service
+  sub: exited
+- active: active
+  description: Disk Manager
+  load: loaded
+  service: udisks2.service
+  sub: running
+- active: active
+  description: Uncomplicated firewall
+  load: loaded
+  service: ufw.service
+  sub: exited
+- active: active
+  description: Daemon for power management
+  load: loaded
+  service: upower.service
+  sub: running
+- active: active
+  description: User Runtime Directory /run/user/1000
+  load: loaded
+  service: user-runtime-dir@1000.service
+  sub: exited
+- active: active
+  description: User Manager for UID 1000
+  load: loaded
+  service: user@1000.service
+  sub: running
+- active: inactive
+  description: Daemon for generating UUIDs
+  load: loaded
+  service: uuidd.service
+  sub: dead
+- active: active
+  description: WPA supplicant
+  load: loaded
+  service: wpa_supplicant.service
+  sub: running
+- active: inactive
+  description: Import ZFS pools by cache file
+  load: loaded
+  service: zfs-import-cache.service
+  sub: dead
+- active: active
+  description: Install ZFS kernel module
+  load: loaded
+  service: zfs-load-module.service
+  sub: exited
+- active: active
+  description: Mount ZFS filesystems
+  load: loaded
+  service: zfs-mount.service
+  sub: exited
+- active: active
+  description: ZFS file system shares
+  load: loaded
+  service: zfs-share.service
+  sub: exited
+- active: active
+  description: Wait for ZFS Volume (zvol) links in /dev
+  load: loaded
+  service: zfs-volume-wait.service
+  sub: exited
+- active: active
+  description: ZFS Event Daemon (zed)
+  load: loaded
+  service: zfs-zed.service
+  sub: running
