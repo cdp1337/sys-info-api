@@ -62,6 +62,37 @@ def get_name() -> str:
 	return 'Unknown'
 
 
+def get_id() -> str:
+	"""
+	Try to get the name of the device OS based on hints in /etc
+	"""
+
+	# Check for appliance name first; we'll prefer this over the base OS
+	try:
+		return Version().get_name().lower()
+	except MetricNotAvailable:
+		pass
+
+	try:
+		PveVersion().get_version()
+		return 'proxmox'
+	except MetricNotAvailable:
+		pass
+
+	try:
+		return OsRelease().get_id()
+	except MetricNotAvailable:
+		pass
+
+	# MacOS
+	# try:
+	# 	return system_profiler.SystemProfiler.software().system_name()
+	# except MetricNotAvailable:
+	# 	pass
+
+	return 'Unknown'
+
+
 def get_upstream_id() -> str:
 	"""
 	Try to get the name of the upstream OS based on hints in /etc
