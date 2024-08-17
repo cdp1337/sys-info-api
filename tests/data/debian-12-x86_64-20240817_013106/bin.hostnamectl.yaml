@@ -1,0 +1,12 @@
+architecture: x86-64
+boot_id: fd2dab93a655478698d97e581f4e034f
+chassis: "vm \U0001F5B4"
+firmware_version: rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org
+hostname: test-debian-12
+icon: computer-vm
+kernel: Linux 6.1.0-23-amd64
+machine_id: 0ecd662031e14a4daf802d72e4e1a620
+model: Standard PC _i440FX + PIIX, 1996_
+operating_system: Debian GNU/Linux 12 (bookworm)
+vendor: QEMU
+virtualization: kvm

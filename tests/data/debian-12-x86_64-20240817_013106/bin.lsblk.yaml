@@ -1,0 +1,45 @@
+disk_vda_hotplug: false
+disk_vda_model: null
+disk_vda_partitioning: dos
+disk_vda_path: /dev/vda
+disk_vda_rev: null
+disk_vda_rotational: true
+disk_vda_serial: null
+disk_vda_size: 10737418240
+disk_vda_state: null
+disk_vda_transport: null
+disk_vda_uuid: 9c450f09
+disk_vda_vendor: '0x1af4'
+disks:
+- vda
+filesystem_vda1_label: null
+filesystem_vda1_mount: /
+filesystem_vda1_size: 9448928051
+filesystem_vda1_type: ext4
+filesystem_vda1_used: 1932735283
+filesystem_vda1_version: '1.0'
+filesystem_vda5_label: null
+filesystem_vda5_mount: '[SWAP]'
+filesystem_vda5_size: null
+filesystem_vda5_type: swap
+filesystem_vda5_used: null
+filesystem_vda5_version: '1'
+filesystems:
+- vda1
+- vda5
+partition_vda1_path: /dev/vda1
+partition_vda1_size: 9663676416
+partition_vda1_type: Linux
+partition_vda1_uuid: 29a92ac3-c38e-4c4c-9e08-a4172399d92b
+partition_vda2_path: /dev/vda2
+partition_vda2_size: 1024
+partition_vda2_type: Extended
+partition_vda2_uuid: null
+partition_vda5_path: /dev/vda5
+partition_vda5_size: 1022361600
+partition_vda5_type: Linux swap / Solaris
+partition_vda5_uuid: 4b8208bb-26a9-4ff0-aa91-7b24af368a48
+partitions:
+- vda1
+- vda2
+- vda5

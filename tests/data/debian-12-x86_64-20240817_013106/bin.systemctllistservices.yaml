@@ -1,0 +1,426 @@
+data:
+- active: active
+  description: Load AppArmor profiles
+  load: loaded
+  service: apparmor.service
+  sub: exited
+- active: inactive
+  description: Daily apt upgrade and clean activities
+  load: loaded
+  service: apt-daily-upgrade.service
+  sub: dead
+- active: inactive
+  description: Daily apt download activities
+  load: loaded
+  service: apt-daily.service
+  sub: dead
+- active: not-found
+  description: dead auditd.service
+  load: auditd.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead connman.service
+  load: connman.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead console-screen.service
+  load: console-screen.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Set console font and keymap
+  load: loaded
+  service: console-setup.service
+  sub: exited
+- active: active
+  description: Regular background program processing daemon
+  load: loaded
+  service: cron.service
+  sub: running
+- active: active
+  description: D-Bus System Message Bus
+  load: loaded
+  service: dbus.service
+  sub: running
+- active: not-found
+  description: dead display-manager.service
+  load: display-manager.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Daily dpkg database backup service
+  load: loaded
+  service: dpkg-db-backup.service
+  sub: dead
+- active: inactive
+  description: Online ext4 Metadata Check for All Filesystems
+  load: loaded
+  service: e2scrub_all.service
+  sub: dead
+- active: inactive
+  description: Remove Stale Online ext4 Metadata Check Snapshots
+  load: loaded
+  service: e2scrub_reap.service
+  sub: dead
+- active: inactive
+  description: Emergency Shell
+  load: loaded
+  service: emergency.service
+  sub: dead
+- active: inactive
+  description: Discard unused blocks on filesystems from /etc/fstab
+  load: loaded
+  service: fstrim.service
+  sub: dead
+- active: inactive
+  description: getty on tty2-tty6 if dbus and logind are not available
+  load: loaded
+  service: getty-static.service
+  sub: dead
+- active: active
+  description: Getty on tty1
+  load: loaded
+  service: getty@tty1.service
+  sub: running
+- active: active
+  description: ifup for ens18
+  load: loaded
+  service: ifup@ens18.service
+  sub: exited
+- active: active
+  description: Helper to synchronize boot up for ifupdown
+  load: loaded
+  service: ifupdown-pre.service
+  sub: exited
+- active: inactive
+  description: Cleaning Up and Shutting Down Daemons
+  load: loaded
+  service: initrd-cleanup.service
+  sub: dead
+- active: inactive
+  description: Mountpoints Configured in the Real Root
+  load: loaded
+  service: initrd-parse-etc.service
+  sub: dead
+- active: inactive
+  description: Switch Root
+  load: loaded
+  service: initrd-switch-root.service
+  sub: dead
+- active: inactive
+  description: Cleanup udev Database
+  load: loaded
+  service: initrd-udevadm-cleanup-db.service
+  sub: dead
+- active: not-found
+  description: dead kbd.service
+  load: kbd.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Set the console keyboard layout
+  load: loaded
+  service: keyboard-setup.service
+  sub: exited
+- active: active
+  description: Create List of Static Device Nodes
+  load: loaded
+  service: kmod-static-nodes.service
+  sub: exited
+- active: inactive
+  description: Rotate log files
+  load: loaded
+  service: logrotate.service
+  sub: dead
+- active: inactive
+  description: Daily man-db regeneration
+  load: loaded
+  service: man-db.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module configfs
+  load: loaded
+  service: modprobe@configfs.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module dm_mod
+  load: loaded
+  service: modprobe@dm_mod.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module drm
+  load: loaded
+  service: modprobe@drm.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module efi_pstore
+  load: loaded
+  service: modprobe@efi_pstore.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module fuse
+  load: loaded
+  service: modprobe@fuse.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module loop
+  load: loaded
+  service: modprobe@loop.service
+  sub: dead
+- active: active
+  description: Raise network interfaces
+  load: loaded
+  service: networking.service
+  sub: exited
+- active: not-found
+  description: dead NetworkManager.service
+  load: NetworkManager.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead plymouth-quit-wait.service
+  load: plymouth-quit-wait.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead plymouth-start.service
+  load: plymouth-start.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: QEMU Guest Agent
+  load: loaded
+  service: qemu-guest-agent.service
+  sub: running
+- active: inactive
+  description: /etc/rc.local Compatibility
+  load: loaded
+  service: rc-local.service
+  sub: dead
+- active: inactive
+  description: Rescue Shell
+  load: loaded
+  service: rescue.service
+  sub: dead
+- active: active
+  description: OpenBSD Secure Shell server
+  load: loaded
+  service: ssh.service
+  sub: running
+- active: not-found
+  description: dead syslog.service
+  load: syslog.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Dispatch Password Requests to Console
+  load: loaded
+  service: systemd-ask-password-console.service
+  sub: dead
+- active: inactive
+  description: Forward Password Requests to Wall
+  load: loaded
+  service: systemd-ask-password-wall.service
+  sub: dead
+- active: active
+  description: Set Up Additional Binary Formats
+  load: loaded
+  service: systemd-binfmt.service
+  sub: exited
+- active: inactive
+  description: First Boot Wizard
+  load: loaded
+  service: systemd-firstboot.service
+  sub: dead
+- active: inactive
+  description: File System Check on Root Device
+  load: loaded
+  service: systemd-fsck-root.service
+  sub: dead
+- active: inactive
+  description: File System Check Daemon to report status
+  load: loaded
+  service: systemd-fsckd.service
+  sub: dead
+- active: active
+  description: Hostname Service
+  load: loaded
+  service: systemd-hostnamed.service
+  sub: running
+- active: not-found
+  description: dead systemd-hwdb-update.service
+  load: systemd-hwdb-update.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: initctl Compatibility Daemon
+  load: loaded
+  service: systemd-initctl.service
+  sub: dead
+- active: active
+  description: Flush Journal to Persistent Storage
+  load: loaded
+  service: systemd-journal-flush.service
+  sub: exited
+- active: active
+  description: Journal Service
+  load: loaded
+  service: systemd-journald.service
+  sub: running
+- active: active
+  description: User Login Management
+  load: loaded
+  service: systemd-logind.service
+  sub: running
+- active: inactive
+  description: Commit a transient machine-id on disk
+  load: loaded
+  service: systemd-machine-id-commit.service
+  sub: dead
+- active: active
+  description: Load Kernel Modules
+  load: loaded
+  service: systemd-modules-load.service
+  sub: exited
+- active: inactive
+  description: Network Configuration
+  load: loaded
+  service: systemd-networkd.service
+  sub: dead
+- active: not-found
+  description: dead systemd-oomd.service
+  load: systemd-oomd.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: TPM2 PCR Barrier (initrd)
+  load: loaded
+  service: systemd-pcrphase-initrd.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (Initialization)
+  load: loaded
+  service: systemd-pcrphase-sysinit.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (User)
+  load: loaded
+  service: systemd-pcrphase.service
+  sub: dead
+- active: inactive
+  description: Platform Persistent Storage Archival
+  load: loaded
+  service: systemd-pstore.service
+  sub: dead
+- active: active
+  description: Load/Save Random Seed
+  load: loaded
+  service: systemd-random-seed.service
+  sub: exited
+- active: active
+  description: Remount Root and Kernel File Systems
+  load: loaded
+  service: systemd-remount-fs.service
+  sub: exited
+- active: inactive
+  description: Repartition Root Disk
+  load: loaded
+  service: systemd-repart.service
+  sub: dead
+- active: active
+  description: Apply Kernel Variables
+  load: loaded
+  service: systemd-sysctl.service
+  sub: exited
+- active: inactive
+  description: Merge System Extension Images into /usr/ and /opt/
+  load: loaded
+  service: systemd-sysext.service
+  sub: dead
+- active: active
+  description: Create System Users
+  load: loaded
+  service: systemd-sysusers.service
+  sub: exited
+- active: active
+  description: Network Time Synchronization
+  load: loaded
+  service: systemd-timesyncd.service
+  sub: running
+- active: inactive
+  description: Cleanup of Temporary Directories
+  load: loaded
+  service: systemd-tmpfiles-clean.service
+  sub: dead
+- active: active
+  description: Create Static Device Nodes in /dev
+  load: loaded
+  service: systemd-tmpfiles-setup-dev.service
+  sub: exited
+- active: active
+  description: Create Volatile Files and Directories
+  load: loaded
+  service: systemd-tmpfiles-setup.service
+  sub: exited
+- active: inactive
+  description: Wait for udev To Complete Device Initialization
+  load: loaded
+  service: systemd-udev-settle.service
+  sub: dead
+- active: active
+  description: Coldplug All udev Devices
+  load: loaded
+  service: systemd-udev-trigger.service
+  sub: exited
+- active: active
+  description: Rule-based Manager for Device Events and Files
+  load: loaded
+  service: systemd-udevd.service
+  sub: running
+- active: not-found
+  description: dead systemd-update-done.service
+  load: systemd-update-done.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Record Runlevel Change in UTMP
+  load: loaded
+  service: systemd-update-utmp-runlevel.service
+  sub: dead
+- active: active
+  description: Record System Boot/Shutdown in UTMP
+  load: loaded
+  service: systemd-update-utmp.service
+  sub: exited
+- active: active
+  description: Permit User Sessions
+  load: loaded
+  service: systemd-user-sessions.service
+  sub: exited
+- active: not-found
+  description: dead systemd-vconsole-setup.service
+  load: systemd-vconsole-setup.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: User Runtime Directory /run/user/0
+  load: loaded
+  service: user-runtime-dir@0.service
+  sub: exited
+- active: active
+  description: User Runtime Directory /run/user/1000
+  load: loaded
+  service: user-runtime-dir@1000.service
+  sub: exited
+- active: active
+  description: User Manager for UID 0
+  load: loaded
+  service: user@0.service
+  sub: running
+- active: active
+  description: User Manager for UID 1000
+  load: loaded
+  service: user@1000.service
+  sub: running

@@ -1,0 +1,7 @@
+data:
+- device: /dev/vda1
+  format: ext4
+  free: 7023202304
+  label: /
+  total: 9454448640
+  used: 1928876032

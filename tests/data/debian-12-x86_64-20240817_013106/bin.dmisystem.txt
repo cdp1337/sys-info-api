@@ -1,0 +1,12 @@
+System Information
+	Manufacturer: QEMU
+	Product Name: Standard PC (i440FX + PIIX, 1996)
+	Version: pc-i440fx-9.0
+	Serial Number: Not Specified
+	UUID: 8d4f4cfa-735b-428b-ae37-d2f9c46239a4
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: Not Specified
+
+System Boot Information
+	Status: No errors detected

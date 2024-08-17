@@ -1,0 +1,61 @@
+audio_devices: []
+firewire_devices: []
+network_devices:
+- class: Ethernet controller
+  device: Virtio network device
+  physlot: '18'
+  progif: '00'
+  sdevice: Virtio network device
+  slot: '0000:00:12.0'
+  svendor: Red Hat, Inc.
+  vendor: Red Hat, Inc.
+system_devices:
+- class: Host bridge
+  device: 440FX - 82441FX PMC [Natoma]
+  progif: '00'
+  rev: '02'
+  sdevice: Qemu virtual machine
+  slot: '0000:00:00.0'
+  svendor: Red Hat, Inc.
+  vendor: Intel Corporation
+- class: ISA bridge
+  device: 82371SB PIIX3 ISA [Natoma/Triton II]
+  physlot: '1'
+  progif: '00'
+  sdevice: Qemu virtual machine
+  slot: '0000:00:01.0'
+  svendor: Red Hat, Inc.
+  vendor: Intel Corporation
+- class: USB controller
+  device: 82371SB PIIX3 USB [Natoma/Triton II]
+  physlot: '1'
+  progif: '00'
+  rev: '01'
+  sdevice: QEMU Virtual Machine
+  slot: '0000:00:01.2'
+  svendor: Red Hat, Inc.
+  vendor: Intel Corporation
+- class: PCI bridge
+  device: QEMU PCI-PCI bridge
+  progif: '00'
+  slot: '0000:00:05.0'
+  vendor: Red Hat, Inc.
+- class: PCI bridge
+  device: QEMU PCI-PCI bridge
+  progif: '00'
+  slot: 0000:00:1e.0
+  vendor: Red Hat, Inc.
+- class: PCI bridge
+  device: QEMU PCI-PCI bridge
+  progif: '00'
+  slot: 0000:00:1f.0
+  vendor: Red Hat, Inc.
+video_devices:
+- class: VGA compatible controller
+  device: Device 1111
+  progif: '00'
+  rev: '02'
+  sdevice: Device 1100
+  slot: '0000:00:02.0'
+  svendor: Red Hat, Inc.
+  vendor: Vendor 1234

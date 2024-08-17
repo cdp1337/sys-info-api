@@ -1,0 +1,8 @@
+Filesystem     Type     1024-blocks    Used Available Capacity Mounted on
+udev           devtmpfs      468580       0    468580       0% /dev
+tmpfs          tmpfs          98352     500     97852       1% /run
+/dev/vda1      ext4         9232860 1883668   6858596      22% /
+tmpfs          tmpfs         491756       0    491756       0% /dev/shm
+tmpfs          tmpfs           5120       0      5120       0% /run/lock
+tmpfs          tmpfs          98348       0     98348       0% /run/user/0
+tmpfs          tmpfs          98348       0     98348       0% /run/user/1000

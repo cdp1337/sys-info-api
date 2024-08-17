@@ -1,0 +1,38 @@
+data:
+- bus: '001'
+  device: '002'
+  device_class: null
+  device_protocol: null
+  device_sub_class: null
+  id_product:
+    code: 1
+    value: QEMU Tablet
+  id_vendor:
+    code: 1575
+    value: Adomax Technology Co., Ltd
+  interface_class: Human Interface Device
+  interface_sub_class: null
+  manufacturer: QEMU
+  max_power: 100
+  product: QEMU USB Tablet
+  serial: 28754-0000:00:01.2-1
+  usb_version: '2.00'
+- bus: '001'
+  device: '001'
+  device_class: Hub
+  device_protocol: Full speed (or root) hub
+  device_sub_class: null
+  id_product:
+    code: 1
+    value: 1.1 root hub
+  id_vendor:
+    code: 7531
+    value: Linux Foundation
+  interface_class: Hub
+  interface_sub_class: Full speed (or root) hub
+  manufacturer: Linux 6.1.0-23-amd64 uhci_hcd
+  max_power: 0
+  number_ports: 2
+  product: UHCI Host Controller
+  serial: '0000:00:01.2'
+  usb_version: '1.10'

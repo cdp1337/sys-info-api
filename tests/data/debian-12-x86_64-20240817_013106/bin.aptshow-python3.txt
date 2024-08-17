@@ -1,0 +1,30 @@
+Package: python3
+Source: python3-defaults (3.11.2-1)
+Version: 3.11.2-1+b1
+Installed-Size: 81
+Maintainer: Matthias Klose <doko@debian.org>
+Architecture: amd64
+Replaces: python3-minimal (<< 3.1.2-2)
+Provides: python3-profiler, python3-supported-max (= 3.11), python3-supported-min (= 3.11)
+Depends: python3.11 (>= 3.11.2-1~), libpython3-stdlib (= 3.11.2-1+b1)
+Pre-Depends: python3-minimal (= 3.11.2-1+b1)
+Suggests: python3-doc (>= 3.11.2-1+b1), python3-tk (>= 3.11.2-1~), python3-venv (>= 3.11.2-1+b1)
+Description-en: interactive high-level object-oriented language (default python3 version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python 3 version (currently v3.11).
+Description-md5: 7e57783fdb3703b27f408a029b7b786f
+Multi-Arch: allowed
+Homepage: https://www.python.org/
+Tag: devel::interpreter, devel::lang:python, devel::library,
+ implemented-in::c, implemented-in::python, role::devel-lib,
+ role::program, role::shared-lib
+Section: python
+Priority: optional
+Filename: pool/main/p/python3-defaults/python3_3.11.2-1+b1_amd64.deb
+Size: 26300
+MD5sum: 48ebc2dc2cb4fa44aaa2780f8141bbe1
+SHA256: 33f6dafbd1a6902d9063172ec7dbd4b2225e12009e0d7ec5c933a72c2f5f3b74

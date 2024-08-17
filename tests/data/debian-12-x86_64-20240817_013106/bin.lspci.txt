@@ -1,0 +1,109 @@
+Slot:	0000:00:00.0
+Class:	Host bridge
+Vendor:	Intel Corporation
+Device:	440FX - 82441FX PMC [Natoma]
+SVendor:	Red Hat, Inc.
+SDevice:	Qemu virtual machine
+Rev:	02
+ProgIf:	00
+
+Slot:	0000:00:01.0
+Class:	ISA bridge
+Vendor:	Intel Corporation
+Device:	82371SB PIIX3 ISA [Natoma/Triton II]
+SVendor:	Red Hat, Inc.
+SDevice:	Qemu virtual machine
+PhySlot:	1
+ProgIf:	00
+
+Slot:	0000:00:01.1
+Class:	IDE interface
+Vendor:	Intel Corporation
+Device:	82371SB PIIX3 IDE [Natoma/Triton II]
+SVendor:	Red Hat, Inc.
+SDevice:	Qemu virtual machine
+PhySlot:	1
+ProgIf:	80
+
+Slot:	0000:00:01.2
+Class:	USB controller
+Vendor:	Intel Corporation
+Device:	82371SB PIIX3 USB [Natoma/Triton II]
+SVendor:	Red Hat, Inc.
+SDevice:	QEMU Virtual Machine
+PhySlot:	1
+Rev:	01
+ProgIf:	00
+
+Slot:	0000:00:01.3
+Class:	Bridge
+Vendor:	Intel Corporation
+Device:	82371AB/EB/MB PIIX4 ACPI
+SVendor:	Red Hat, Inc.
+SDevice:	Qemu virtual machine
+PhySlot:	1
+Rev:	03
+ProgIf:	00
+
+Slot:	0000:00:02.0
+Class:	VGA compatible controller
+Vendor:	Vendor 1234
+Device:	Device 1111
+SVendor:	Red Hat, Inc.
+SDevice:	Device 1100
+Rev:	02
+ProgIf:	00
+
+Slot:	0000:00:03.0
+Class:	Unclassified device [00ff]
+Vendor:	Red Hat, Inc.
+Device:	Virtio memory balloon
+SVendor:	Red Hat, Inc.
+SDevice:	Virtio memory balloon
+PhySlot:	3
+ProgIf:	00
+
+Slot:	0000:00:05.0
+Class:	PCI bridge
+Vendor:	Red Hat, Inc.
+Device:	QEMU PCI-PCI bridge
+ProgIf:	00
+
+Slot:	0000:00:08.0
+Class:	Communication controller
+Vendor:	Red Hat, Inc.
+Device:	Virtio console
+SVendor:	Red Hat, Inc.
+SDevice:	Virtio console
+PhySlot:	8
+ProgIf:	00
+
+Slot:	0000:00:0a.0
+Class:	SCSI storage controller
+Vendor:	Red Hat, Inc.
+Device:	Virtio block device
+SVendor:	Red Hat, Inc.
+SDevice:	Virtio block device
+PhySlot:	10
+ProgIf:	00
+
+Slot:	0000:00:12.0
+Class:	Ethernet controller
+Vendor:	Red Hat, Inc.
+Device:	Virtio network device
+SVendor:	Red Hat, Inc.
+SDevice:	Virtio network device
+PhySlot:	18
+ProgIf:	00
+
+Slot:	0000:00:1e.0
+Class:	PCI bridge
+Vendor:	Red Hat, Inc.
+Device:	QEMU PCI-PCI bridge
+ProgIf:	00
+
+Slot:	0000:00:1f.0
+Class:	PCI bridge
+Vendor:	Red Hat, Inc.
+Device:	QEMU PCI-PCI bridge
+ProgIf:	00

@@ -1,0 +1,12 @@
+Static hostname: test-debian-12
+       Icon name: computer-vm
+         Chassis: vm 🖴
+      Machine ID: 0ecd662031e14a4daf802d72e4e1a620
+         Boot ID: fd2dab93a655478698d97e581f4e034f
+  Virtualization: kvm
+Operating System: Debian GNU/Linux 12 (bookworm)
+          Kernel: Linux 6.1.0-23-amd64
+    Architecture: x86-64
+ Hardware Vendor: QEMU
+  Hardware Model: Standard PC _i440FX + PIIX, 1996_
+Firmware Version: rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org
