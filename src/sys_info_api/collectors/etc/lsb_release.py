@@ -97,10 +97,10 @@ class LsbRelease(BinCollector):
 		version = self.get_version()
 		parts = []
 		if version['major'] is not None:
-			str(parts.append(version['major']))
+			parts.append(str(version['major']))
 
 			if version['minor'] is not None:
-				str(parts.append(version['minor']))
+				parts.append(str(version['minor']))
 
 		return '.'.join(parts)
 
