@@ -1,0 +1,19 @@
+Processor Information
+	Socket Designation: CPU 0
+	Type: Central Processor
+	Family: Other
+	Manufacturer: QEMU
+	Version: pc-i440fx-9.0
+	Voltage: Unknown
+	External Clock: Unknown
+	Max Speed: 2000 MHz
+	Current Speed: 2000 MHz
+	Status: Populated, Enabled
+	Upgrade: Other
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Core Count: 2
+	Core Enabled: 2
+	Thread Count: 2
+	Characteristics: None

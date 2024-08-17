@@ -1,0 +1,18 @@
+cpu_0_asset_tag: null
+cpu_0_cores: 2
+cpu_0_family: Other
+cpu_0_flags: null
+cpu_0_frequency: 2000
+cpu_0_manufacturer: QEMU
+cpu_0_max_frequency: 2000
+cpu_0_model: pc-i440fx-9.0
+cpu_0_part_number: null
+cpu_0_serial_number: null
+cpu_0_socket: CPU 0
+cpu_0_socket_type: Other
+cpu_0_status: Populated, Enabled
+cpu_0_threads: 2
+cpu_0_voltage: null
+total_cores: 2
+total_count: 1
+total_threads: 2

@@ -1,0 +1,40 @@
+disk_vda_hotplug: false
+disk_vda_model: null
+disk_vda_partitioning: dos
+disk_vda_path: /dev/vda
+disk_vda_rev: null
+disk_vda_rotational: true
+disk_vda_serial: null
+disk_vda_size: 10737418240
+disk_vda_state: null
+disk_vda_transport: null
+disk_vda_uuid: 2dd3341b
+disk_vda_vendor: '0x1af4'
+disks:
+- vda
+filesystem_vda1_label: null
+filesystem_vda1_mount: /boot
+filesystem_vda1_size: 1006632960
+filesystem_vda1_type: xfs
+filesystem_vda1_used: 235090739
+filesystem_vda1_version: null
+filesystem_vda2_label: null
+filesystem_vda2_mount: null
+filesystem_vda2_size: null
+filesystem_vda2_type: LVM2_member
+filesystem_vda2_used: null
+filesystem_vda2_version: LVM2 001
+filesystems:
+- vda1
+- vda2
+partition_vda1_path: /dev/vda1
+partition_vda1_size: 1073741824
+partition_vda1_type: Linux
+partition_vda1_uuid: bfc10bda-d07c-4418-b86e-a4f6b512136e
+partition_vda2_path: /dev/vda2
+partition_vda2_size: 9663676416
+partition_vda2_type: Linux LVM
+partition_vda2_uuid: 2eT31N-SxOz-63VS-A2WI-xAeI-WRFJ-u2Pegh
+partitions:
+- vda1
+- vda2

@@ -1,0 +1,542 @@
+data:
+- active: active
+  description: Security Auditing Service
+  load: loaded
+  service: auditd.service
+  sub: running
+- active: not-found
+  description: dead autofs.service
+  load: autofs.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: NTP client/server
+  load: loaded
+  service: chronyd.service
+  sub: running
+- active: active
+  description: Command Scheduler
+  load: loaded
+  service: crond.service
+  sub: running
+- active: active
+  description: D-Bus System Message Bus
+  load: loaded
+  service: dbus-broker.service
+  sub: running
+- active: not-found
+  description: dead display-manager.service
+  load: display-manager.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Device-mapper event daemon
+  load: loaded
+  service: dm-event.service
+  sub: dead
+- active: inactive
+  description: dnf makecache
+  load: loaded
+  service: dnf-makecache.service
+  sub: dead
+- active: inactive
+  description: dracut cmdline hook
+  load: loaded
+  service: dracut-cmdline.service
+  sub: dead
+- active: inactive
+  description: dracut initqueue hook
+  load: loaded
+  service: dracut-initqueue.service
+  sub: dead
+- active: inactive
+  description: dracut mount hook
+  load: loaded
+  service: dracut-mount.service
+  sub: dead
+- active: inactive
+  description: dracut pre-mount hook
+  load: loaded
+  service: dracut-pre-mount.service
+  sub: dead
+- active: inactive
+  description: dracut pre-pivot and cleanup hook
+  load: loaded
+  service: dracut-pre-pivot.service
+  sub: dead
+- active: inactive
+  description: dracut pre-trigger hook
+  load: loaded
+  service: dracut-pre-trigger.service
+  sub: dead
+- active: inactive
+  description: dracut pre-udev hook
+  load: loaded
+  service: dracut-pre-udev.service
+  sub: dead
+- active: inactive
+  description: Service executing upon dracut-shutdown failure to perform cleanup
+  load: loaded
+  service: dracut-shutdown-onfailure.service
+  sub: dead
+- active: active
+  description: Restore /run/initramfs on shutdown
+  load: loaded
+  service: dracut-shutdown.service
+  sub: exited
+- active: not-found
+  description: dead ebtables.service
+  load: ebtables.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Emergency Shell
+  load: loaded
+  service: emergency.service
+  sub: dead
+- active: active
+  description: firewalld - dynamic firewall daemon
+  load: loaded
+  service: firewalld.service
+  sub: running
+- active: active
+  description: Getty on tty1
+  load: loaded
+  service: getty@tty1.service
+  sub: running
+- active: inactive
+  description: Cleaning Up and Shutting Down Daemons
+  load: loaded
+  service: initrd-cleanup.service
+  sub: dead
+- active: inactive
+  description: Mountpoints Configured in the Real Root
+  load: loaded
+  service: initrd-parse-etc.service
+  sub: dead
+- active: inactive
+  description: Switch Root
+  load: loaded
+  service: initrd-switch-root.service
+  sub: dead
+- active: inactive
+  description: Cleanup udev Database
+  load: loaded
+  service: initrd-udevadm-cleanup-db.service
+  sub: dead
+- active: not-found
+  description: dead ip6tables.service
+  load: ip6tables.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead ipset.service
+  load: ipset.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead iptables.service
+  load: iptables.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: irqbalance daemon
+  load: loaded
+  service: irqbalance.service
+  sub: running
+- active: active
+  description: Crash recovery kernel arming
+  load: loaded
+  service: kdump.service
+  sub: exited
+- active: active
+  description: Create List of Static Device Nodes
+  load: loaded
+  service: kmod-static-nodes.service
+  sub: exited
+- active: active
+  description: Rebuild Dynamic Linker Cache
+  load: loaded
+  service: ldconfig.service
+  sub: exited
+- active: inactive
+  description: Rotate log files
+  load: loaded
+  service: logrotate.service
+  sub: dead
+- active: inactive
+  description: LVM2 poll daemon
+  load: loaded
+  service: lvm2-lvmpolld.service
+  sub: dead
+- active: active
+  description: Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress
+    polling
+  load: loaded
+  service: lvm2-monitor.service
+  sub: exited
+- active: inactive
+  description: Load CPU microcode update
+  load: loaded
+  service: microcode.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module configfs
+  load: loaded
+  service: modprobe@configfs.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module drm
+  load: loaded
+  service: modprobe@drm.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Module fuse
+  load: loaded
+  service: modprobe@fuse.service
+  sub: dead
+- active: not-found
+  description: dead network.service
+  load: network.service
+  service: "\u25CF"
+  sub: inactive
+- active: active
+  description: Network Manager Wait Online
+  load: loaded
+  service: NetworkManager-wait-online.service
+  sub: exited
+- active: active
+  description: Network Manager
+  load: loaded
+  service: NetworkManager.service
+  sub: running
+- active: inactive
+  description: Netfilter Tables
+  load: loaded
+  service: nftables.service
+  sub: dead
+- active: active
+  description: Read and set NIS domainname from /etc/sysconfig/network
+  load: loaded
+  service: nis-domainname.service
+  sub: exited
+- active: not-found
+  description: dead ntpd.service
+  load: ntpd.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead ntpdate.service
+  load: ntpdate.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead plymouth-quit-wait.service
+  load: plymouth-quit-wait.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead plymouth-start.service
+  load: plymouth-start.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead polkit.service
+  load: polkit.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: /etc/rc.d/rc.local Compatibility
+  load: loaded
+  service: rc-local.service
+  sub: dead
+- active: inactive
+  description: Rescue Shell
+  load: loaded
+  service: rescue.service
+  sub: dead
+- active: active
+  description: System Logging Service
+  load: loaded
+  service: rsyslog.service
+  sub: running
+- active: inactive
+  description: Mark the need to relabel after reboot
+  load: loaded
+  service: selinux-autorelabel-mark.service
+  sub: dead
+- active: not-found
+  description: dead sntp.service
+  load: sntp.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: OpenSSH ecdsa Server Key Generation
+  load: loaded
+  service: sshd-keygen@ecdsa.service
+  sub: dead
+- active: inactive
+  description: OpenSSH ed25519 Server Key Generation
+  load: loaded
+  service: sshd-keygen@ed25519.service
+  sub: dead
+- active: inactive
+  description: OpenSSH rsa Server Key Generation
+  load: loaded
+  service: sshd-keygen@rsa.service
+  sub: dead
+- active: active
+  description: OpenSSH server daemon
+  load: loaded
+  service: sshd.service
+  sub: running
+- active: inactive
+  description: SSSD Kerberos Cache Manager
+  load: loaded
+  service: sssd-kcm.service
+  sub: dead
+- active: inactive
+  description: System Security Services Daemon
+  load: loaded
+  service: sssd.service
+  sub: dead
+- active: not-found
+  description: dead syslog.service
+  load: syslog.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Dispatch Password Requests to Console
+  load: loaded
+  service: systemd-ask-password-console.service
+  sub: dead
+- active: inactive
+  description: Forward Password Requests to Wall
+  load: loaded
+  service: systemd-ask-password-wall.service
+  sub: dead
+- active: inactive
+  description: Set Up Additional Binary Formats
+  load: loaded
+  service: systemd-binfmt.service
+  sub: dead
+- active: inactive
+  description: Update Boot Loader Random Seed
+  load: loaded
+  service: systemd-boot-random-seed.service
+  sub: dead
+- active: active
+  description: Automatic Boot Loader Update
+  load: loaded
+  service: systemd-boot-update.service
+  sub: exited
+- active: inactive
+  description: First Boot Wizard
+  load: loaded
+  service: systemd-firstboot.service
+  sub: dead
+- active: inactive
+  description: File System Check on Root Device
+  load: loaded
+  service: systemd-fsck-root.service
+  sub: dead
+- active: active
+  description: Hostname Service
+  load: loaded
+  service: systemd-hostnamed.service
+  sub: running
+- active: active
+  description: Rebuild Hardware Database
+  load: loaded
+  service: systemd-hwdb-update.service
+  sub: exited
+- active: inactive
+  description: initctl Compatibility Daemon
+  load: loaded
+  service: systemd-initctl.service
+  sub: dead
+- active: active
+  description: Rebuild Journal Catalog
+  load: loaded
+  service: systemd-journal-catalog-update.service
+  sub: exited
+- active: active
+  description: Flush Journal to Persistent Storage
+  load: loaded
+  service: systemd-journal-flush.service
+  sub: exited
+- active: active
+  description: Journal Service
+  load: loaded
+  service: systemd-journald.service
+  sub: running
+- active: active
+  description: User Login Management
+  load: loaded
+  service: systemd-logind.service
+  sub: running
+- active: inactive
+  description: Commit a transient machine-id on disk
+  load: loaded
+  service: systemd-machine-id-commit.service
+  sub: dead
+- active: inactive
+  description: Load Kernel Modules
+  load: loaded
+  service: systemd-modules-load.service
+  sub: dead
+- active: active
+  description: Generate network units from Kernel command line
+  load: loaded
+  service: systemd-network-generator.service
+  sub: exited
+- active: inactive
+  description: TPM2 PCR Machine ID Measurement
+  load: loaded
+  service: systemd-pcrmachine.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (initrd)
+  load: loaded
+  service: systemd-pcrphase-initrd.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (Initialization)
+  load: loaded
+  service: systemd-pcrphase-sysinit.service
+  sub: dead
+- active: inactive
+  description: TPM2 PCR Barrier (User)
+  load: loaded
+  service: systemd-pcrphase.service
+  sub: dead
+- active: active
+  description: Load/Save OS Random Seed
+  load: loaded
+  service: systemd-random-seed.service
+  sub: exited
+- active: active
+  description: Remount Root and Kernel File Systems
+  load: loaded
+  service: systemd-remount-fs.service
+  sub: exited
+- active: inactive
+  description: Repartition Root Disk
+  load: loaded
+  service: systemd-repart.service
+  sub: dead
+- active: inactive
+  description: Load/Save RF Kill Switch Status
+  load: loaded
+  service: systemd-rfkill.service
+  sub: dead
+- active: active
+  description: Apply Kernel Variables
+  load: loaded
+  service: systemd-sysctl.service
+  sub: exited
+- active: inactive
+  description: Merge System Extension Images into /usr/ and /opt/
+  load: loaded
+  service: systemd-sysext.service
+  sub: dead
+- active: active
+  description: Create System Users
+  load: loaded
+  service: systemd-sysusers.service
+  sub: exited
+- active: not-found
+  description: dead systemd-timesyncd.service
+  load: systemd-timesyncd.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Cleanup of Temporary Directories
+  load: loaded
+  service: systemd-tmpfiles-clean.service
+  sub: dead
+- active: active
+  description: Create Static Device Nodes in /dev
+  load: loaded
+  service: systemd-tmpfiles-setup-dev.service
+  sub: exited
+- active: active
+  description: Create Volatile Files and Directories
+  load: loaded
+  service: systemd-tmpfiles-setup.service
+  sub: exited
+- active: not-found
+  description: dead systemd-tmpfiles.service
+  load: systemd-tmpfiles.service
+  service: "\u25CF"
+  sub: inactive
+- active: inactive
+  description: Wait for udev To Complete Device Initialization
+  load: loaded
+  service: systemd-udev-settle.service
+  sub: dead
+- active: active
+  description: Coldplug All udev Devices
+  load: loaded
+  service: systemd-udev-trigger.service
+  sub: exited
+- active: active
+  description: Rule-based Manager for Device Events and Files
+  load: loaded
+  service: systemd-udevd.service
+  sub: running
+- active: active
+  description: Update is Completed
+  load: loaded
+  service: systemd-update-done.service
+  sub: exited
+- active: inactive
+  description: Record Runlevel Change in UTMP
+  load: loaded
+  service: systemd-update-utmp-runlevel.service
+  sub: dead
+- active: active
+  description: Record System Boot/Shutdown in UTMP
+  load: loaded
+  service: systemd-update-utmp.service
+  sub: exited
+- active: active
+  description: Permit User Sessions
+  load: loaded
+  service: systemd-user-sessions.service
+  sub: exited
+- active: inactive
+  description: Setup Virtual Console
+  load: loaded
+  service: systemd-vconsole-setup.service
+  sub: dead
+- active: active
+  description: User Runtime Directory /run/user/0
+  load: loaded
+  service: user-runtime-dir@0.service
+  sub: exited
+- active: active
+  description: User Manager for UID 0
+  load: loaded
+  service: user@0.service
+  sub: running
+- active: not-found
+  description: dead ypbind.service
+  load: ypbind.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead yppasswdd.service
+  load: yppasswdd.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead ypserv.service
+  load: ypserv.service
+  service: "\u25CF"
+  sub: inactive
+- active: not-found
+  description: dead ypxfrd.service
+  load: ypxfrd.service
+  service: "\u25CF"
+  sub: inactive

@@ -1,0 +1,15 @@
+id: rocky
+like:
+- rocky
+- rhel
+- centos
+- fedora
+name: Rocky Linux
+version:
+  codename: Blue Onyx
+  major: 9
+  minor: 4
+  modifier: null
+  point: null
+version_codename: Blue Onyx
+version_string: '9.4'
