@@ -1,0 +1,7 @@
+Filesystem          Type     1024-blocks    Used Available Capacity Mounted on
+devtmpfs            devtmpfs        4096       0      4096       0% /dev
+tmpfs               tmpfs         393668       0    393668       0% /dev/shm
+tmpfs               tmpfs         157468    5588    151880       4% /run
+/dev/mapper/rl-root xfs          8318976 1455404   6863572      18% /
+/dev/vda1           xfs           983040  229588    753452      24% /boot
+tmpfs               tmpfs          78732       0     78732       0% /run/user/0

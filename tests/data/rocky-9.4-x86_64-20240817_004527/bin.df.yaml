@@ -1,0 +1,13 @@
+data:
+- device: /dev/mapper/rl-root
+  format: xfs
+  free: 7028297728
+  label: /
+  total: 8518631424
+  used: 1490333696
+- device: /dev/vda1
+  format: xfs
+  free: 771534848
+  label: /boot
+  total: 1006632960
+  used: 235098112

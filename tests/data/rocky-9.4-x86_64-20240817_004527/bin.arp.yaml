@@ -1,0 +1,13 @@
+data:
+- interface: ens18
+  ip: 10.10.10.130
+  mac: 92:cc:92:d1:da:ca
+- interface: ens18
+  ip: 10.10.10.1
+  mac: b8:97:5a:17:d0:f5
+ips:
+- 10.10.10.130
+- 10.10.10.1
+ips_on_ens18:
+- 10.10.10.130
+- 10.10.10.1

@@ -1,0 +1,12 @@
+architecture: x86-64
+boot_id: 0e4f1b17164946ac81d5b5ecd4af5338
+chassis: "vm \U0001F5B4"
+firmware_version: rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org
+hostname: (unset)
+icon: computer-vm
+kernel: Linux 5.14.0-427.13.1.el9_4.x86_64
+machine_id: de3d459907cb4261b259972f716aa337
+model: Standard PC _i440FX + PIIX, 1996_
+operating_system: Rocky Linux 9.4 (Blue Onyx)
+vendor: QEMU
+virtualization: kvm

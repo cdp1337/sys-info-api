@@ -1,0 +1,14 @@
+Static hostname: (unset)
+Transient hostname: localhost
+         Icon name: computer-vm
+           Chassis: vm 🖴
+        Machine ID: de3d459907cb4261b259972f716aa337
+           Boot ID: 0e4f1b17164946ac81d5b5ecd4af5338
+    Virtualization: kvm
+  Operating System: Rocky Linux 9.4 (Blue Onyx)
+       CPE OS Name: cpe:/o:rocky:rocky:9::baseos
+            Kernel: Linux 5.14.0-427.13.1.el9_4.x86_64
+      Architecture: x86-64
+   Hardware Vendor: QEMU
+    Hardware Model: Standard PC _i440FX + PIIX, 1996_
+  Firmware Version: rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org
