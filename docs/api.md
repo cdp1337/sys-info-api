@@ -153,6 +153,7 @@
 - [`cmd.run_returncode`](./sys_info_api.common.cmd.md#function-run_returncode): Run a command and pass stderr to the log, ignoring output, and return the returncode
 - [`operating_system.get_arch`](./sys_info_api.device.operating_system.md#function-get_arch): Get the architecture of this OS
 - [`operating_system.get_boottime`](./sys_info_api.device.operating_system.md#function-get_boottime)
+- [`operating_system.get_id`](./sys_info_api.device.operating_system.md#function-get_id): Try to get the name of the device OS based on hints in /etc
 - [`operating_system.get_installed_software`](./sys_info_api.device.operating_system.md#function-get_installed_software): Call the underlying OS's package manager to handle detection of installed software
 - [`operating_system.get_name`](./sys_info_api.device.operating_system.md#function-get_name): Try to get the name of the device OS based on hints in /etc
 - [`operating_system.get_updates`](./sys_info_api.device.operating_system.md#function-get_updates): Get any updates that are available

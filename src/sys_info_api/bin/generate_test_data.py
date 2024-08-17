@@ -14,8 +14,8 @@
 
 import os
 import sys
-import platform
 import yaml
+import datetime
 
 from sys_info_api.collectors.bin.apt import AptUpdatesTest, AptShowTest
 from sys_info_api.collectors.bin.arp import ArpTest
@@ -39,11 +39,12 @@ from sys_info_api.collectors.bin.uptime import UptimeTest
 from sys_info_api.collectors.bin.who import WhoBootTimeTest
 from sys_info_api.collectors.bin.yum import YumUpdatesTest, YumListInstalledTest
 from sys_info_api.collectors.etc.lsb_release import LsbReleaseTest
-from sys_info_api.collectors.etc.os_release import OsRelease, OsReleaseTest
+from sys_info_api.collectors.etc.os_release import OsReleaseTest
 from sys_info_api.collectors.etc.version import VersionTest
 from sys_info_api.collectors.etc.yum_repos import YumReposTest
 from sys_info_api.common.exceptions import MetricNotAvailable
 from sys_info_api.device.operating_system import OsDump
+from sys_info_api.device import operating_system
 
 
 def run(mock_run: str = None):
@@ -59,12 +60,12 @@ def run(mock_run: str = None):
 
 	cmd_help = '--help' in sys.argv or '-h' in sys.argv
 
-	# @todo Swap this with the higher level functionality once ready
-	try:
-		os_info = OsRelease()
-		target_dir = '-'.join([os_info.get_id(), os_info.get_version_string()])
-	except MetricNotAvailable:
-		target_dir = '-'.join([platform.system(), platform.release()])
+	target_dir = '-'.join([
+		operating_system.get_id(),
+		operating_system.get_version(),
+		operating_system.get_arch(),
+		datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+	])
 
 	# Set the target to store collected results within tests/data
 	target = os.path.abspath(os.path.join(
