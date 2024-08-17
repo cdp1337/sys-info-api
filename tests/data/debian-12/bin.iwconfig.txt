@@ -1,5 +1,0 @@
-wlx6c5ab06d580e  IEEE 802.11  ESSID:off/any  
-          Mode:Managed  Access Point: Not-Associated   Tx-Power=off   
-          Retry short limit:7   RTS thr=2347 B   Fragment thr:off
-          Encryption key:off
-          Power Management:on

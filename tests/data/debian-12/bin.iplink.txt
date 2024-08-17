@@ -1,5 +1,0 @@
-lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
-enp6s0           UP             a0:36:bc:3d:9f:1e <BROADCAST,MULTICAST,UP,LOWER_UP> 
-enxa0cec8a4c6b9  DOWN           a0:ce:c8:a4:c6:b9 <NO-CARRIER,BROADCAST,MULTICAST,UP> 
-tun0             UNKNOWN        <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> 
-wlx6c5ab06d580e  DOWN           5a:66:e2:d4:f1:4d <BROADCAST,MULTICAST>
