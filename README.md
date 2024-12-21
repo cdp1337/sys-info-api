@@ -4,7 +4,7 @@ Alpha-phase development, not ready for production use yet!
 
 Documentation and such to come once the platform is more complete.
 
-## Application Architecture
+## Application architecture
 
 This library is composed of two layers, collectors and device.
 
@@ -17,18 +17,11 @@ For example, the operating system name is provided by the `operating_system` dev
 which in turn queries /etc/version, pveversion, /etc/os-release, and system_profiler to determine the operating system.
 
 
-## Setting up from source (for development)
+## Development notes
 
-Linux Mint 22 requires python-venv to be installed: `sudo apt install python3-venv`
+For development notes and guide on developing this project, see [the build guide](docs/build_guide.md).
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-python3 -m pip install --upgrade pip
-pip3 install -e .[dev]
-```
-
-## Low level Collectors
+## Low level collectors
 
 List of collectors and the platforms tested.
 (Not a definitive list of supported platforms, as Debian support for example generally extends to any Debian-based distro
@@ -106,4 +99,10 @@ Red Hat / Rocky:
 
 ```bash
 sudo yum install dmidecode net-tools
+```
+
+Debian:
+
+```bash
+sudo apt install net-tools
 ```
