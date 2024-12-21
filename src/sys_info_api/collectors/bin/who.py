@@ -12,7 +12,7 @@
 #  You should have received a copy of the GNU Affero General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from sys_info_api.common import str_to_utc
 from sys_info_api.common.bin_collector import BinCollector
@@ -40,3 +40,15 @@ class WhoBootTimeTest(BinCollectorTest):
 		self.keys = {
 			'data': self.collector.get_data,
 		}
+
+	def verify_test_data(self, data: dict):
+		"""
+		Verify test data against the underlying collector
+		:param data:
+		:return:
+		"""
+		# Verify the data is a valid date time
+		# Since the source string may come from a different timezone (and does not include timezone data),
+		# we cannot ensure that the timezone the test machine is the same.
+		self.assertIsInstance(data['data'], datetime)
+		self.assertEqual(data['data'].tzinfo, timezone.utc)
