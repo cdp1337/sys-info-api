@@ -23,6 +23,7 @@ from sys_info_api.collectors.bin.df import DfTest
 from sys_info_api.collectors.bin.dmidecode import DmiBaseboardTest, DmiMemoryTest, DmiBiosTest, DmiCacheTest, \
 	DmiChassisTest, DmiProcessorTest, DmiSystemTest
 from sys_info_api.collectors.bin.dpkg import DpkgListInstalledTest
+from sys_info_api.collectors.bin.groups import GroupsListTest
 from sys_info_api.collectors.bin.hostnamectl import HostnameCtlTest
 from sys_info_api.collectors.bin.ifconfig import Ifconfig, IfconfigTest
 from sys_info_api.collectors.bin.ip import IPLink, IPLinkTest
@@ -78,6 +79,7 @@ def run(mock_run: str = None):
 	interfaces = _get_net_interfaces()
 	packages = [['python3'], ['vlc'], ['xterm']]
 	yum_repos = [['epel'], ['centos'], ['rocky']]
+	users = [['root'], ['vm-user'], ['test-user'], ['nobody']]
 
 	# Collection of scripts to run and try to store
 	collectors = [
@@ -93,6 +95,7 @@ def run(mock_run: str = None):
 		['bin.dmiprocessor', DmiProcessorTest],
 		['bin.dmisystem', DmiSystemTest],
 		['bin.dpkglistinstalled', DpkgListInstalledTest],
+		['bin.groupslist', GroupsListTest, users],
 		['bin.hostnamectl', HostnameCtlTest],
 		['bin.ifconfig', IfconfigTest],
 		['bin.iplink', IPLinkTest],
@@ -118,6 +121,17 @@ def run(mock_run: str = None):
 		['device.os', OsDump],
 	]
 
+	if only_collectors is not None and not cmd_help:
+		# Verify the requested collector is a valid collector.
+		valid = False
+		for c in collectors:
+			if c[0] in only_collectors:
+				valid = True
+				break
+		if not valid:
+			print('Invalid collector requested: {}'.format(only_collectors), file=sys.stderr)
+			cmd_help = True
+
 	if cmd_help:
 		# Print usage / help and exit
 		print('Usage: generate_test_data [collector]')
@@ -125,7 +139,8 @@ def run(mock_run: str = None):
 		print('If no collectors are provided, all tests are executed and stored in tests/data')
 		print('Otherwise, an individual collector can be requested to display the results of that single test.')
 		print('Collectors: ')
-		print(', '.join(c[0] for c in collectors))
+		print('  * ' + '\n  * '.join(c[0] for c in collectors))
+		exit(1)
 
 	if not print_only and not os.path.exists(target):
 		print('Creating test data in: {}'.format(target))
@@ -218,5 +233,6 @@ def _get_net_interfaces():
 	return ret
 
 
-# Debug / Test
-# run('bin.dpkglistinstalled')
+if __name__ == '__main__':
+	# Allow this script to be run standalone
+	run()
