@@ -10,7 +10,7 @@
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L34"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L35"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_name`
 
@@ -23,7 +23,7 @@ Try to get the name of the device OS based on hints in /etc
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L65"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L66"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_id`
 
@@ -36,7 +36,7 @@ Try to get the name of the device OS based on hints in /etc
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L96"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L97"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_upstream_id`
 
@@ -51,7 +51,7 @@ This may be different from the actual OS running, ie: Proxmox VE is considered t
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L125"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L126"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_version`
 
@@ -64,7 +64,7 @@ Try to get the name of the device OS based on hints in /etc
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L149"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L150"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_upstream_version`
 
@@ -79,7 +79,7 @@ This may be different from the actual OS running, ie: Proxmox VE is considered t
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L172"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L173"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_upstream_version_major`
 
@@ -94,7 +94,7 @@ This may be different from the actual OS running, ie: Proxmox VE is considered t
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L195"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L196"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_arch`
 
@@ -107,7 +107,7 @@ Get the architecture of this OS
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L203"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L204"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_boottime`
 
@@ -122,7 +122,7 @@ get_boottime() → Optional[datetime]
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L228"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L229"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_installed_software`
 
@@ -135,7 +135,7 @@ Call the underlying OS's package manager to handle detection of installed softwa
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L244"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L245"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `get_updates`
 
@@ -148,7 +148,7 @@ Get any updates that are available
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L259"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L260"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>function</kbd> `like_os`
 
@@ -165,7 +165,7 @@ Useful to see if this OS is "like Debian" or "like Red Hat"
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L278"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L279"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ## <kbd>class:</kbd> `OsDump`
 Dump all info available about the operating system (from the os module) 
@@ -175,7 +175,7 @@ Dump all info available about the operating system (from the os module)
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L286"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L287"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `generate_raw_data`
 
@@ -189,7 +189,7 @@ generate_raw_data() → str
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L289"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L290"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `generate_test_data`
 
@@ -203,7 +203,7 @@ generate_test_data() → dict
 
 ---
 
-<a href="../src/sys_info_api/device/operating_system.py#L283"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+<a href="../src/sys_info_api/device/operating_system.py#L284"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
 
 ### <kbd>method:</kbd> `setUp`
 

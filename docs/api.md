@@ -12,6 +12,7 @@
 - [`sys_info_api.collectors.bin.df`](./sys_info_api.collectors.bin.df.md#module-sys_info_apicollectorsbindf)
 - [`sys_info_api.collectors.bin.dmidecode`](./sys_info_api.collectors.bin.dmidecode.md#module-sys_info_apicollectorsbindmidecode)
 - [`sys_info_api.collectors.bin.dpkg`](./sys_info_api.collectors.bin.dpkg.md#module-sys_info_apicollectorsbindpkg)
+- [`sys_info_api.collectors.bin.groups`](./sys_info_api.collectors.bin.groups.md#module-sys_info_apicollectorsbingroups)
 - [`sys_info_api.collectors.bin.hostnamectl`](./sys_info_api.collectors.bin.hostnamectl.md#module-sys_info_apicollectorsbinhostnamectl)
 - [`sys_info_api.collectors.bin.ifconfig`](./sys_info_api.collectors.bin.ifconfig.md#module-sys_info_apicollectorsbinifconfig)
 - [`sys_info_api.collectors.bin.ip`](./sys_info_api.collectors.bin.ip.md#module-sys_info_apicollectorsbinip)
@@ -74,6 +75,8 @@
 - [`dpkg.DpkgInstall`](./sys_info_api.collectors.bin.dpkg.md#class-dpkginstall)
 - [`dpkg.DpkgListInstalled`](./sys_info_api.collectors.bin.dpkg.md#class-dpkglistinstalled)
 - [`dpkg.DpkgListInstalledTest`](./sys_info_api.collectors.bin.dpkg.md#class-dpkglistinstalledtest)
+- [`groups.GroupsList`](./sys_info_api.collectors.bin.groups.md#class-groupslist): groups - print the groups a user is in
+- [`groups.GroupsListTest`](./sys_info_api.collectors.bin.groups.md#class-groupslisttest)
 - [`hostnamectl.HostnameCtl`](./sys_info_api.collectors.bin.hostnamectl.md#class-hostnamectl)
 - [`hostnamectl.HostnameCtlTest`](./sys_info_api.collectors.bin.hostnamectl.md#class-hostnamectltest)
 - [`ifconfig.Ifconfig`](./sys_info_api.collectors.bin.ifconfig.md#class-ifconfig): Collects information about network interfaces from the ifconfig command.

@@ -112,6 +112,7 @@ Ran 11 tests in 0.094s
 OK
 ```
 
+
 ### Linting code
 
 Code linting of this project is done with `flake8` and is done automatically on pre-commit.
@@ -120,6 +121,18 @@ To manually lint code prior to commit:
 
 ```bash
 flake8 src
+```
+
+
+### Updating documentation
+
+Run the following script to automatically parse the code for docstrings and 
+generate docs within `docs/`.
+
+Will also scan through the test data to produce a report of what operating systems have been tested.
+
+```bash
+scripts/gen_docs.sh
 ```
 
 

@@ -72,6 +72,18 @@ setUp()
 
 
 
+---
+
+<a href="../src/sys_info_api/collectors/bin/who.py#L44"><img align="right" style="float:right;" src="https://img.shields.io/badge/-source-cccccc?style=flat-square"></a>
+
+### <kbd>method:</kbd> `verify_test_data`
+
+```python
+verify_test_data(data: dict)
+```
+
+Verify test data against the underlying collector :param data: :return: 
+
 
 
 

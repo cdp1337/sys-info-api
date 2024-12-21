@@ -19,6 +19,7 @@
 | bin | [Slot](sys_info_api.collectors.bin.dmidecode.md#class-slot) | |
 | bin | [DpkgInstall](sys_info_api.collectors.bin.dpkg.md#class-dpkginstall) | |
 | bin | [DpkgListInstalled](sys_info_api.collectors.bin.dpkg.md#class-dpkglistinstalled) | ![Debian](images/icons/debian.svg) 12 ![LinuxMint](images/icons/linuxmint.svg) 22 |
+| bin | [GroupsList](sys_info_api.collectors.bin.groups.md#class-groupslist) | |
 | bin | [HostnameCtl](sys_info_api.collectors.bin.hostnamectl.md#class-hostnamectl) | ![Debian](images/icons/debian.svg) 12 ![LinuxMint](images/icons/linuxmint.svg) 22 ![Rocky](images/icons/rocky.svg) 9.4 |
 | bin | [Ifconfig](sys_info_api.collectors.bin.ifconfig.md#class-ifconfig) | ![Debian](images/icons/debian.svg) 12 ![LinuxMint](images/icons/linuxmint.svg) 22 ![Rocky](images/icons/rocky.svg) 9.4 |
 | bin | [IPLink](sys_info_api.collectors.bin.ip.md#class-iplink) | ![Debian](images/icons/debian.svg) 12 ![LinuxMint](images/icons/linuxmint.svg) 22 ![Rocky](images/icons/rocky.svg) 9.4 |
