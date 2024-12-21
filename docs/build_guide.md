@@ -136,6 +136,14 @@ scripts/gen_docs.sh
 ```
 
 
+### Generating test data
+
+```bash
+# Generate all test data and store in tests/data/[os_name]-[os_version]-[arch]-[timestamp]/
+sudo venv/bin/generate_test_data
+```
+
+
 ## Managing build and distribution
 
 To upload to PyPI, the following steps are useful:
