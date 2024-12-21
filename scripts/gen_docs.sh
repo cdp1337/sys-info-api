@@ -64,6 +64,7 @@ find docs/ -name '*.md' | while read file; do
 	sed -i "$file" -e 's:{%img_debian%}:![Debian](images/icons/debian.svg):g'
 	sed -i "$file" -e 's:{%img_fedora%}:![Fedora](images/icons/fedora.svg):g'
 	sed -i "$file" -e 's:{%img_freebsd%}:![FreeBSD](images/icons/freebsd.svg):g'
+	sed -i "$file" -e 's:{%img_linuxmint%}:![LinuxMint](images/icons/linuxmint.svg):g'
 	sed -i "$file" -e 's:{%img_macos%}:![MacOS](images/icons/macos.svg):g'
 	sed -i "$file" -e 's:{%img_redhat%}:![Redhat](images/icons/redhat.svg):g'
 	sed -i "$file" -e 's:{%img_rocky%}:![Rocky](images/icons/rocky.svg):g'
